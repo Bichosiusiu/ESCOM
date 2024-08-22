@@ -1,0 +1,4 @@
+10   Carlos  Zapatero    1200.50
+24   Luis    Carpintero  1500.99
+43   Enrique Mecanico    1305.70
+84   Jose    Jardinero   990.50

@@ -1,0 +1,15 @@
+perro   dog
+avestruz    ostrich
+gato    cat
+elefante    elephant
+toro    bull
+pajaro  bird
+conejo  rabbit
+tigre   tiger
+leon    lion
+tortuga turttle
+pato    duck
+langosta    lobster
+lobo    wolf
+pez fish
+oveja   sheep
