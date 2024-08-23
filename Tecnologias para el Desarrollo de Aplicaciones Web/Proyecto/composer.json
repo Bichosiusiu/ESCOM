@@ -1,0 +1,19 @@
+{
+    "name": "cesar/proyecto",
+    "description": "Una aplicacion de venta de productos",
+    "type": "project",
+    "require": {
+        "tecnickcom/tcpdf": "^6.7",
+        "dompdf/dompdf": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cesar\\Proyecto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cesar"
+        }
+    ]
+}
