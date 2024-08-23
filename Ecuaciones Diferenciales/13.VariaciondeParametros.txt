@@ -1,0 +1,419 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Ecuaciones diferenciales lineales no homogéneas con coeficientes constantes Método de variación de parámetros}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 18 de noviembre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[y''+y=\operatorname{sen}\left(x\right)
+\]
+Calcular: 
+\[y''+y=\operatorname{sen}\left(x\right)
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=f\left(x\right)
+\]
+\[\lambda^{2}+1=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{{\lambda}^{2}+1}{\;\rightarrow\;\lambda_{1,2}=\pm i}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,\operatorname{sen}\left(x\right)+C\,\cos\left(x\right)}\end{gathered}
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[\overline y=C_{1}\,\operatorname{sen}\left(x\right)+C\,\cos\left(x\right)
+\]
+Método de coeficientes indeterminados
+\[y_{\mathrm{i}}={x}^{\mathrm{s}}\,e^{\alpha\,x}\left(R_{\mathrm{m}}\left(x\right)\,\cos\beta\,x+T_{\mathrm{m}}\left(x\right)\,\operatorname{sen}\beta\,x\right)
+\]
+Solución particular:
+\[\alpha+\beta\,i=i\;\rightarrow\;\mathrm{s}=1
+\]
+\[\left(y=x\,\left(b\,\operatorname{sen}\left(x\right)+a\,\cos\left(x\right)\right)\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}''=\left(-B\,x-2\,A\right)\,\operatorname{sen}\left(x\right)+\left(2\,B-A\,x\right)\,\cos\left(x\right)
+\]
+Susutituir:
+\[2\,B\,\cos\left(x\right)-2\,A\,\operatorname{sen}\left(x\right)=\operatorname{sen}\left(x\right)
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-2\,A=1\\2\,B=0\end{gathered}\right.=\left\{\begin{gathered}A=-\dfrac{1}{2}\\B=0\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{0}=-\dfrac{x\,\cos\left(x\right)}{2}
+\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[y''-y'-2\,y=3\,{e}^{2\,x}-{x}^{2}
+\]
+Calcular: 
+\[y''-y'-2\,y=3\,{e}^{2\,x}-{x}^{2}
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=f\left(x\right)
+\]
+\[\lambda^{2}-\lambda-2=0
+\]
+\[\left(\lambda-2\right)\,\left(\lambda+1\right)=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{\lambda-2}{\;\rightarrow\;\lambda_{1}=2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{2\,x}}\\{\lambda+1}{\;\rightarrow\;\lambda_{2}=-1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{x}}}\end{gathered}
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[\overline y=C\,{e}^{2\,x}+\dfrac{C_{1}}{{e}^{x}}
+\]
+Método de coeficientes indeterminados
+\[y_{\mathrm{i}}={x}^{\mathrm{s}}\,e^{\alpha\,x}\left(R_{\mathrm{m}}\left(x\right)\,\cos\beta\,x+T_{\mathrm{m}}\left(x\right)\,\operatorname{sen}\beta\,x\right)
+\]
+Solución particular:
+\[\alpha+\beta\,i=2\;\rightarrow\;\mathrm{s}=1
+\]
+\[\left(y=a\,x\,{e}^{2\,x}\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}'=\left(2\,A\,x+A\right)\,{e}^{2\,x}
+\]
+\[y_{0}''=\left(4\,A\,x+4\,A\right)\,{e}^{2\,x}
+\]
+Susutituir:
+\[3\,A\,{e}^{2\,x}=3\,{e}^{2\,x}
+\]
+Encontrar coeficientes:
+\[{3\,A=3\;{\rightarrow}\;A=1}
+\]
+Solucion particular
+\[y_{0}=x\,{e}^{2\,x}
+\]
+Solución particular:
+\[\alpha+\beta\,i=0\;\rightarrow\;\mathrm{s}=0
+\]
+\[\left(y=a\,{x}^{2}+b\,x+c\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{1}'=2\,A\,x+B
+\]
+\[y_{1}''=2\,A
+\]
+Sustituir:
+\[-2\,A\,{x}^{2}+\left(-2\,B-2\,A\right)\,x-2\,C-B+2\,A=-{x}^{2}
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-2\,A=-1\\-2\,B-2\,A=0\\-2\,C-B+2\,A=0\end{gathered}\right.=\left\{\begin{gathered}A=\dfrac{1}{2}\\B=-\dfrac{1}{2}\\C=\dfrac{3}{4}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{1}=\dfrac{{x}^{2}}{2}-\dfrac{x}{2}+\dfrac{3}{4}
+\]
+Solucion:
+\[
+y_{1}=x\,{e}^{2x}+\,x\dfrac{{x}^{2}}{2}-\dfrac{x}{2}+\dfrac{3}{4}
+\]
+\newpage
+\section*{Ejercicio 13}
+Arellano Millan Gabriel
+
+Ecuacion
+\[y''-2\,y'+y=4\,\cos\left(3\,x\right)-2\,\operatorname{sen}\left(2\,x\right)
+\]
+Calcular: 
+\[y''-2\,y'+y=4\,\cos\left(3\,x\right)-2\,\operatorname{sen}\left(2\,x\right)
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=f\left(x\right)
+\]
+\[\lambda^{2}-2\,\lambda+1=0
+\]
+\[\left({\lambda-1}\right)^{2}=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{\left({\lambda-1}\right)^{2}}{\;\rightarrow\;\lambda_{1,2}=1}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\left(C_{1}\,x+C\right)\,{e}^{x}}\end{gathered}
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[\overline y=\left(C_{1}\,x+C\right)\,{e}^{x}
+\]
+Método de coeficientes indeterminados
+\[y_{\mathrm{i}}={x}^{\mathrm{s}}\,e^{\alpha\,x}\left(R_{\mathrm{m}}\left(x\right)\,\cos\beta\,x+T_{\mathrm{m}}\left(x\right)\,\operatorname{sen}\beta\,x\right)
+\]
+Solución particular:
+\[\alpha+\beta\,i=2\,i\;\rightarrow\;\mathrm{s}=0
+\]
+\[\left(y=b\,\operatorname{sen}\left(2\,x\right)+a\,\cos\left(2\,x\right)\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}'=2\,B\,\cos\left(2\,x\right)-2\,A\,\operatorname{sen}\left(2\,x\right)
+\]
+\[y_{0}''=-9\,B\,\operatorname{sen}\left(3\,x\right)-9\,A\,\cos\left(3\,x\right)
+\]
+Susutituir:
+\[\left(6\,A-8\,B\right)\,\operatorname{sen}\left(3\,x\right)+\left(-6\,B-8\,A\right)\,\cos\left(3\,x\right)=4\,\cos\left(3\,x\right)
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-6\,B-8\,A=4\\6\,A-8\,B=0\end{gathered}\right.=\left\{\begin{gathered}A=-\dfrac{8}{25}\\B=-\dfrac{6}{25}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{0}=-\dfrac{6\,\operatorname{sen}\left(3\,x\right)}{25}-\dfrac{8\,\cos\left(3\,x\right)}{25}
+\]
+Solución particular:
+\[\alpha+\beta\,i=2\,i\;\rightarrow\;\mathrm{s}=0
+\]
+\[\left(y=b\,\operatorname{sen}\left(2\,x\right)+a\,\cos\left(2\,x\right)\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}'=2\,B\,\cos\left(2\,x\right)-2\,A\,\operatorname{sen}\left(2\,x\right)
+\]
+\[y_{1}''=-4\,B\,\operatorname{sen}\left(2\,x\right)-4\,A\,\cos\left(2\,x\right)
+\]
+Sustituir:
+\[\left(4\,A-3\,B\right)\,\operatorname{sen}\left(2\,x\right)+\left(-4\,B-3\,A\right)\,\cos\left(2\,x\right)=-2\,\operatorname{sen}\left(2\,x\right)
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}4\,A-3\,B=-2\\-4\,B-3\,A=0\end{gathered}\right.=\left\{\begin{gathered}A=-\dfrac{8}{25}\\B=\dfrac{6}{25}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{1}=\dfrac{6\,\operatorname{sen}\left(2\,x\right)}{25}-\dfrac{8\,\cos\left(2\,x\right)}{25}
+\]
+Solución particular:
+\[y=-\dfrac{6\,\operatorname{sen}\left(3\,x\right)}{25}-\dfrac{8\,\cos\left(3\,x\right)}{25}+\dfrac{6\,\operatorname{sen}\left(2\,x\right)}{25}-\dfrac{8\,\cos\left(2\,x\right)}{25}
+\]
+\newpage
+\section*{Ejercicio 19}
+Ocaña Castro Hector
+Ecuacion
+\[y''-3\,y'-9\,y=4\,\cos\left(2\,x\right)-\dfrac{5}{{e}^{x}}
+\]
+Calcular: 
+\[y''-3\,y'-9\,y=4\,\cos\left(2\,x\right)-\dfrac{5}{{e}^{x}}
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=f\left(x\right)
+\]
+\[\lambda^{2}-3\,\lambda-9=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{{\lambda}^{2}-3\,\lambda-9}{\;\rightarrow\;\lambda_{1}=-\dfrac{3\,\sqrt{5}-3}{2}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{\left(\frac{3}{2}-\frac{3\,\sqrt{5}}{2}\right)\,x}}\\\phantom{{{\lambda}^{2}-3\,\lambda-9}}{\;\rightarrow\;\lambda_{2}=\dfrac{3\,\sqrt{5}+3}{2}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,{e}^{\left(\frac{3\,\sqrt{5}}{2}+\frac{3}{2}\right)\,x}}\end{gathered}
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[\overline y=C_{1}\,{e}^{\left(\frac{3\,\sqrt{5}}{2}+\frac{3}{2}\right)\,x}+C\,{e}^{\left(\frac{3}{2}-\frac{3\,\sqrt{5}}{2}\right)\,x}
+\]
+Metodo de coeficientes indeterminados: 
+\[
+y_{\mathrm{i}}={x}^{\mathrm{s}}\,e^{\alpha\,x}\left(R_{\mathrm{m}}\left(x\right)\,\cos\beta\,x+T_{\mathrm{m}}\left(x\right)\,\operatorname{sen}\beta\,x\right)
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=2\,i\;\rightarrow\;\mathrm{s}=0
+\]
+\[
+\left(y=b\,\operatorname{sen}\left(2\,x\right)+a\,\cos\left(2\,x\right)\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}'=2\,B\,\cos\left(2\,x\right)-2\,A\,\operatorname{sen}\left(2\,x\right)
+\]
+\[y_{1}''=-4\,B\,\operatorname{sen}\left(2\,x\right)-4\,A\,\cos\left(2\,x\right)
+\]
+Sustituir:
+\[\left(6\,A-13\,B\right)\,\operatorname{sen}\left(2\,x\right)+\left(-6\,B-13\,A\right)\,\cos\left(2\,x\right)=4\,\cos\left(2\,x\right)
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-6\,B-13\,A=4\\6\,A-13\,B=0\end{gathered}\right.=\left\{\begin{gathered}A=-\dfrac{52}{205}\\B=-\dfrac{24}{205}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{0}=-\dfrac{24\,\operatorname{sen}\left(2\,x\right)}{205}-\dfrac{52\,\cos\left(2\,x\right)}{205}
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=-1\;\rightarrow\;\mathrm{s}=0
+\]
+\[
+\left(y=a\,{e}^{-x}\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{1}'=-\dfrac{A}{{e}^{x}}
+\]
+\[y_{1}''=\dfrac{A}{{e}^{x}}
+\]
+Sustituir:
+\[-\dfrac{5\,A}{{e}^{x}}=-\dfrac{5}{{e}^{x}}
+\]
+Encontrar coeficientes:
+\[{-5\,A=-5\;{\rightarrow}\;A=1}
+\]
+Solucion particular
+\[y_{1}=\dfrac{1}{{e}^{x}}
+\]
+Solucion:
+\[y=-\dfrac{24\,\operatorname{sen}\left(2\,x\right)}{205}-\dfrac{52\,\cos\left(2\,x\right)}{205}+\dfrac{1}{{e}^{x}}
+\]
+\newpage
+\section*{Ejercicio 25}
+Lopez Chavez Moises y Vazquez Blancas Cesar Said
+
+Ecuacion
+\[y''-3\,y'-10\,y=50\,\cos\left(5\,x\right)+12\,{e}^{x}-\dfrac{7}{{e}^{2\,x}}+20\,x
+\]
+Calcular: 
+\[y''-3\,y'-10\,y=50\,\cos\left(5\,x\right)+12\,{e}^{x}-\dfrac{7}{{e}^{2\,x}}+20\,x
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=f\left(x\right)
+\]
+\[\lambda^{2}-3\,\lambda-10=0
+\]
+\[\left(\lambda-5\right)\,\left(\lambda+2\right)=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{\lambda-5}{\;\rightarrow\;\lambda_{1}=5}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{5\,x}}\\{\lambda+2}{\;\rightarrow\;\lambda_{2}=-2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{2\,x}}}\end{gathered}
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[\overline y=C\,{e}^{5\,x}+\dfrac{C_{1}}{{e}^{2\,x}}
+\]
+Metodo de coeficientes indeterminados: 
+\[
+y_{\mathrm{i}}={x}^{\mathrm{s}}\,e^{\alpha\,x}\left(R_{\mathrm{m}}\left(x\right)\,\cos\beta\,x+T_{\mathrm{m}}\left(x\right)\,\operatorname{sen}\beta\,x\right)
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=5\,i\;\rightarrow\;\mathrm{s}=0
+\]
+\[
+\left(y=b\,\operatorname{sen}\left(5\,x\right)+a\,\cos\left(5\,x\right)\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{0}'=5\,B\,\cos\left(5\,x\right)-5\,A\,\operatorname{sen}\left(5\,x\right)
+\]
+\[y_{0}''=-25\,B\,\operatorname{sen}\left(5\,x\right)-25\,A\,\cos\left(5\,x\right)
+\]
+Sustituir:
+\[\left(15\,A-35\,B\right)\,\operatorname{sen}\left(5\,x\right)+\left(-15\,B-35\,A\right)\,\cos\left(5\,x\right)=50\,\cos\left(5\,x\right)
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-15\,B-35\,A=50\\15\,A-35\,B=0\end{gathered}\right.=\left\{\begin{gathered}A=-\dfrac{35}{29}\\B=-\dfrac{15}{29}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{0}=-\dfrac{15\,\operatorname{sen}\left(5\,x\right)}{29}-\dfrac{35\,\cos\left(5\,x\right)}{29}
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=1\;\rightarrow\;\mathrm{s}=0
+\]
+\[
+\left(y=a\,{e}^{x}\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{1}'=A\,{e}^{x}
+\]
+\[y_{1}''=A\,{e}^{x}
+\]
+Sustituir:
+\[-12\,A\,{e}^{x}=12\,{e}^{x}
+\]
+Encontrar coeficientes:
+\[{-12\,A=12\;{\rightarrow}\;A=-1}
+\]
+Solucion particular
+\[y_{1}=-{e}^{x}
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=-2\;\rightarrow\;\mathrm{s}=1
+\]
+\[
+\left(y=a\,x\,{e}^{-2\,x}\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{2}'=-\dfrac{2\,A\,x-A}{{e}^{2\,x}}
+\]
+\[y_{2}''=\dfrac{4\,A\,x-4\,A}{{e}^{2\,x}}
+\]
+Sustituir:
+\[-\dfrac{7\,A}{{e}^{2\,x}}=-\dfrac{7}{{e}^{2\,x}}
+\]
+Encontrar coeficientes:
+\[{-7\,A=-7\;{\rightarrow}\;A=1}
+\]
+Solucion particular
+\[y_{2}=\dfrac{x}{{e}^{2\,x}}
+\]
+Solucion particular:
+\[
+\alpha+\beta\,i=0\;\rightarrow\;\mathrm{s}=0
+\]
+\[
+\left(y=a\,x+b\right)'_{x}
+\]
+Calcular derivadas:
+\[y_{3}'=A
+\]
+\[y_{3}''=0
+\]
+Sustituir:
+\[-10\,A\,x-10\,B-3\,A=20\,x
+\]
+Encontrar coeficientes:
+\[{\left\{\begin{gathered}-10\,A=20\\-10\,B-3\,A=0\end{gathered}\right.=\left\{\begin{gathered}A=-2\\B=\dfrac{3}{5}\end{gathered}\right.}
+\]
+Solucion particular
+\[y_{3}=\dfrac{3}{5}-2\,x
+\]
+Solucion:
+\[y=-\dfrac{15\,\operatorname{sen}\left(5\,x\right)}{29}-\dfrac{35\,\cos\left(5\,x\right)}{29}-{e}^{x}+\dfrac{x}{{e}^{2\,x}}-2\,x+\dfrac{3}{5}
+\]
+\end{document}

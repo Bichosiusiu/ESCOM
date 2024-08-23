@@ -1,0 +1,229 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{EDOLH de 2do orden coeficientes constantes}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 9 de noviembre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[y''-\dfrac{5\,y'}{2}+y=0
+\]
+Calcular: 
+\[y''-\dfrac{5\,y'}{2}+y=0
+\]
+\[2\,y''-5\,y'+2\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[2\,\lambda^{2}-5\,\lambda+2=0
+\]
+\[\left(\lambda-2\right)\,\left(2\,\lambda-1\right)=0
+\]
+hallamos las raicez
+\[\begin{gathered}{\lambda-2}{\;\rightarrow\;\lambda_{1}=2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{2\,x}}\\{2\,\lambda-1}{\;\rightarrow\;\lambda_{2}=\dfrac{1}{2}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,{e}^{\frac{x}{2}}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[y=C\,{e}^{2\,x}+C_{1}\,{e}^{\frac{x}{2}}
+\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[16\,y''+16\,y'+3\,y=0
+\] 
+Calcular: 
+\[16\,y''+16\,y'+3\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[16\,\lambda^{2}+16\,\lambda+3=0
+\]
+\[\left(4\,\lambda+1\right)\,\left(4\,\lambda+3\right)=0
+\]
+\[\begin{gathered}{4\,\lambda+1}{\;\rightarrow\;\lambda_{1}=-\dfrac{1}{4}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C}{{e}^{\frac{x}{4}}}}\\{4\,\lambda+3}{\;\rightarrow\;\lambda_{2}=-\dfrac{3}{4}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{\frac{3\,x}{4}}}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=\dfrac{C}{{e}^{\frac{x}{4}}}+\dfrac{C_{1}}{{e}^{\frac{3\,x}{4}}}
+\]
+\newpage
+\section*{Ejercicio 13}
+Arellano Millan Gabriel
+
+Ecuacion
+\[y''-8\,y'-9\,y=0
+\] 
+Calcular: 
+\[y''-8\,y'-9\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{2}-8\,\lambda-9=0
+\]
+\[\left(\lambda-9\right)\,\left(\lambda+1\right)=0
+\]
+\[\begin{gathered}{\lambda-9}{\;\rightarrow\;\lambda_{1}=9}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{9\,x}}\\{\lambda+1}{\;\rightarrow\;\lambda_{2}=-1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{x}}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=C\,{e}^{9\,x}+\dfrac{C_{1}}{{e}^{x}}
+\]
+\newpage
+\section*{Ejercicio 19}
+Ocaña Castro Hector
+
+Ecuacion
+\[y''-6\,y'+8\,y=0
+\] 
+Calcular: 
+\[y''-6\,y'+8\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{2}-6\,\lambda+8=0
+\]
+\[\left(\lambda-4\right)\,\left(\lambda-2\right)=0
+\]
+\[\begin{gathered}{\lambda-4}{\;\rightarrow\;\lambda_{1}=4}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{4\,x}}\\{\lambda-2}{\;\rightarrow\;\lambda_{2}=2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,{e}^{2\,x}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=C\,{e}^{4\,x}+C_{1}\,{e}^{2\,x}
+\]
+\newpage
+\section*{Ejercicio 25}
+Lopez Chavez Moises 
+
+Ecuacion
+\[y=C_{1}\,\operatorname{sen}\left(\frac{x}{2}\right)\,{e}^{x}+C\,\cos\left(\frac{x}{2}\right)\,{e}^{x}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+\[\begin{gathered}{4\,{\lambda}^{2}-8\,\lambda+5}{\;\rightarrow\;\lambda_{1,2}=\dfrac{\pm i}{2}+1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,\operatorname{sen}\left(\frac{x}{2}\right)\,{e}^{x}+C\,\cos\left(\frac{x}{2}\right)\,{e}^{x}}\end{gathered}
+\]
+\[4\,\lambda^{2}-8\,\lambda+5=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+Resultado: 
+\[4\,y''-8\,y'+5\,y=0
+\]
+\newpage
+\section*{Ejercicio 31}
+    Vazquez Blancas Cesar Said
+
+Ecuacion
+\[y=\dfrac{C_{1}\,x+C}{{e}^{\sqrt{5}\,x}}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+\[\begin{gathered}{{\lambda}^{2}+2\,\sqrt{5}\,\lambda+5}{\;\rightarrow\;\lambda_{1,2}=-\sqrt{5}}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\dfrac{C_{1}\,x+C}{{e}^{\sqrt{5}\,x}}}\end{gathered}
+\]
+\[\lambda^{2}+2\,\sqrt{5}\,\lambda+5=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+Resultado: 
+\[y''+2\,\sqrt{5}\,y'+5\,y=0
+\]
+\end{document}

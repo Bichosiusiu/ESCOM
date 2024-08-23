@@ -1,0 +1,301 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Ecuaciones homogeneas}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 2 de octubre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Saeed Priego Merino
+\newline
+Dada la ecuación diferencial \(xy' - y + x = 0\)
+
+\begin{enumerate}
+    \item \textbf{Cambio de Variable}:
+    Definimos \(y = vx\). Esto nos permite reescribir la ecuación diferencial como:
+    
+    \[xy' - y + x = 0 \rightarrow x(v'x + v) - vx + x = 0\]
+
+    \item \textbf{Expansión y Simplificación}:
+    Distribuimos \(x\) en el primer término y simplificamos:
+    
+    \[v'x^2 + vx - vx + x = 0\]
+    
+    \[v'x^2 + x = 0\]
+
+    \item \textbf{Separación de Variables}:
+    Obtenemos \(v'\) en un lado y \(x\) en el otro:
+    
+    \[v' = -\frac{1}{x}\]
+
+    \item \textbf{Integración}:
+    Integramos ambos lados con respecto a \(x\):
+    
+    \[\int v' \,dx = \int -\frac{1}{x} \,dx\]
+    
+    \[v = -\ln|x| + C\]
+
+    \item \textbf{Recuperar la Solución}:
+    Recordamos que \(y = vx\), y sustituimos el valor de \(v\):
+    
+    \[y = -x \ln|x| + Cx\]
+\end{enumerate}
+
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel\\
+\newline
+Dada la ecuación diferencial \(x(x+y)dy=(x^2+y^2)dx\), procederemos a resolverla paso a paso.
+
+\begin{enumerate}
+    \item \textbf{División por \(x^2\)}:
+    
+    Dividimos ambos lados de la ecuación por \(x^2\) para simplificar:
+    
+    \[(x+y)dy = \left(1 + \left(\frac{y}{x}\right)^2\right)dx\]
+
+    \item \textbf{Cambio de Variable}:
+    
+    Definimos \(u = \frac{y}{x}\), lo cual implica que \(y = ux\) y \(dy = udx + xdu\). Sustituimos y reordenamos:
+    
+    \[udu + (1-u)dx = \frac{1}{x}dx\]
+
+    \item \textbf{Multiplicación por \(x\)}:
+
+    Multiplicamos ambos lados por \(x\) para obtener:
+
+    \[xudu + (x - xu)dx = dx\]
+
+    \item \textbf{Integración}:
+
+    Notamos que el primer término a la izquierda es la derivada de \(\frac{1}{2}u^2x^2\) y el segundo término es la derivada de \(\frac{1}{2}x^2 - \frac{1}{2}u x^2\). Por lo tanto, la ecuación se reduce a:
+
+    \[\frac{1}{2}u^2x^2 - \frac{1}{2}u x^2 = \frac{1}{2}x^2 + C\]
+
+    \item \textbf{Resolución para \(u\)}:
+
+    La ecuación \(\frac{1}{2}u^2 - \frac{1}{2}u = 1 + \frac{2C}{x^2}\) es una ecuación cuadrática en \(u\) que puede resolverse con la fórmula cuadrática.
+
+    \item \textbf{Recuperar la Solución Original}:
+
+    Recordamos que \(u = \frac{y}{x}\), por lo que sustituimos de vuelta:
+
+    \[-\frac{y}{x} = \ln|x|(1 - \frac{y}{x})^2 + C\]
+
+    Esta es la solución general de la ecuación diferencial dada.
+
+\end{enumerate}
+
+\section*{Ejercicio 13}
+Arellano Millan Gabriel\\
+\newline
+Dada la ecuación diferencial
+
+\[(2xy+x^2+3y^2)y' + (y^2+2xy+3x^2) = 0\]
+
+procederemos a resolverla paso a paso.
+
+\begin{enumerate}
+    \item \textbf{Simplificación inicial}:
+    
+    Reescribimos la ecuación de forma más manejable:
+    
+    \[y' + \frac{y^2+2xy+3x^2}{2xy+x^2+3y^2} = 0\]
+
+    \item \textbf{Factorización y cambio de variable}:
+    
+    Factorizamos y hacemos el cambio de variable \(v = y + x\), lo que nos lleva a:
+    
+    \[v' - 1 + \frac{v^2 + 3x^2}{v(2v+x)} = 0\]
+
+    \item \textbf{Eliminación de denominador}:
+    
+    Multiplicamos por \(v(2v+x)\) para simplificar:
+    
+    \[2v^2v' + xv' - v + v^2 + 3x^2 = 0\]
+
+    \item \textbf{Integración}:
+    
+    Resolvemos la ecuación diferencial separable para obtener:
+    
+    \[v^3 + \frac{x^2}{2}v^2 - \frac{1}{2}v^2 + \frac{3}{2}x^2v + C = 0\]
+
+    \item \textbf{Sustitución de vuelta}:
+    
+    Sustituimos \(v = y + x\) para obtener la solución final:
+    
+    \[(y + x)^3 + \frac{x^2}{2}(y + x)^2 - \frac{1}{2}(y + x)^2 + \frac{3}{2}x^2(y + x) + C = 0\]
+    
+    Simplificamos para llegar a la forma final:
+    
+    \[(y+x)(y^2+x^2) = C\]
+\end{enumerate}
+
+\section*{Ejercicio 19}
+Ocaña Castro Hector\\
+Dada la ecuación diferencial \(x^2 + 2xy \frac{dy}{dx} = -3x^2 - y^2 - 2xy\), procederemos a resolverla paso a paso.
+
+\begin{enumerate}
+    \item \textbf{Reescribimos}:
+    
+    Reescribimos la ecuacion:
+    
+    \[3x^2 + y^2 + 2xy + (x^2 + 2xy) \frac{dy}{dx} = 0\]
+
+    \item \textbf{Integramos}:
+    
+    \[\int(x^2 + 2xy) \, dy = x^2y + xy^2 + C\]
+
+    \item \textbf{Sustituimos c por f(x): \(x\)}:
+
+    \[x^2y + xy^2 + f(x)\]
+
+    \item \textbf{Calculamos la derivada con respecto a x y queda}:
+
+    \[2yx + y^2 + f(x)'\]
+
+    \item \textbf{Igualamos y despejamos f(x)'}:
+
+    \[3x^2 + y^2 + 2xy = 2yx + y^2 + f(x)'\]
+
+    \[3x^2 + 2xy - 2yx = f(x)'\]
+
+    \[3x^2 - 2yx + 2xy = f(x)'\]
+
+    \[f(x)'=3x^2\]
+    \item \textbf{Integramos y queda }:
+    
+    \[f(x)'=\int3x^2\]
+
+    \[f(x)'=x^3 + c\]
+
+        Sustituimos  para llegar a la forma final:
+    
+    \[x^2y + xy^2 + x^3 = c\]
+\end{enumerate}
+
+\section*{Ejercicio 25}
+Vazquez Blancas Cesar Said\\\\
+Dada la ecuación diferencial \((y-x)y' + y = 0 , y(0)=1\), procederemos a resolverla paso a paso.
+
+\begin{enumerate}
+    \item \textbf{Reescribimos}:
+    
+    Reescribimos la ecuacion:
+    
+    \[\frac{1}{y} + \frac{y-x}{y^2}\ y' = 0\]
+
+    \item \textbf{Integramos}:
+    
+    \[\int\frac{y-x}{y^2}\ \, dy = \frac{x}{y} + \ln|y| + C\]
+
+    \item \textbf{Sustituimos c por f(x)}:
+
+    \[\frac{x}{y} + \ln|y| + f(x)\]
+
+    \item \textbf{Calculamos la derivada con respecto a x y queda}:
+
+    \[\frac{1}{y} + f(x)'\]
+
+    \item \textbf{Igualamos y despejamos f(x)'}:
+
+    \[\frac{1}{y}=\frac{1}{y} + f(x)'\]
+
+    \[\frac{1}{y}-\frac{1}{y} =f(x)'\]
+
+    \[f(x)'=0\]
+
+        Sustituimos  para llegar a la forma final:
+    
+    \[\frac{x}{y} + \ln(y) = c\]
+        \item \textbf{Aplicamos condiciones iniciales}:
+
+    \[\frac{0}{1} + \ln(1) = c\]
+
+    \[c=\frac{0}{1} + \ln(1)\]
+
+    \[c=0\]
+
+        Sustituimos  para llegar a la forma final:
+    
+    \[\frac{x}{y} + \ln(y) = 0\]
+\end{enumerate}
+
+\section*{Ejercicio 31}
+Lopez Chavez Moises\\\\
+Dada la ecuación diferencial \(x(e^{\frac{y}{x}} - 1)y' = e^{\frac{y}{x}}(y - x) , y(1)=0\), procederemos a resolverla paso a paso.
+
+\begin{enumerate}
+    \item \textbf{Reescribimos}:
+    
+    Reescribimos la ecuacion:
+    
+    \[-\frac{e^{\frac{y}{x}}(y-x)}{x}+(e^{\frac{y}{x}} - 1)y'=0\]
+
+    \item \textbf{Integramos}:
+    
+    \[\int(e^{\frac{y}{x}} - 1)dy= -y + xe^{\frac{y}{x}} + C\]
+
+    \item \textbf{Sustituimos c por f(x)}:
+
+    \[-y + xe^{\frac{y}{x}} + f(x)\]
+
+    \item \textbf{Calculamos la derivada con respecto a x y queda}:
+
+    \[e^{\frac{y}{x}} - \frac{e^{\frac{y}{x}}y}{x} + f(x)'\]
+
+    \item \textbf{Igualamos y despejamos f(x)'}:
+
+    \[-\frac{e^{\frac{y}{x}}(y-x)}{x}=e^{\frac{y}{x}} - \frac{e^{\frac{y}{x}}y}{x} + f(x)'\]
+    \[f(x)'=0\]
+
+        Sustituimos  para llegar a la forma final:
+    
+    \[-y + xe^{\frac{y}{x}} = c\]
+        \item \textbf{Aplicamos condiciones iniciales}:
+
+    \[-0 + 1e^{\frac{0}{1}} =c\]
+
+    \[c=-0 + 1e^0\]
+
+    \[c=0+1(1)\]
+    \[c=1\]
+
+        Sustituimos  para llegar a la forma final:
+    
+    \[-y + xe^{\frac{y}{x}} = 1\]
+\end{enumerate}
+
+\end{document}

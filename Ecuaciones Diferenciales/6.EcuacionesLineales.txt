@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{EDO Lineales}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 2 de octubre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[(3\frac{y}{x} - 8)dx + 3dy = 0
+\]
+Reescribe 
+\[y' + \frac{1}{x} y = \frac{8}{3}
+\]
+Hallamos el factor de integracion 
+\[P(x)= \frac{\mu(x)'}{\mu(x)}=In(\mu(x))=\frac{{1}}{{x}}
+\]
+Integrando
+\[e{\int\frac{{1}}{{x}}}=x\]
+Multiplicando por la primera ecuación
+\[y'x + \frac{1}{x} y x= \frac{8x}{3}\]
+\[(xy)' = \frac{8x}{3}\]
+Separamos variables e integramos
+\[x y = \int \frac{8x}{3} \, dx
+\]
+Reaolvemos
+\[xy= \frac{4x^2}{3} + C
+\]
+Separamos y queda
+\[3xy-4x^2=c\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel\\
+Ecuacion
+\[y'+(cosx)y=cosx
+\]
+Reescribe 
+\[\frac{1}{{y-1}} \cdot y' = -\cos(x)
+\]
+Integrando
+\[\int \frac{1}{{y-1}} dy = \int-\cos(x)dx
+\]
+Resolvemos 
+\[In(y-1)+c= -sen(x)+c\]
+\[In(y-1)= -sen(x)+c\]
+Separamos y queda
+\[y-1=e^{-\sin(x)}+c
+\]
+\[y=1+ce^{-\sin(x)}
+\]
+\newpage
+\section*{Ejercicio 13}
+Arellano Millan Gabriel\\
+Ecuacion
+\[xy' - 3y = x^4 \sin(x)
+\]
+Reescribe 
+\[y' - \frac{3y}{x} = x^3 \sin(x)
+\]
+Hallamos el factor de integracion 
+\[P(x)= \frac{\mu(x)'}{\mu(x)}=In(\mu(x))=-\frac{{3}}{{x}}
+\]
+Integrando
+\[e{\int\frac{{3}}{{x}}}=-3In(x)+c = \frac{e^c}{x^3}=\frac{1}{x^3}\]
+Multiplicando por la primera ecuación
+\[y'\frac{1}{x^3} -\frac{1}{x^3} \frac{3y}{x} = x^3 \sin(x)\frac{1}{x^3}\]
+\[(\frac{1}{x^3}y)' = sen(x) \]
+Integrando
+\[(\frac{1}{x^3}y) = \int sen(x) 
+\]
+\[(\frac{1}{x^3}y) = -cos(x)+c
+\]
+Separamos y queda
+\[y-1=e^{-\sin(x)}+c
+\]
+\[y=x^3(-cosx+c)
+\]
+\newpage
+\section*{Ejercicio 19}
+Ocaña Castro Hector\\
+Ecuacion
+\[xy' - 2x^2 y = e^{x^2}
+\]
+Reescribimos
+\[y' - 2xy = \frac{e^{x^2}}{x}
+\]
+Hallamos el factor de integracion 
+\[P(x)= \frac{\mu(x)'}{\mu(x)}=In(\mu(x))=-2x
+\]
+Integrando
+\[e{\int-2x} = e^{-x^2}\]
+Multiplicando por la primera ecuación
+\[y'e^{-x^2} - 2xye^{-x^2} = \frac{e^{x^2}e^{-x^2}}{x}\]
+\[(e^{-x^2}y)' = \frac{1}{x}\]
+Integrando
+\[(e^{-x^2}y)' =\int \frac{1}{x}
+\]
+\[(e^{-x^2}y)=In(x)+C
+\]
+Separamos y queda
+\[y=e^{x^2}(In(x)+c)
+\]
+
+\newpage
+\section*{Ejercicio 25}
+Vazquez Blancas Cesar Said y Lopez Chavez Moises\\\\
+Ecuacion
+\[y' + (secx)y=cosx
+\]
+Reescribimos
+\[y' + (secx)y=cosx
+\]
+Hallamos el factor de integracion 
+\[P(x)= \frac{\mu(x)'}{\mu(x)}=In(\mu(x))=-sec(x)
+\]
+Integrando
+\[e{\int-sec(x)} = tan(x)+sec(x)\]
+Multiplicando por la primera ecuación
+\[y'(tan(x)+sec(x)) + tan(x)+sec(x)(secx)y=cosx(tan(x)+sec(x))\]
+Integrando
+\[y(tan(x)+sec(x)) + tan(x)+sec(x)(secx)y=\int cosx(tan(x)+sec(x))
+\]
+\[y(tan(x)+sec(x))=cos(x)+x+c
+\]
+Separamos y queda
+\[y=\frac{x - \cos(x) + c}{\sec(x) + \tan(x)}
+\]
+\end{document}

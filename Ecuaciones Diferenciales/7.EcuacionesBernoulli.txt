@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Ecuaciones de Bernoulli}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 21 de octubre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed,Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[y' + \frac{y}{x} = \frac{2x^4y^4}{3}
+\]
+Tiene una forma
+\[y'+p(x)y=q(x)y^n
+\]
+Encontramos las definiciones
+\[P(x)= \frac{1}{x}, Q(x)=\frac{2x^4}{3}, n=4
+\]
+Transformar
+\[v=y^(1-n), v'=-\frac{3y'}{y^4} \]
+Por lo tanto se escribe asi:
+\[-\frac{1}{3}v' + \frac{v}{x} = \frac{2x^4}{3}
+\]
+Reescribimos:
+\[v' - \frac{3v}{x} = -2x^4
+\]
+Hallamos el factor de integracion que es: 
+\[\mu(x) = \frac{1}{x^3}
+\]
+Reescribimos a:
+\[\left(\frac{v}{x^3}\right)' = -2x
+\]
+Separamos variables e integramos
+\[\frac{v}{x^3}= \int-2x
+\]
+Reaolvemos
+\[\frac{v}{x^3}=-x^2 + c
+\]
+Despejamos: 
+\[v = -x^5 + cx^3
+\]
+Sustituimos v y despejamos quedando:
+\[y^-3 = -x^5 + cx^3
+\]
+\[\frac{1}{{x^3 y^3}} + x^2 = c
+\]
+\newpage
+\section*{Ejercicio 7}
+Arellano Millan Gabriel,Ocaña Castro Hector\\
+
+Ecuacion
+\[y = y' + \sqrt{1 - {y'}}
+\]
+
+Encontramos las definiciones
+\[P(x)= y' , dy=pdx
+\]
+\[y=  p + \sqrt{1 - {p}}
+\]
+Tomar diferencial de ambos lados
+\[\mathrm{d}y=\mathrm{d}p-\dfrac{\mathrm{d}p}{2\,\sqrt{1-p}} \]
+Sustituir:
+\[p\,\mathrm{d}x=\mathrm{d}p-\dfrac{\mathrm{d}p}{2\,\sqrt{1-p}}
+\]
+Dividir por p: 
+\[\mathrm{d}x=\left(\dfrac{1}{p}-\dfrac{1}{2\,\sqrt{1-p}\,p}\right)\,\mathrm{d}p
+\]
+Se encuentra una ecuacion separable
+\[\int{1}{\;\mathrm{d}x}=\int{\dfrac{1}{p}-\dfrac{1}{2\,\sqrt{1-p}\,p}}{\;\mathrm{d}p}
+\]
+Integramos
+\[x=\ln\left(p\right)-\dfrac{\ln\left(\frac{\sqrt{1-p}-1}{\sqrt{1-p}+1}\right)}{2}+C
+\]
+Reaolvemos
+\[x=\ln\left(p\right)+\dfrac{\ln\left(\sqrt{1-p}+1\right)}{2}-\dfrac{\ln\left(\sqrt{1-p}-1\right)}{2}+C
+\]
+Resolvemos ambas: 
+\[y=p+\sqrt{1-p}\]
+\[x=\ln\left(p\right)+\dfrac{\ln\left(\sqrt{1-p}+1\right)}{2}-\dfrac{\ln\left(\sqrt{1-p}-1\right)}{2}+C
+\]
+\newpage
+\section*{Ejercicio 13}
+Vazquez Blancas Cesar Said y Lopez Chavez Moises\\
+Ecuacion
+\[y=x\,y'+\dfrac{y'}{2}
+\]
+Multiplicar por 2
+\[2\,y=2\,x\,y'+y'
+\]
+Despejamos
+\[y'=\dfrac{2\,y}{2\,x+1}
+\]
+\[\mathrm{d}y=\dfrac{2\,y\,\mathrm{d}x}{2\,x+1}\]
+Ecuacion separable
+\[\dfrac{\mathrm{d}y}{y}=\dfrac{2\,\mathrm{d}x}{2\,x+1}\]
+Integramos
+\[\int{\dfrac{1}{y}}{\;\mathrm{d}y}=\int{\dfrac{2}{2\,x+1}}{\;\mathrm{d}x}
+\]
+\[\ln\left(y\right)=\ln\left(2\,x+1\right)+C
+\]
+Separamos y queda
+\[y={e}^{C}\,\left(2\,x+1\right)
+\]
+\[y=C\,\left(2\,x+1\right)
+\]
+Solucion general:
+\[y = cx + \frac{c}{2}
+\]
+\end{document}

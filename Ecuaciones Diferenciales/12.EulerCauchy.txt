@@ -1,0 +1,330 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Ecuación de Euler-Cauchy}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 18 de noviembre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 51}
+Priego Merino Saeed
+
+Ecuacion
+\[{x}^{2}\,y''-12\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''-12\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[
+\left(\lambda-1\right)\,\lambda-12=0
+\]
+\[{\lambda}^{2}-\lambda-12=0
+\]
+Ecuación lineal con coeficientes constantes
+\[y''-y'-12\,y=0
+\]
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\lambda^{2}-\lambda-12=0
+\]
+\[\left(\lambda-4\right)\,\left(\lambda+3\right)=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{\lambda-4}{\;\rightarrow\;\lambda_{1}=4}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{4\,u}}\\{\lambda+3}{\;\rightarrow\;\lambda_{2}=-3}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{3\,u}}}\end{gathered}
+\]
+Solucion general:
+\[P_{\mathrm{k}-1}\left(u\right),\;Q_{\mathrm{k}-1}\left(u\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{u}^{\mathrm{k}-1}
+\]
+Solucion:
+\[y=C\,{e}^{4\,u}+\dfrac{C_{1}}{{e}^{3\,u}}
+\]
+Sustituimos:
+\[y=C\,{x}^{4}+\dfrac{C_{1}}{{x}^{3}}
+\]
+\newpage
+\section*{Ejercicio 52}
+Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[{x}^{2}\,y''+\dfrac{2\,x\,y'}{3}-\dfrac{2\,y}{9}=0
+\]
+Calcular: 
+\[{x}^{2}\,y''+\dfrac{2\,x\,y'}{3}-\dfrac{2\,y}{9}=0
+\]
+\[9\,{x}^{2}\,y''+6\,x\,y'-2\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[
+9\,\left(\lambda-1\right)\,\lambda+6\,\lambda-2=0
+\]
+\[
+9\,{\lambda}^{2}-3\,\lambda-2=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[9\,\left(y''-y'\right)+6\,y'-2\,y=0
+\]
+\[9\,\lambda^{2}-3\,\lambda-2=0
+\]
+\[\left(3\,\lambda-2\right)\,\left(3\,\lambda+1\right)=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{3\,\lambda-2}{\;\rightarrow\;\lambda_{1}=\dfrac{2}{3}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{\frac{2\,u}{3}}}\\{3\,\lambda+1}{\;\rightarrow\;\lambda_{2}=-\dfrac{1}{3}}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{\frac{u}{3}}}}\end{gathered}
+\]
+Solucion general:
+\[y=C\,{e}^{\frac{2\,u}{3}}+\dfrac{C_{1}}{{e}^{\frac{u}{3}}}
+\]
+Solucion:
+\[y=C\,\sqrt[{3}]{{x}^{2}}+\dfrac{C_{1}}{\sqrt[{3}]{x}}
+\]
+Sustituimos:
+\[y=C\,\sqrt[{3}]{{x}^{2}}+\dfrac{C_{1}}{\sqrt[{3}]{x}}
+\]
+\newpage
+\section*{Ejercicio 53}
+Arellano Millan Gabriel
+
+Ecuacion
+\[{x}^{2}\,y''+2\,x\,y'-12\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''+2\,x\,y'-12\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[\left(\lambda-1\right)\,\lambda+2\,\lambda-12=0
+\]
+\[{\lambda}^{2}+\lambda-12=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[y''+y'-12\,y=0
+\]
+\[\lambda^{2}+\lambda-12=0
+\]
+\[\left(\lambda-3\right)\,\left(\lambda+4\right)=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{\lambda-3}{\;\rightarrow\;\lambda_{1}=3}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{3\,u}}\\{\lambda+4}{\;\rightarrow\;\lambda_{2}=-4}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{4\,u}}}\end{gathered}
+\]
+Solucion general:
+\[y=C\,{e}^{3\,u}+\dfrac{C_{1}}{{e}^{4\,u}}
+\]
+Solucion:
+\[y=C\,{x}^{3}+\dfrac{C_{1}}{{x}^{4}}
+\]
+Sustituimos:
+\[y=C\,{x}^{3}+\dfrac{C_{1}}{{x}^{4}}
+\]
+\newpage
+\section*{Ejercicio 54}
+Ocaña Castro Hector
+Ecuacion
+\[{x}^{2}\,y''+5\,x\,y'+4\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''+5\,x\,y'+4\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[\left(\lambda-1\right)\,\lambda+5\,\lambda+4=0
+\]
+\[{\lambda}^{2}+4\,\lambda+4=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[y''+4\,y'+4\,y=0
+\]
+\[\lambda^{2}+4\,\lambda+4=0
+\]
+\[\left({\lambda+2}\right)^{2}=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{\left({\lambda+2}\right)^{2}}{\;\rightarrow\;\lambda_{1,2}=-2}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\dfrac{C_{1}\,u+C}{{e}^{2\,u}}}\end{gathered}
+\]
+Solucion general:
+\[y=\dfrac{C_{1}\,u+C}{{e}^{2\,u}}
+\]
+Solucion:
+\[y=\dfrac{C_{1}\,\ln\left(x\right)+C}{{x}^{2}}
+\]
+Sustituimos:
+\[y=\dfrac{C_{1}\,\ln\left(x\right)+C}{{x}^{2}}
+\]
+\newpage
+\section*{Ejercicio 55}
+Lopez Chavez Moises 
+
+Ecuacion
+\[{x}^{2}\,y''+5\,x\,y'-5\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''+5\,x\,y'-5\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[\left(\lambda-1\right)\,\lambda+5\,\lambda-5=0
+\]
+\[{\lambda}^{2}+4\,\lambda-5=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[y''+4\,y'-5\,y=0
+\]
+\[\lambda^{2}+4\,\lambda-5=0
+\]
+\[\left(\lambda-1\right)\,\left(\lambda+5\right)=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{\lambda-1}{\;\rightarrow\;\lambda_{1}=1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{u}}\\{\lambda+5}{\;\rightarrow\;\lambda_{2}=-5}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{5\,u}}}\end{gathered}
+\]
+Solucion general:
+\[y=C\,{e}^{u}+\dfrac{C_{1}}{{e}^{5\,u}}
+\]
+Solucion:
+\[y=C\,x+\dfrac{C_{1}}{{x}^{5}}
+\]
+Sustituimos:
+\[y=C\,x+\dfrac{C_{1}}{{x}^{5}}
+\]
+\newpage
+\section*{Ejercicio 56}
+Vazquez Blancas Cesar Said
+
+Ecuacion
+\[{x}^{2}\,y''+8\,x\,y'+10\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''+8\,x\,y'+10\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[\left(\lambda-1\right)\,\lambda+8\,\lambda+10=0
+\]
+\[{\lambda}^{2}+7\,\lambda+10=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[y''+7\,y'+10\,y=0
+\]
+\[\lambda^{2}+7\,\lambda+10=0
+\]
+\[\left(\lambda+2\right)\,\left(\lambda+5\right)=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{\lambda+2}{\;\rightarrow\;\lambda_{1}=-2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C}{{e}^{2\,u}}}\\{\lambda+5}{\;\rightarrow\;\lambda_{2}=-5}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{1}}{{e}^{5\,u}}}\end{gathered}
+\]
+Solucion general:
+\[y=\dfrac{C}{{e}^{2\,u}}+\dfrac{C_{1}}{{e}^{5\,u}}
+\]
+Solucion:
+\[y=\dfrac{C}{{x}^{2}}+\dfrac{C_{1}}{{x}^{5}}
+\]
+Sustituimos:
+\[y=\dfrac{C}{{x}^{2}}+\dfrac{C_{1}}{{x}^{5}}
+\]
+\newpage
+\section*{Ejercicio 57}
+Vazquez Blancas Cesar Said
+
+Ecuacion
+\[{x}^{2}\,y''-3\,x\,y'+5\,y=0
+\]
+Calcular: 
+\[{x}^{2}\,y''-3\,x\,y'+5\,y=0
+\]
+Ecuación de Euler
+\[\mathrm{a}_0\,x^{\mathrm{n}}y^{\left(\mathrm{n}\right)}+\mathrm{a}_1\,x^{\mathrm{n}-1}\,y^{\left(\mathrm{n}\right)}+\ldots+\mathrm{a}_{\mathrm{n}-1}\,x\,y'+\mathrm{a}_{\mathrm{n}}\,y=f\left(x\right)
+\]
+Sustitucion:
+\[x={e}^{u}
+\]
+Calcular
+\[\left(\lambda-1\right)\,\lambda-3\,\lambda+5=0
+\]
+\[{\lambda}^{2}-4\,\lambda+5=0
+\]
+
+Ecuación lineal con coeficientes constantes
+\[y''-4\,y'+5\,y=0
+\]
+\[\lambda^{2}-4\,\lambda+5=0
+\]
+Hallamos las raicez
+\[\begin{gathered}{{\lambda}^{2}-4\,\lambda+5}{\;\rightarrow\;\lambda_{1,2}=\pm i+2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,{e}^{2\,u}\,\operatorname{sen}\left(u\right)+C\,{e}^{2\,u}\,\cos\left(u\right)}\end{gathered}
+\]
+Solucion general:
+\[y=C_{1}\,{e}^{2\,u}\,\operatorname{sen}\left(u\right)+C\,{e}^{2\,u}\,\cos\left(u\right)
+\]
+Solucion:
+\[y=C_{1}\,{x}^{2}\,\operatorname{sen}\left(\ln\left(x\right)\right)+C\,{x}^{2}\,\cos\left(\ln\left(x\right)\right)
+\]
+Sustituimos:
+\[y=C_{1}\,{x}^{2}\,\operatorname{sen}\left(\ln\left(x\right)\right)+C\,{x}^{2}\,\cos\left(\ln\left(x\right)\right)
+\]
+\end{document}

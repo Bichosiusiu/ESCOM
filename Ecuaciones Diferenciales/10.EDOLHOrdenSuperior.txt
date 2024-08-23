@@ -1,0 +1,236 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Ecuaciones de orden superior lineal homogenea con coeficientes constantes}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 9 de noviembre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[y'''-2\,y''-y'+2\,y=0
+\]
+Calcular: 
+\[y'''-2\,y''-y'+2\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{3}-2\,\lambda^{2}-\lambda+2=0
+\]
+\[\left(\lambda-2\right)\,\left(\lambda-1\right)\,\left(\lambda+1\right)=0
+\]
+hallamos las raicez
+\[
+\begin{gathered}{\lambda-2}{\;\rightarrow\;\lambda_{1}=2}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{2\,x}}\\{\lambda-1}{\;\rightarrow\;\lambda_{2}=1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{1}\,{e}^{x}}\\{\lambda+1}{\;\rightarrow\;\lambda_{3}=-1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;\dfrac{C_{2}}{{e}^{x}}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Solucion general:
+\[y=C\,{e}^{2\,x}+C_{1}\,{e}^{x}+\dfrac{C_{2}}{{e}^{x}}
+\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[y'''-11\,y''+35\,y'-25\,y=0
+\] 
+Calcular: 
+\[y'''-11\,y''+35\,y'-25\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{3}-11\,\lambda^{2}+35\,\lambda-25=0
+\]
+\[\left({\lambda-5}\right)^{2}\,\left(\lambda-1\right)=0
+\]
+\[
+\begin{gathered}{\left({\lambda-5}\right)^{2}}{\;\rightarrow\;\lambda_{1,2}=5}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\left(C_{1}\,x+C\right)\,{e}^{5\,x}}\\{\lambda-1}{\;\rightarrow\;\lambda_{3}=1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{2}\,{e}^{x}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=\left(C_{1}\,x+C\right)\,{e}^{5\,x}+C_{2}\,{e}^{x}
+\]
+\newpage
+\section*{Ejercicio 13}
+Arellano Millan Gabriel
+
+Ecuacion
+\[y^{\scriptsize\textrm{IV}}+2\,y'''-2\,y'-y=0
+\] 
+Calcular: 
+\[y^{\scriptsize\textrm{IV}}+2\,y'''-2\,y'-y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{4}+2\,\lambda^{3}-2\,\lambda-1=0
+\]
+\[\left(\lambda-1\right)\,\left({\lambda+1}\right)^{3}=0
+\]
+\[
+\begin{gathered}{\lambda-1}{\;\rightarrow\;\lambda_{1}=1}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C\,{e}^{x}}\\{\left({\lambda+1}\right)^{3}}{\;\rightarrow\;\lambda_{2,3,4}=-1}&\;\;{\;\;\mathrm{k}=3\;}&{\tau\,\text{:}\;\dfrac{C_{3}\,{x}^{2}+C_{2}\,x+C_{1}}{{e}^{x}}}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=C\,{e}^{x}+\dfrac{C_{3}\,{x}^{2}+C_{2}\,x-C_{1}}{{e}^{x}}
+\]
+\newpage
+\section*{Ejercicio 19}
+Ocaña Castro Hector
+Ecuacion
+\[y=C_{2}\,{x}^{2}\,{e}^{3\,x}+C_{1}\,x\,{e}^{3\,x}+C\,{e}^{3\,x}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+\[
+\begin{gathered}{\left({\lambda-3}\right)^{3}}{\;\rightarrow\;\lambda_{1,2,3}=3}&\;\;{\;\;\mathrm{k}=3\;}&{\tau\,\text{:}\;\left(C_{2}\,{x}^{2}+C_{1}\,x+C\right)\,{e}^{3\,x}}\end{gathered}
+\]
+\[\left({\lambda-3}\right)^{3}=0
+\]
+\[\lambda^{3}-9\,\lambda^{2}+27\,\lambda-27=0
+\]
+\[[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+Resultado: 
+\[y'''-9\,y''+27\,y'-27\,y=0
+\]
+\newpage
+\section*{Ejercicio 25}
+Lopez Chavez Moises 
+
+Ecuacion
+\[y=C_{3}\,\operatorname{sen}\left(3\,x\right)+C_{2}\,\cos\left(3\,x\right)+C_{1}\,x\,{e}^{x}+C\,{e}^{x}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+\[
+\begin{gathered}{\left({\lambda-1}\right)^{2}}{\;\rightarrow\;\lambda_{1,2}=1}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\left(C_{1}\,x+C\right)\,{e}^{x}}\\{{\lambda}^{2}+9}{\;\rightarrow\;\lambda_{3,4}=\pm 3\,i}&\;\;{\;\;\mathrm{k}=1\;}&{\tau\,\text{:}\;C_{3}\,\operatorname{sen}\left(3\,x\right)+C_{2}\,\cos\left(3\,x\right)}\end{gathered}
+\]
+\[\left({\lambda-1}\right)^{2}\,\left({\lambda}^{2}+9\right)=0
+\]
+\[\lambda^{4}-2\,\lambda^{3}+10\,\lambda^{2}-18\,\lambda+9=0
+\]
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+Resultado: 
+\[y^{\scriptsize\textrm{IV}}-2\,y'''+10\,y''-18\,y'+9\,y=0
+\]
+\newpage
+\section*{Ejercicio 31}
+    Vazquez Blancas Cesar Said
+
+Ecuacion
+\[y^{\scriptsize\textrm{IV}}+8\,y''+16\,y=0
+\] 
+Calcular: 
+\[y^{\scriptsize\textrm{IV}}+8\,y''+16\,y=0
+\]
+Ecuacion lineal con coeficientes constantes:
+\[\mathrm{a_{0\,}}y^{\left(\mathrm{n}\right)}+\mathrm{a_{1\,}}y^{\left(\mathrm{n}-1\right)}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}y'+\mathrm{a_{\mathrm{n}\,}}y=0
+\]
+\[\mathrm{a_{0\,}}\lambda^{\mathrm{n}}+\mathrm{a_{1\,}}\lambda^{\mathrm{n}-1}+\ldots+\mathrm{a_{\mathrm{n}-1\,}}\lambda+\mathrm{a_{\mathrm{n}}}=0
+\]
+\[\lambda^{4}+8\,\lambda^{2}+16=0
+\]
+\[\left({{\lambda}^{2}+4}\right)^{2}=0
+\]
+\[
+\begin{gathered}{\left({{\lambda}^{2}+4}\right)^{2}}{\;\rightarrow\;\lambda_{1,2,3,4}=\pm 2\,i}&\;\;{\;\;\mathrm{k}=2\;}&{\tau\,\text{:}\;\left(C_{3}\,x+C_{2}\right)\,\operatorname{sen}\left(2\,x\right)+\left(C_{1}\,x+C\right)\,\cos\left(2\,x\right)}\end{gathered}
+\]
+Solucion general:
+\[\overline{y}={\small{\sum}}\,P_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\operatorname{sen}\beta\,x+Q_{\mathrm{k}-1}\left(x\right)\,e^{\alpha\,x}\,\cos\beta\,x
+\]
+con:
+\[\lambda=\alpha\pm\beta\,i
+\]
+y:
+\[P_{\mathrm{k}-1}\left(x\right),\;Q_{\mathrm{k}-1}\left(x\right)\,\rightarrow\,C_{1}+\ldots+C_{\mathrm{k}}\,{x}^{\mathrm{k}-1}
+\]
+Resultado:
+\[y=C_{3}\,x\,\operatorname{sen}\left(2\,x\right)+C_{2}\,\operatorname{sen}\left(2\,x\right)+C_{1}\,x\,\cos\left(2\,x\right)+C\,\cos\left(2\,x\right)
+\]
+\end{document}

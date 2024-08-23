@@ -1,0 +1,173 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Factor Integracion}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 2 de octubre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[x^{-2} y^{-5} \, dx + x^{-3} y^{-4} \, dy = 0
+\]
+Teniendo 
+\[My=-\frac{5}{{x^2y^6}}
+\]
+\[Nx=-\frac{3}{{x^4y^4}}\]
+Sustituyendo 
+\[P(x)= \frac{My-Nx}{N}= \frac{-\frac{5}{{x^2y^6}}--\frac{3}{{x^4y^4}}}{x^{-3} y^{-4}}=\frac{{-5x^2 + 3y^2}}{{xy^2}}
+\]
+Integrando
+\[e{\int\frac{{-5x^2 + 3y^2}}{{xy^2}}}=x^3 y^5\]
+Multiplicando por la primera ecuación
+\[x^3 y^5(x^{-2} y^{-5}) \, dx + x^3 y^5(x^{-3} y^{-4})\]
+\[x \, dx + ydy=0\]
+Separamos variables e integramos
+\[\int x \, dx + \int y \, dy = \int 0 \, dx
+\]
+Reaolvemos
+\[\frac{x^2}{2} + \frac{y^2}{2} = C
+\]
+Separamos y queda
+\[x^2+y^2=2c\]
+\[x^2+y^2=c\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel\\
+Ecuacion
+\[(2xy+y^{4}) \, dx + (3x^{2}+6xy^{3}) \, dy = 0
+\]
+Teniendo 
+\[My=2x+4y^3
+\]
+\[Nx=6x+6y^3\]
+Sustituyendo 
+\[P(x)= \frac{My-Nx}{N}= \frac{2x+4y^3-(6x+6y^3)}{3x^{2}+6xy^{3}}=-\frac{{4x+2y^3}}{{3x^2+6xy^3}}
+\]
+Integrando
+\[e{\int-\frac{{4x+2y^3}}{{3x^2+6xy^3}}}=y^2\]
+Multiplicando por la primera ecuación
+\[y^2(2xy+y^{4}) \, dx + y^2(3x^{2}+6xy^{3})dy=0\]
+\[(2xy^3+y^{6}) \, dx + (3x^{2}y^2+6xy^{5})dy=0\]
+Evaluamos 
+\[My=6xy^2+6y^5\]
+\[Nx=6xy^2+6y^5\]
+Integramos
+\[\int(3x^{2}y^2+6xy^{5})dy=x^2y^3 + xy^6+f(x)
+\]
+Calculamos f(x)
+derivamos y queda
+\[2y^3x+y^6+f(x)'\]
+\[2y^3x+y^6+f(x)'=2y^3x+y^6]\]
+\[f(x)'=0\]
+\[\int f(x)'=\int0\]
+\[f(x)=c\]
+sustituimos y queda
+\[x^2y^3 + xy^6=C\]
+\section*{Ejercicio 13}
+Arellano Millan Gabriel\\
+Ecuacion
+\[4y^2 - 5xy\,dx + (6xy - 5x^2)\,dy = 0\]
+Teniendo 
+\[My=8y-5x
+\]
+\[Nx=6y-10x\]
+Sustituyendo 
+\[P(x)= \frac{My-Nx}{N}= \frac{8y-5x-(6y-10x)}{6xy - 5x^2}=-\frac{{2y+5x}}{{6xy - 5x^2}}
+\]
+Integrando
+\[e{\int-\frac{{2y+5x}}{{6xy - 5x^2}}}=x^3y^4\]
+Multiplicando por la primera ecuación
+\[x^3y^4(4y^2 - 5xy) \, dx + x^3y^4(6xy - 5x^2)dy=0\]
+\[(4y^6x^3 - 5x^4y^5) \, dx + (6x^4y^5 - 5x^5y^4)dy=0\]
+Evaluamos 
+\[My=24x^3y^5-25x^4y^4\]
+\[Nx=24x^3y^5-25x^4y^4\]
+Integramos
+\[\int(6x^4y^5 - 5x^5y^4)dy=-x^5y^5 + x^4y^6+f(x)
+\]
+Calculamos f(x)
+derivamos y queda
+\[-x^5y^5 + x^4y^6+f(x)'\]
+\[4y^6x^3 - 5x^4y^5
++f(x)'=4y^6x^3 - 5x^4y^5\]
+\[f(x)'=0\]
+\[\int f(x)'=\int0\]
+\[f(x)=c\]
+sustituimos y queda
+\[-x^5y^5 + x^4y^6=c\]
+\[-1^52^5+ 1^42^6=c\]
+\[-(1+32)+ 1+64=c\]
+\[-33+ 65=c  c=32\]
+\[-x^5y^5 + x^4y^6=32\]
+
+\section*{Ejercicio 19}
+Ocaña Castro Hector\\
+Ecuacion
+\[F(x) = x \left( y\cosh(x) + \frac{y}{x}\sinh(x) \right)dx + \sinh(x)dy = 0\]
+Teniendo 
+\[My=\frac{e^x}{2} + \frac{1}{2e^x} + e^{2x} - \frac{1}{2xe^x}
+\]
+\[Nx=cosh(x)\]
+Sustituyendo 
+\[P(x)= \frac{My-Nx}{N}= \frac{\frac{e^x}{2} + \frac{1}{2e^x} + e^{2x} - \frac{1}{2xe^x}-cosh(x)}{senh(x)}=-\frac{{1}}{{x}}
+\]
+Integrando
+\[e{\int-\frac{{1}}{{x}}}=x\]
+Por lo tanto 
+
+\[F(x)=x = P(x)=x \, es \ verdadero\]
+\newpage
+\section*{Ejercicio 25}
+Vazquez Blancas Cesar Said y Lopez Chavez Moises\\\\
+Ecuacion
+\[(xy^2\sinh(xy) + y\cosh(xy)\,)dx + (x^2y\sinh(xy) + 2x\cosh(xy)\,)dy = 0\]
+Teniendo 
+\[My=3xysenh(xy)+x^2y^2cosh(xy)+cosh(xy)
+\]
+\[Nx=4xysenh(xy)+x^2y^2cosh(xy)+2cosh(xy)\]
+Sustituyendo 
+\[P(x)= \frac{My-Nx}{N}= \frac{3xysenh(xy)+x^2y^2cosh(xy)+cosh(xy)-(4xysenh(xy)+x^2y^2cosh(xy)+2cosh(xy))}{x^2y\sinh(xy) + 2x\cosh(xy)}\]
+\[=-\frac{{xysenh(xy)+cosh(xy)}}{{x^2y\sinh(xy) + 2x\cosh(xy)}}
+\]
+Integrando
+\[e{\int-\frac{{xysenh(xy)+cosh(xy)}}{{x^2y\sinh(xy) + 2x\cosh(xy)}}=\frac{y}{x}}\]
+Por lo tanto 
+
+\[F(x)=\frac{y}{x}\]
+\end{document}
+

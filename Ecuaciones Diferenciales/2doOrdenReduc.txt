@@ -1,0 +1,316 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{EDO lineales de 2do orden}} 
+    \vspace{2cm}
+    
+    {\Large Materia: Ecuaciones Diferenciales}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Saeed Priego Merino \\
+    Diaz Torres Jonathan Samuel \\
+    Arellano Millan Gabriel \\
+    Ocaña Castro Hector \\
+    Lopez Chavez Moises \\ 
+    Vazquez Blancas Cesar Said}
+    
+    \vfill
+    
+    {\large Fecha: 2 de noviembre de 2023}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{Ejercicio 1}
+Priego Merino Saeed
+
+Ecuacion
+\[x\,y''+y'=0
+\]
+Ecuacion de la forma:
+\[F\left(x,\,y^{\left(k\right)},\,y^{\left(k+1\right)},\ldots,\,y^{\left(n\right)}\right)=0\]
+con:
+\[k=1,\;n=2
+\]
+Bajo el orden de la ecuacion de sustitucion: 
+\[y^{\left(k\right)}=u\left(x\right)
+\]
+Sustitucion:
+\[y'=u
+\] 
+\[u'\,x+u=0
+\]
+Calcular: 
+\[u'\,x+u=0
+\]
+\[u'\,x=-u
+\]
+\[u'=-\dfrac{u}{x}
+\]
+\[\dfrac{\mathrm{d}u}{\mathrm{d}x}=-\dfrac{u}{x}
+\]
+\[\mathrm{d}u=-\dfrac{u\,\mathrm{d}x}{x}
+\]
+\[\dfrac{\mathrm{d}u}{u}=-\dfrac{\mathrm{d}x}{x}
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{u}}{\;\mathrm{d}u}=\int{-\dfrac{1}{x}}{\;\mathrm{d}x}
+\]
+\[\ln\left(u\right)=C-\ln\left(x\right)
+\]
+\[u=\dfrac{{e}^{C}}{x}
+\]
+\[u=\dfrac{C}{x}
+\]
+Sustituimos y queda:
+\[y'=\dfrac{C}{x}
+\]
+\[\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{C}{x}
+\]
+\[\mathrm{d}y=\dfrac{C\,\mathrm{d}x}{x}
+\]
+Ecuacion Separable:
+\[\int{1}{\;\mathrm{d}y}=\int{\dfrac{C}{x}}{\;\mathrm{d}x}
+\]
+\[y=C\,\ln\left(x\right)+C_{1}
+\]
+Resultado:
+\[y=C\,\ln\left(x\right)+C_{1}
+\]
+\newpage
+\section*{Ejercicio 7}
+Diaz Torres Jonathan Samuel
+
+Ecuacion
+\[y\,y''+{y'}^{2}=0
+\]
+Ecuacion de la forma:
+\[F\left(x,\,y^{\left(k\right)},\,y^{\left(k+1\right)},\ldots,\,y^{\left(n\right)}\right)=0\]
+Bajo el orden de la ecuacion de sustitucion: 
+\[y'=u\left(y\right)
+\]
+Sustitucion:
+\[u\,u'\,y+{u}^{2}=0
+\] 
+Calcular: 
+\[u\,u'\,y+{u}^{2}=0
+\]
+\[u'\,y+u=0
+\]
+\[u'\,y=-u
+\]
+\[u'=-\dfrac{u}{y}
+\]
+\[\dfrac{\mathrm{d}u}{\mathrm{d}y}=-\dfrac{u}{y}
+\]
+\[\mathrm{d}u=-\dfrac{u\,\mathrm{d}y}{y}
+\]
+\[\dfrac{\mathrm{d}u}{u}=-\dfrac{\mathrm{d}y}{y}
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{u}}{\;\mathrm{d}u}=\int{-\dfrac{1}{x}}{\;\mathrm{d}x}
+\]
+\[\ln\left(u\right)=C-\ln\left(x\right)
+\]
+\[u=\dfrac{{e}^{C}}{x}
+\]
+\[u=\dfrac{C}{x}
+\]
+Sustituimos y queda:
+\[\int{\dfrac{1}{u}}{\;\mathrm{d}u}=\int{-\dfrac{1}{y}}{\;\mathrm{d}y}
+\]
+\[\ln\left(u\right)=C-\ln\left(y\right)
+\]
+\[u=\dfrac{{e}^{C}}{y}
+\]
+\[u=\dfrac{C}{y}
+\]
+\[y'=\dfrac{C}{y}
+\]
+\[\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{C}{y}
+\]
+\[\mathrm{d}y=\dfrac{C\,\mathrm{d}x}{y}
+\]
+\[y\,\mathrm{d}y=C\,\mathrm{d}x
+\]
+Ecuacion Separable:
+\[\int{y}{\;\mathrm{d}y}=\int{C}{\;\mathrm{d}x}
+\]
+\[\dfrac{{y}^{2}}{2}=C\,x+C_{1}
+\]
+Resultado:
+\[\dfrac{{y}^{2}}{2}=C\,x+C_{1}
+\]
+\newpage
+\section*{Ejercicio 19}
+Arellano Millan Gabriel
+
+Ecuacion
+\[4\,x\,y''+y'=0
+\]
+Ecuacion de la forma:
+\[F\left(x,\,y^{\left(k\right)},\,y^{\left(k+1\right)},\ldots,\,y^{\left(n\right)}\right)=0\]
+Bajo el orden de la ecuacion de sustitucion: 
+\[y^{\left(k\right)}=u\left(x\right)
+\]
+Sustitucion:
+\[y'=u
+\] 
+Calcular: 
+\[4\,u'\,x+u=0
+\]
+\[4\,u'\,x=-u
+\]
+\[u'=-\dfrac{u}{4\,x}
+\]
+\[\dfrac{\mathrm{d}u}{\mathrm{d}x}=-\dfrac{u}{4\,x}
+\]
+\[\mathrm{d}u=-\dfrac{u\,\mathrm{d}x}{4\,x}
+\]
+\[\dfrac{\mathrm{d}u}{u}=-\dfrac{\mathrm{d}x}{4\,x}
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{u}}{\;\mathrm{d}u}=\int{-\dfrac{1}{4\,x}}{\;\mathrm{d}x}
+\]
+\[\ln\left(u\right)=C-\dfrac{\ln\left(x\right)}{4}
+\]
+\[u=\dfrac{{e}^{C}}{\sqrt[{4}]{x}}
+\]
+\[u=\dfrac{C}{\sqrt[{4}]{x}}
+\]
+Sustituimos y queda:
+\[y'=\dfrac{C}{\sqrt[{4}]{x}}
+\]
+\[\dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{C}{\sqrt[{4}]{x}}
+\]
+\[\mathrm{d}y=\dfrac{C\,\mathrm{d}x}{\sqrt[{4}]{x}}
+\]
+Ecuacion Separable:
+\[\int{1}{\;\mathrm{d}y}=\int{\dfrac{C}{\sqrt[{4}]{x}}}{\;\mathrm{d}x}
+\]
+\[y=\dfrac{4\,C\,\sqrt[{4}]{{x}^{3}}}{3}+C_{1}
+\]
+Resultado:
+\[y=\dfrac{4\,C\,\sqrt[{4}]{{x}^{3}}}{3}+C_{1}
+\]
+\newpage
+\section*{Ejercicio 19}
+Ocaña Castro Hector
+
+Ecuacion
+\[y''=2\,y\,y'
+\]
+Ecuacion de la forma:
+\[F\left(x,\,y^{\left(k\right)},\,y^{\left(k+1\right)},\ldots,\,y^{\left(n\right)}\right)=0\]
+Bajo el orden de la ecuacion de sustitucion: 
+\[y'=u\left(y\right)
+\]
+Sustitucion:
+\[u\,u'=2\,u\,y
+\] 
+Calcular: 
+\[u\,u'=2\,u\,y
+\]
+\[u'=2\,y
+\]
+\[\dfrac{\mathrm{d}u}{\mathrm{d}y}=2\,y
+\]
+\[\mathrm{d}u=2\,y\,\mathrm{d}y
+\]
+Ecuacion Separable:
+\[\int{1}{\;\mathrm{d}u}=\int{2\,y}{\;\mathrm{d}y}
+\]
+\[u={y}^{2}+C
+\]
+\[u={y}^{2}+C,\;\;{u=0}
+\]
+\[y'={y}^{2}+C
+\]
+Sustituimos y queda:
+\[\dfrac{\mathrm{d}y}{\mathrm{d}x}={y}^{2}+C
+\]
+\[\mathrm{d}y=\left({y}^{2}+C\right)\,\mathrm{d}x
+\]
+\[\dfrac{\mathrm{d}y}{{y}^{2}+C}=\mathrm{d}x
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{{y}^{2}+C}}{\;\mathrm{d}y}=\int{1}{\;\mathrm{d}x}
+\]
+\[\dfrac{\arctan\left(\frac{y}{\sqrt{C}}\right)}{\sqrt{C}}=x+C_{1}
+\]
+Resultado:
+\[y=C\,\tan\left(C\,\left(x+C_{1}\right)\right)
+\]
+\newpage
+\section*{Ejercicio 25}
+Lopez Chavez Moises ,
+    Vazquez Blancas Cesar Said
+
+Ecuacion
+\[y\,y''={y'}^{2}
+\]
+Ecuacion de la forma:
+\[F\left(x,\,y^{\left(k\right)},\,y^{\left(k+1\right)},\ldots,\,y^{\left(n\right)}\right)=0\]
+Bajo el orden de la ecuacion de sustitucion: 
+\[y'=u\left(y\right)
+\]
+Sustitucion:
+\[u\,u'\,y={u}^{2}
+\] 
+Calcular: 
+\[u\,u'\,y={u}^{2}
+\]
+\[u'\,y=u
+\]
+\[u'=\dfrac{u}{y}
+\]
+\[\dfrac{\mathrm{d}u}{\mathrm{d}y}=\dfrac{u}{y}
+\]
+\[\mathrm{d}u=\dfrac{u\,\mathrm{d}y}{y}
+\]
+\[\dfrac{\mathrm{d}u}{u}=\dfrac{\mathrm{d}y}{y}
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{u}}{\;\mathrm{d}u}=\int{\dfrac{1}{y}}{\;\mathrm{d}y}
+\]
+\[\ln\left(u\right)=\ln\left(y\right)+C
+\]
+\[u={e}^{C}\,y
+\]
+\[u=C\,y
+\]
+Sustituimos y queda:
+\[y'=C\,y
+\]
+\[\dfrac{\mathrm{d}y}{\mathrm{d}x}=C\,y
+\]
+\[\mathrm{d}y=C\,y\,\mathrm{d}x
+\]
+\[\dfrac{\mathrm{d}y}{y}=C\,\mathrm{d}x
+\]
+Ecuacion Separable:
+\[\int{\dfrac{1}{y}}{\;\mathrm{d}y}=\int{C}{\;\mathrm{d}x}
+\]
+\[\ln\left(y\right)=C\,x+C_{2}
+\]
+Resultado:
+\[y=C_{2}\,{e}^{C\,x}
+\]
+\end{document}
