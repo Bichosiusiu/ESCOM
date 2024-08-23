@@ -1,0 +1,255 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Matematicas Avanzadas para la Ingenieria}} 
+    \vspace{2cm}
+    
+    {\Large SERIE DE TAYLOR}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large 
+    Arellano Millan Gabriel \\
+    Gomez Tovar Yoshua Oziel \\
+    Herrera Tovar Karla Elena \\
+    Vazquez Blancas Cesar Said\\
+    Zarco Sosa Kevin \\
+    
+    
+    
+    
+    \vfill
+    
+    {\large 8 de Junio de 2024}
+\end{titlepage}
+\newpage 
+
+\section*{1.- e^{-z} , 0 }
+\begin{align*}
+f(z) &= e^{-z} & f(0) &= e^0 = 1 \\
+f'(z) &= -e^{-z} & f'(0) &= -e^0 = -1 \\
+f''(z) &= e^{-z} & f''(0) &= e^0 = 1 \\
+f'''(z) &= -e^{-z} & f'''(0) &= -e^0 = -1 \\
+\\
+&\sum_{m=0}^{\infty}\frac{f^{(m)}(z_0)}{m!}(z-z_0)^m & \\
+\\
+& 1 - z + \frac{z^2}{2} - \frac{z^3}{3!} + - \dotsb \quad R = \infty 
+\end{align*}
+\section*{3.- \sin \pi z , 0 }
+\begin{align*}
+f(z) &= \sin \pi z & f(0) &= 0 \\
+f'(z) &= \pi \cos \pi z & f'(0) &= \pi \\
+f''(z) &= -\pi^2 \sin \pi z & f''(0) &= 0 \\
+f'''(z) &= -\pi^3 \cos \pi z & f'''(0) &= -\pi^3 \\
+\\
+& \pi z - \frac{\pi^3 z^3}{3!} + \frac{\pi^5 z^5}{5!} - \dotsb \quad R = \infty 
+\end{align*}
+\section*{5.- \sin z , \pi/2 }
+\begin{align*}
+f(z) &= \sin z & f(\pi/2) &= 1 \\
+f'(z) &= \cos z & f'(\pi/2) &= 0 \\
+f''(z) &= -\sin z & f''(\pi/2) &= -1 \\
+f'''(z) &= -\cos z & f'''(\pi/2) &= 0 \\
+f^{(4)}(z) &= \sin z & f^{(4)}(\pi/2) &= 1 \\
+\\
+& 1 - \frac{(z - \pi/2)^2}{2!} + \frac{(z - \pi/2)^4}{4!} - \dotsb \quad R = \infty 
+\end{align*}
+\section*{7.- &\cdot \frac{1}{1-z}, -1 & \\ }
+\begin{align*}
+f(z) &= \frac{1}{1-z} & f(-1) &= \frac{1}{2} \\
+f'(z) &= \frac{1}{(1-z)^2} & f'(-1) &= \frac{1}{4} \\
+f''(z) &= \frac{1}{(1-z)^3} & f''(-1) &= \frac{1}{8} \\
+f'''(z) &= \frac{1}{(1-z)^4} & f'''(-1) &= \frac{1}{16} \\
+f^{(4)}(z) &= \frac{1}{(1-z)^5} & f^{(4)}(-1) &= \frac{1}{32} \\
+\\
+& \frac{1}{2} + \frac{(z+1)}{4} + \frac{(z+1)^2}{8} + \frac{(z+1)^3}{16} + \dotsb \quad R = 2
+\end{align*}
+\section*{9.- \ln z, 1 }
+\begin{align*}
+f(z) &= \ln z & f(1) &= 0 \\
+f'(z) &= \frac{1}{z} & f'(1) &= 1 \\
+f''(z) &= -\frac{1}{z^2} & f''(1) &= -1 \\
+f'''(z) &= \frac{1}{z^3} & f'''(1) &= 1 \\
+f^{(4)}(z) &= -\frac{1}{z^4} & f^{(4)}(1) &= -1 \\
+\\
+& (z-1) - \frac{(z-1)^2}{2} + \frac{(z-1)^3}{3} - \dotsb \quad R = 1
+\end{align*}
+\section*{11.- z^5 , -1}
+\begin{align*}
+f(z) &= z^5 & f(-1) &= -1 \\
+f'(z) &= 5z^4 & f'(-1) &= 5 \\
+f''(z) &= 20z^3 & f''(-1) &= -20 \\
+f'''(z) &= 60z^2 & f'''(-1) &= 60 \\
+f^{(4)}(z) &= 120z & f^{(4)}(-1) &= -120 \\
+f^{(5)}(z) &= 120 & f^{(5)}(-1) &= 120 \\
+f^{(6)}(z) &= 0 & f^{(6)}(-1) &= 0 \\
+\\
+& -1 + 5(z+1) - 10(z+1)^2 + 10(z+1)^3 \\
+& - 5(z+1)^4 + (z+1)^5
+\end{align*}
+\section*{13.- \sin^2 z, 0  }
+\begin{align*}
+f(z) &= \sin^2 z & f(0) &= 0 \\
+f'(z) &= \sin 2z & f'(0) &= 0 \\
+f''(z) &= 2 \cos 2z & f''(0) &= 2 \\
+f'''(z) &= -4 \sin 2z & f'''(0) &= 0 \\
+f^{(4)}(z) &= -8 \cos 2z & f^{(4)}(0) &= -8 \\
+f^{(5)}(z) &= 16 \sin 2z & f^{(5)}(0) &= 0 \\
+f^{(6)}(z) &= 32 \cos 2z & f^{(6)}(0) &= 32 \\
+\\
+& z^2 - \frac{2^3 z^4}{4!} + \frac{2^5 z^6}{6!} - \frac{2^7 z^8}{8!} + \dotsb \quad R = \infty 
+\end{align*}
+\section*{15.- \cos (z - \pi/2), \pi/2   }
+\begin{align*}
+f(z) &= \cos (z - \pi/2) & f(\pi/2) &= 1 \\
+f'(z) &= -\sin (z - \pi/2) & f'(\pi/2) &= 0 \\
+f''(z) &= -\cos (z - \pi/2) & f''(\pi/2) &= -1 \\
+f'''(z) &= \sin (z - \pi/2) & f'''(\pi/2) &= 0 \\
+f^{(4)}(z) &= \cos (z - \pi/2) & f^{(4)}(\pi/2) &= 1 \\
+\\
+& 1 - \frac{(z - \pi/2)^2}{2!} + \frac{(z - \pi/2)^4}{4!} - \dotsb \quad R = \infty 
+\end{align*}
+\section*{17.- Deducir 14 y 15 a partir de 12.Obtener 16 a partr de Teorema de Taylor  }
+\begin{align*}
+e^z &= \sum_{n=0}^{\infty} \frac{z^n}{n!} \\
+\\
+\sin z &= \frac{e^{iz} - e^{-iz}}{2i} \qquad \cos z = \frac{e^{iz} + e^{-iz}}{2} \\
+\\
+\sinh z &= \frac{e^z - e^{-z}}{2} \qquad \cosh z = \frac{e^z + e^{-z}}{2} \\
+\\
+e^{iz} - e^{-iz} &= \sum_{n=0}^{\infty} \frac{z^n i^n}{n!} - \sum_{n=0}^{\infty} \frac{-iz^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^n i^n - (-iz^n)}{n!} = \sum_{n=0}^{\infty} \frac{z^n i^n + iz^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{2i^n z^n}{n!} = \sum_{n=0}^{\infty} \frac{2z^{2n+1}}{(2n+1)!} (-1)^n \\
+\\
+\sin z &= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!}
+\end{align*}
+\begin{align*}
+e^{iz} + e^{-iz} &= \sum_{n=0}^{\infty} \frac{z^n i^n}{n!} + \sum_{n=0}^{\infty} \frac{z^n (-i)^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^n i^n + z^n (-i)^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^n (i^n + (-i)^n)}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^{2n} (i^{2n} + (-i)^{2n})}{(2n)!}
+&= \sum_{n=0}^{\infty} \frac{z^{2n} ((-1)^n + (-1)^n)}{(2n)!} \\
+&= \sum_{n=0}^{\infty} (-1)^n \frac{2z^{2n}}{(2n)!} \\
+\\
+\cos z &= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!}
+\end{align*}
+\begin{align*}
+e^z - e^{-z} &= \sum_{n=0}^{\infty} \frac{z^n}{n!} - \sum_{n=0}^{\infty} \frac{(-z)^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^n - (-z)^n}{n!} = \sum_{n=0}^{\infty} \frac{z^n + z^n}{n!} \qquad \text{(odd terms only)} \\
+&= \sum_{n=0}^{\infty} \frac{2z^{2n+1}}{(2n+1)!} \\
+\sinh z &= \sum_{n=0}^{\infty} \frac{z^{2n+1}}{(2n+1)!} \\
+\\
+e^z + e^{-z} &= \sum_{n=0}^{\infty} \frac{z^n}{n!} + \sum_{n=0}^{\infty} \frac{(-z)^n}{n!} \\
+&= \sum_{n=0}^{\infty} \frac{z^n + (-z)^n}{n!} = \sum_{n=0}^{\infty} \frac{z^n - z^n}{n!} \qquad \text{(even terms only)} \\
+&= \sum_{n=0}^{\infty} \frac{2z^{2n}}{(2n)!} \\
+\cosh z &= \sum_{n=0}^{\infty} \frac{z^{2n}}{(2n)!}
+\end{align*}
+\begin{align*}
+& \ln(1+z) & \\
+f(z) &= \ln(1+z) & f(0) &= 0 \\
+f'(z) &= \frac{1}{1+z} & f'(0) &= 1 \\
+f''(z) &= -\frac{1}{(1+z)^2} & f''(0) &= -1 \\
+f'''(z) &= \frac{1}{(1+z)^3} & f'''(0) &= 1 \\
+f^{(4)}(z) &= -\frac{1}{(1+z)^4} & f^{(4)}(0) &= -1 \\
+\\
+& z - \frac{z^2}{2} + \frac{z^3}{3} - \frac{z^4}{4} 
+\end{align*}
+\section*{19.- Demostrar que cosh \neq 0   }
+\begin{align*}
+\cosh z &= \sum_{n=0}^{\infty} \frac{z^{2n}}{(2n)!} \\
+&= 1 + \frac{z^2}{2!} + \frac{z^4}{4!} + \frac{z^6}{6!} + \dotsb \\
+\\
+|z| \geq 0 &\implies \cosh z \neq 0 
+\end{align*}
+\section*{21.- Demostrar que  (\sin z)' = \cos z \text{ y } (\cos z)' = -\sin z}
+\begin{align*}
+\sin z &= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!} \\
+(\sin z)' &= \left( \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!} \right)' \\
+&= \sum_{n=0}^{\infty} \frac{d}{dz} \left( (-1)^n \frac{z^{2n+1}}{(2n+1)!} \right) \\
+&= \sum_{n=0}^{\infty} (-1)^n \frac{d}{dz} \left( \frac{z^{2n+1}}{(2n+1)!} \right) \\
+&= \sum_{n=0}^{\infty} (-1)^n \frac{(2n+1) z^{2n}}{(2n+1)!} \\
+&= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!} = \cos z
+\end{align*}
+\begin{align*}
+(\cos z)' &= \left( \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!} \right)' \\
+&= \sum_{n=0}^{\infty} (-1)^n \frac{d}{dz} \left( \frac{z^{2n}}{(2n)!} \right) \\
+&= \sum_{n=1}^{\infty} (-1)^n \frac{2n z^{2n-1}}{(2n)!}
+&= \sum_{n=1}^{\infty} (-1)^n \frac{z^{2n-1}}{(2n-1)!} \\
+&= -\sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!} = -\sin z 
+\end{align*}
+\section*{23.- f(z)=sen z / z esta indefinida en z=0, Definir f(0) de modo que f(z) se vuelva entera.}
+\begin{align*}
+f(z) &= \frac{\sin z}{z} \\
+\\
+\sin z &= z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dotsb = \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!} \\
+\\
+\frac{\sin z}{z} &= 1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \frac{z^6}{7!} + \dotsb = \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n+1)!} \\
+\\
+f(0) &= 1
+\end{align*}
+f(0)= 1 la funcion se vuelve holomorfa o entera en todo el plano complejo
+\section*{25.- Deducir 14 y 15 entre el seno y coseno trigonometricos e hiperbolicos a partir de 14 y 15}
+\begin{align*}
+\sinh(iy) &= i \sin(y) \\ \\
+\sin z &= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!} \\
+\\
+\sinh z &= \sum_{n=0}^{\infty} \frac{z^{2n+1}}{(2n+1)!} \\
+\\
+\sum_{n=0}^{\infty} \frac{(iy)^{2n+1}}{(2n+1)!} &= i \sum_{n=0}^{\infty} \frac{y^{2n+1}}{(2n+1)!} \\
+\\
+\sum_{n=0}^{\infty} \frac{i y^{2n+1}}{(2n+1)!} &= \sum_{n=0}^{\infty} \frac{i y^{2n+1}}{(2n+1)!}
+\end{align*}
+\begin{align*}
+\cosh(iy) &= \cos(y) \\ \\
+\cosh z &= \sum_{n=0}^{\infty} \frac{z^{2n}}{(2n)!} \\
+\\
+\cos z &= \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!} \\
+\\
+\sum_{n=0}^{\infty} \frac{(iy)^{2n}}{(2n)!} 
+\end{align*}
+\section*{27.- }
+\begin{align*}
+27. &- f(z) = \frac{2}{\sqrt{\pi}} \int_0^z e^{-t^2} dt & \\
+\\
+& \int_0^z e^{-t^2} dt & e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \dotsb \\
+\\
+e^{-t^2} &= 1 - t^2 + \frac{(-t^2)^2}{2!} + \frac{(-t^2)^3}{3!} + \dotsb \\
+&= 1 - t^2 + \frac{t^4}{2!} - \frac{t^6}{3!} + \dotsb \\
+\\
+&\int_0^z \left( 1 dt - \int_0^z t^2 dt + \frac{1}{2!} \int_0^z t^4 dt - \frac{1}{3!} \int_0^z t^6 dt + \dotsb \right) \\
+\\
+& t - \frac{t^3}{3} + \frac{t^5}{2!5} - \frac{t^7}{3!7} + \dotsb \Bigg|_0^z \\
+\\
+&= \frac{2}{\sqrt{\pi}} \left( z - \frac{z^3}{3} + \frac{z^5}{2!5} - \frac{z^7}{3!7} + \dotsb \right) \qquad R = \infty
+\end{align*}
+\section*{29.- }
+\begin{align*}
+& 29.- S(z) = \int_0^z \sin t^2 \, dt & \\
+\\
+& \sin z = z - \frac{z^3}{3!} + \frac{z^5}{5!} - \frac{z^7}{7!} + \dotsb & \\
+\\
+& \sin t^2 = t^2 - \frac{(t^2)^3}{3!} + \frac{(t^2)^5}{5!} - \frac{(t^2)^7}{7!} + \dotsb \\
+&= t^2 - \frac{t^6}{3!} + \frac{t^{10}}{5!} - \frac{t^{14}}{7!} + \dotsb \\
+\\
+& \int_0^z \left( t^2 dt - \frac{1}{3!} \int_0^z t^6 dt + \frac{1}{5!} \int_0^z t^{10} dt - \frac{1}{7!} \int_0^z t^{14} dt + \dotsb \right) \\
+\\
+& \frac{t^3}{3} - \frac{t^7}{3!7} + \frac{t^{11}}{5!11} - \frac{t^{15}}{7!15} + \dotsb \Bigg|_0^z \\
+\\
+&= \frac{z^3}{3} - \frac{z^7}{3!7} + \frac{z^{11}}{5!11} - \frac{z^{15}}{7!15} + \dotsb \qquad R = \infty
+\end{align*}
+\end{document}

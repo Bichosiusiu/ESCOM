@@ -1,0 +1,347 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge  Matemáticas Avanzadas para la Ingeniería \par}
+\vspace{1cm}
+{\Large \textsc{Potencias y Raíces de un Número Complejo} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CM2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \par}
+{\itshape\Large Arellano Millán Gabriel \par}
+{\itshape\Large Gómez Tovar Yoshua Oziel \par}
+{\itshape\Large Herrera Tovar Karla Elena \par}
+{\itshape\Large Vásquez Blancas César Said \par}
+{\itshape\Large Zarco Sosa Kevin \par}
+\vfill
+{\Large 29 de Marzo de 2024 \par}
+\end{titlepage}
+
+\textbf{Escriba en forma polar el número complejo indicado.}
+
+\section{Ejercicio 1}
+\begin{equation}2\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma rectangular a polar. Primero calculando el valor de r.
+\begin{equation}r=\sqrt{2^{2}}\end{equation}
+\begin{equation}r=2\end{equation}
+Posteriormente, se cálcula el valor del ángulo.
+\begin{equation}\theta=\arctan(\frac{0}{2})\end{equation}
+\begin{equation}\theta=\arctan(0)\end{equation}
+\begin{equation}\theta=0\end{equation}
+Por lo tanto, se tiene que la forma polar del número complejo es:
+\begin{equation}2(\cos(0)+i\sin({0}))\end{equation}
+
+\section{Ejercicio 3}
+\begin{equation}-3i\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma rectangular a polar. Primero calculando el valor de r.
+\begin{equation}r=\sqrt{(-3)^{2}}\end{equation}
+\begin{equation}r=3\end{equation}
+Posteriormente, se cálcula el valor del ángulo.
+\begin{equation}\theta=\frac{3\pi}{2}\end{equation}
+Por lo tanto, se tiene que la forma polar del número complejo es:
+\begin{equation}3(\cos(\frac{3\pi}{2})+i\sin({\frac{3\pi}{2}}))\end{equation}
+
+\section{Ejercicio 5}
+\begin{equation}1+i\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma rectangular a polar. Primero calculando el valor de r.
+\begin{equation}r=\sqrt{1^{2}+1^{2}}\end{equation}
+\begin{equation}r=\sqrt{2}\end{equation}
+Posteriormente, se cálcula el valor del ángulo.
+\begin{equation}\theta=\arctan(\frac{1}{1})\end{equation}
+\begin{equation}\theta=\arctan(1)\end{equation}
+\begin{equation}\theta=\frac{\pi}{4}\end{equation}
+Por lo tanto, se tiene que la forma polar del número complejo es:
+\begin{equation}\sqrt{2}(\cos(\frac{\pi}{4})+i\sin({\frac{\pi}{4}}))\end{equation}
+
+\section{Ejercicio 7}
+\begin{equation}-\sqrt{3}=i\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma rectangular a polar. Primero calculando el valor de r.
+\begin{equation}r=\sqrt{(-\sqrt{3})^{2}+1^{2}}\end{equation}
+\begin{equation}r=\sqrt{4}=2\end{equation}
+Posteriormente, se cálcula el valor del ángulo.
+\begin{equation}\theta=\arctan(\frac{1}{-\sqrt{3}})\end{equation}
+\begin{equation}\theta=-\frac{\pi}{6}\end{equation}
+Por lo tanto, se tiene que la forma polar del número complejo es:
+\begin{equation}2(\cos(-\frac{\pi}{6})+i\sin({-\frac{\pi}{6}}))\end{equation}
+
+\section{Ejercicio 9}
+\begin{equation}\frac{3}{-1+i}\end{equation}
+Para comenzar, se realiza la división de números complejos.
+\begin{equation}\frac{3}{-1+i}=-\frac{3}{2}-\frac{3}{2}i\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma rectangular a polar. Primero calculando el valor de r.
+\begin{equation}r=\sqrt{(-\frac{3}{2})^{2}+(-\frac{3}{2})^{2}}\end{equation}
+\begin{equation}r=\sqrt{\frac{18}{4}}=\frac{\sqrt{18}}{2}\end{equation}
+Posteriormente, se cálcula el valor del ángulo.
+\begin{equation}\theta=\arctan(\frac{-\frac{3}{2}}{-\frac{3}{2}})\end{equation}
+\begin{equation}\theta=\arctan(1)\end{equation}
+\begin{equation}\theta=\frac{\pi}{4}\end{equation}
+Por lo tanto, se tiene que la forma polar del número complejo es:
+\begin{equation}\frac{\sqrt{18}}{2}(\cos(\frac{\pi}{4})+i\sin({\frac{\pi}{4}}))\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Escriba en la forma a+ib en el número indicado en forma polar.}
+
+\section{Ejercicio 11}
+\begin{equation}z=5(\cos(\frac{7\pi}{6})+i\sin(\frac{7\pi}{6}))\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma polar a la forma a=ib.
+\begin{equation}z=5(\cos(\frac{7\pi}{6})+i\sin(\frac{7\pi}{6}))\end{equation}
+\begin{equation}z=5(-\frac{\sqrt{3}}{2}-\frac{1}{2}i)\end{equation}
+Por lo tanto, se tiene que la forma a+ib del número complejo es:
+\begin{equation}-\frac{5\sqrt{3}}{2}-\frac{5}{2}i\end{equation}
+
+\section{Ejercicio 13}
+\begin{equation}z=6(\cos(\frac{\pi}{8})+i\sin(\frac{\pi}{8}))\end{equation}
+Aplicando la fórmula correspondiente para pasar un número complejo en forma polar a la forma a=ib.
+\begin{equation}z=6(\cos(\frac{\pi}{8})+i\sin(\frac{\pi}{8}))\end{equation}
+\begin{equation}z=6(\frac{\sqrt{\sqrt{2+\sqrt{2}}}}{2}+\frac{\sqrt{2-\sqrt{2}}}{2}i)\end{equation}
+Por lo tanto, se tiene que la forma a+ib del número complejo es:
+\begin{equation}3\sqrt{2+\sqrt{2}}+3\sqrt{2-\sqrt{2}}i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Encuentre }$z_{1}z_{2}$ \textbf{y} $\frac{z_{1}}{z_{2}}$  \textbf{. Escriba en la forma a+ib.}
+
+\section{Ejercicio 15}
+\begin{equation}z_{1}=2(\cos(\frac{\pi}{8})+i\sin(\frac{\pi}{8}))\end{equation}
+\begin{equation}z_{2}=4(\cos(\frac{3\pi}{8})+i\sin(\frac{3\pi}{8}))\end{equation}
+Primero se obtiene $z_{1}z_{2}$, siguiendo la fórmula correspondiente.
+\begin{equation}z_{1}z_{2}=(2*4)(\cos(\frac{\pi}{8}+\frac{3\pi}{8})+i\sin(\frac{\pi}{8}+\frac{3\pi}{8}))\end{equation}
+\begin{equation}z_{1}z_{2}=8(\cos(\frac{\pi}{2})+i\sin(\frac{\pi}{2}))\end{equation}
+\begin{equation}z_{1}z_{2}=8(0+i)\end{equation}
+Por lo tanto, se tiene que la forma a+ib de $z_{1}z_{2}$ es:
+\begin{equation}8i\end{equation}
+Ahora, para obtener $\frac{z_{1}}{z_{2}}$, de igual forma se sigue la fórmula indicada.
+\begin{equation}\frac{z_{1}}{z_{2}}=\frac{2}{4}(\cos(\frac{\pi}{8}-\frac{3\pi}{8})+i\sin(\frac{\pi}{8}-\frac{3\pi}{8}))\end{equation}
+\begin{equation}\frac{z_{1}}{z_{2}}=\frac{1}{2}(\cos(-\frac{2\pi}{8})+i\sin(-\frac{2\pi}{8}))\end{equation}
+\begin{equation}\frac{z_{1}}{z_{2}}=\frac{1}{2}(\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i)\end{equation}
+Por lo tanto, se tiene que la forma a+ib de $\frac{z_{1}}{z_{2}}$ es:
+\begin{equation}\frac{\sqrt{2}}{4}-\frac{\sqrt{2}}{4}i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Escriba cada número complejo en forma polar. Después, utilice (4) o (5) para obtener una forma polar del número indicado. Finalmente, escríbalo en la forma a+ib.}
+
+\section{Ejercicio 17}
+\begin{equation}(3-3i)(5+5\sqrt{3}i\end{equation}
+Primero se obtiene $r_{1}$ y su ángulo.
+\begin{equation}r_{1}=\sqrt{3^{2}+(-3)^{2}}\end{equation}
+\begin{equation}r_{1}=\sqrt{18}=3\sqrt{2}\end{equation}
+\begin{equation}\theta=\arctan(\frac{-3}{3})\end{equation}
+\begin{equation}\theta=-\frac{\pi}{4}\end{equation}
+También se obtiene $r_{2}$ y su ángulo.
+\begin{equation}r_{2}=\sqrt{5^{2}+(5\sqrt{3})^{2}}\end{equation}
+\begin{equation}r_{2}=\sqrt{100}=10\end{equation}
+\begin{equation}\theta=\arctan(\frac{5\sqrt{3}}{5})\end{equation}
+\begin{equation}\theta=\frac{\pi}{3}\end{equation}
+Obteniendo la forma polar de ambos términos:
+\begin{equation}z_{1}=3\sqrt{2}(\cos(\frac{7\pi}{4})+i\sin(\frac{7\pi}{4}))\end{equation}
+\begin{equation}z_{2}=10(\cos(\frac{\pi}{3})+i\sin(\frac{\pi}{3}))\end{equation}
+Se obtiene $z_{1}z_{2}$, siguiendo la fórmula correspondiente.
+\begin{equation}z_{1}z_{2}=(3\sqrt{2}*10)(\cos(\frac{7\pi}{4}+\frac{\pi}{3})+i\sin(\frac{7\pi}{4}+\frac{\pi}{3}))\end{equation}
+\begin{equation}z_{1}z_{2}=30\sqrt{2}(\cos(\frac{25\pi}{12})+i\sin(\frac{25\pi}{12}))\end{equation}
+Por lo tanto, se tiene que la forma a+ib es:
+\begin{equation}40.98+10.98i\end{equation}
+
+\section{Ejercicio 19}
+\begin{equation}\frac{-i}{2-2i}\end{equation}
+Primero se obtiene $r_{1}$ y su ángulo.
+\begin{equation}r_{1}=\sqrt{(-1)^{2}}\end{equation}
+\begin{equation}r_{1}=1\end{equation}
+\begin{equation}\theta=\frac{3\pi}{2}\end{equation}
+También se obtiene $r_{2}$ y su ángulo.
+\begin{equation}r_{2}=\sqrt{2^{2}+(-2)^{2}}\end{equation}
+\begin{equation}r_{2}=\sqrt{8}=2\sqrt{2}\end{equation}
+\begin{equation}\theta=\frac{7\pi}{4}\end{equation}
+Obteniendo la forma polar de ambos términos:
+\begin{equation}z_{1}=(\cos(\frac{3\pi}{2})+i\sin(\frac{3\pi}{2}))\end{equation}
+\begin{equation}z_{2}=2\sqrt{2}(\cos(\frac{7\pi}{4})+i\sin(\frac{7\pi}{4}))\end{equation}
+Se obtiene $\frac{z_{1}}{z_{2}}$, siguiendo la fórmula correspondiente.
+\begin{equation}\frac{z_{1}}{z_{2}}=\frac{1}{2\sqrt{2}}(\cos(\frac{7\pi}{4}+i\sin(\frac{7\pi}{4}))\end{equation}
+\begin{equation}\frac{z_{1}}{z_{2}}=\frac{\sqrt{2}}{4\sqrt{2}}-\frac{\sqrt{2}}{4\sqrt{2}}i\end{equation}
+Por lo tanto, se tiene que la forma a+ib es:
+\begin{equation}\frac{1}{4}-\frac{1}{4}i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Utilice (8) para calcular la potencia indicada.}
+
+\section{Ejercicio 21}
+\begin{equation}(1+\sqrt{3}i)^{9}\end{equation}
+Obtenemos r y su ángulo.
+\begin{equation}r=\sqrt{1^{2}+(\sqrt{3})^{2}}\end{equation}
+\begin{equation}r=\sqrt{4}=2\end{equation}
+\begin{equation}\theta=\arctan(\frac{\sqrt{3}}{1})\end{equation}
+\begin{equation}\theta=\frac{\pi}{3}\end{equation}
+Finalmente, se calcula la potencia deseada.
+\begin{equation}2^{9}(\cos(3\pi)+i\sin(3\pi))\end{equation}
+\begin{equation}512(\cos(3\pi)+i\sin(3\pi))\end{equation}
+\begin{equation}-512+0\end{equation}
+Por lo tanto, se tiene que la potencia del número complejo es:
+\begin{equation}-512\end{equation}
+
+\section{Ejercicio 23}
+\begin{equation}(\frac{1}{2}+\frac{1}{2}i)^{10}\end{equation}
+Obtenemos r y su ángulo.
+\begin{equation}r=\sqrt{(\frac{1}{2})^{2}+(\frac{1}{2})^{2}}\end{equation}
+\begin{equation}r=\sqrt{\frac{2}{4}}=\frac{\sqrt{2}}{2}\end{equation}
+\begin{equation}\theta=\arctan(1)\end{equation}
+\begin{equation}\theta=\frac{\pi}{4}\end{equation}
+Finalmente, se calcula la potencia deseada.
+\begin{equation}(\frac{\sqrt{2}}{2})^{10}(\cos(\frac{5\pi}{2})+i\sin(\frac{5\pi}{2}))\end{equation}
+\begin{equation}\frac{1}{32}(\cos(\frac{5\pi}{2})+i\sin(\frac{5\pi}{2}))\end{equation}
+\begin{equation}\frac{1}{32}(0)+\frac{1}{32}i\end{equation}
+Por lo tanto, se tiene que la potencia del número complejo es:
+\begin{equation}\frac{1}{32}i\end{equation}
+
+\section{Ejercicio 25}
+\begin{equation}(\cos(\frac{\pi}{8})+i\sin(\frac{\pi}{8}))^{12}\end{equation}
+Se tiene que r y su ángulo son:
+\begin{equation}r=1\end{equation}
+\begin{equation}\theta=\frac{\pi}{8}\end{equation}
+Finalmente, se calcula la potencia deseada.
+\begin{equation}(\cos(\frac{3\pi}{2})+i\sin(\frac{3\pi}{2}))\end{equation}
+\begin{equation}0-i\end{equation}
+Por lo tanto, se tiene que la potencia del número complejo es:
+\begin{equation}-i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Utilice (10) para calcular todas las raíces.}
+
+\section{Ejercicio 27}
+\begin{equation}(8)^{\frac{1}{3}}\end{equation}
+Obteniendo r y su ángulo se tiene.
+\begin{equation}r=\sqrt{8^{2}}\end{equation}
+\begin{equation}r=8\end{equation}
+\begin{equation}\theta=\arctan(0)\end{equation}
+\begin{equation}\theta=0\end{equation}
+Se calcula la raíz k=0.
+\begin{equation}2(\cos(\frac{2k\pi}{3})+i\sin(\frac{2k\pi}{3}))\end{equation}
+\begin{equation}2(\cos(0)+i\sin(0))\end{equation}
+\begin{equation}2\end{equation}
+Se calcula la raíz k=1.
+\begin{equation}2(\cos(\frac{2k\pi}{3})+i\sin(\frac{2k\pi}{3}))\end{equation}
+\begin{equation}2(\cos(\frac{2\pi}{3})+i\sin(\frac{2\pi}{3}))\end{equation}
+\begin{equation}-1+\sqrt{3}i\end{equation}
+Se calcula la raíz k=2.
+\begin{equation}2(\cos(\frac{2k\pi}{3})+i\sin(\frac{2k\pi}{3}))\end{equation}
+\begin{equation}2(\cos(\frac{4\pi}{3})+i\sin(\frac{4\pi}{3}))\end{equation}
+\begin{equation}-1-\sqrt{3}i\end{equation}
+
+\section{Ejercicio 29}
+\begin{equation}(i)^{\frac{1}{2}}\end{equation}
+Obteniendo r y su ángulo se tiene.
+\begin{equation}r=\sqrt{1^{2}}\end{equation}
+\begin{equation}r=1\end{equation}
+\begin{equation}\theta=\frac{\pi}{2}\end{equation}
+Se calcula la raíz k=0.
+\begin{equation}(\cos(\frac{\frac{\pi}{2}+2k\pi}{2})+i\sin(\frac{\frac{\pi}{2}+2k\pi}{2}))\end{equation}
+\begin{equation}(\cos(\frac{\pi}{4})+i\sin(\frac{\pi}{4}))\end{equation}
+\begin{equation}\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i\end{equation}
+Se calcula la raíz k=1.
+\begin{equation}2(\cos(\frac{\frac{\pi}{2}+2k\pi}{2})+i\sin(\frac{\frac{\pi}{2}+2k\pi}{2}))\end{equation}
+\begin{equation}(\cos(\frac{5\pi}{4})+i\sin(\frac{5\pi}{4}))\end{equation}
+\begin{equation}-\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\end{equation}
+
+\section{Ejercicio 31}
+\begin{equation}(-1+\sqrt{3}i)^{\frac{1}{2}}\end{equation}
+Obteniendo r y su ángulo se tiene.
+\begin{equation}r=\sqrt{(-1)^{2}+(\sqrt{3})^{2}}\end{equation}
+\begin{equation}r=\sqrt{4}=2\end{equation}
+\begin{equation}\theta=-\frac{\pi}{3}\end{equation}
+Se calcula la raíz k=0.
+\begin{equation}\sqrt{2}(\cos(\frac{-\frac{\pi}{3}+2k\pi}{2})+i\sin(\frac{-\frac{\pi}{3}+2k\pi}{2}))\end{equation}
+\begin{equation}\sqrt{2}(\cos(-\frac{\pi}{6})+i\sin(-\frac{\pi}{6}))\end{equation}
+\begin{equation}-\frac{\sqrt{6}}{2}-\frac{\sqrt{2}}{2}i\end{equation}
+Se calcula la raíz k=1.
+\begin{equation}\sqrt{2}(\cos(\frac{-\frac{\pi}{3}+2k\pi}{2})+i\sin(\frac{-\frac{\pi}{3}+2k\pi}{2}))\end{equation}
+\begin{equation}\sqrt{2}(\cos(\frac{5\pi}{6})+i\sin(\frac{5\pi}{6}))\end{equation}
+\begin{equation}-\frac{\sqrt{6}}{2}+\frac{\sqrt{2}}{2}i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Encuentre todas las soluciones de la ecuación dada.}
+
+\section{Ejercicio 33}
+\begin{equation}z^{4}+1=0\end{equation}
+Despejando z.
+\begin{equation}z=(-1)^{\frac{1}{4}}\end{equation}
+Obteniendo r y su ángulo se tiene.
+\begin{equation}r=\sqrt{(-1)^{2}}\end{equation}
+\begin{equation}r=1\end{equation}
+\begin{equation}\theta=\pi\end{equation}
+Se calcula la raíz k=0.
+\begin{equation}(\cos(\frac{\pi}{4})+i\sin(\frac{\pi}{4}))\end{equation}
+\begin{equation}\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i\end{equation}
+Se calcula la raíz k=1.
+\begin{equation}(\cos(\frac{3\pi}{4})+i\sin(\frac{3\pi}{4}))\end{equation}
+\begin{equation}-\frac{\sqrt{2}}{2}+\frac{\sqrt{2}}{2}i\end{equation}
+Se calcula la raíz k=2.
+\begin{equation}(\cos(\frac{5\pi}{4})+i\sin(\frac{5\pi}{4}))\end{equation}
+\begin{equation}-\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\end{equation}
+Se calcula la raíz k=3.
+\begin{equation}(\cos(\frac{7\pi}{4})+i\sin(\frac{7\pi}{4}))\end{equation}
+\begin{equation}\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\textbf{Exprese el número complejo indicado en forma polar y de modo a+ib.}
+
+\section{Ejercicio 35}
+\begin{equation}(\cos(\frac{\pi}{9})+i\sin(\frac{\pi}{9}))^{12}(2(\cos(\frac{\pi}{6})+i\sin(\frac{\pi}{6})))^{5}\end{equation}
+Desarrollando con las fórmulas correspondientes.
+\begin{equation}(\cos(\frac{4\pi}{3})+i\sin(\frac{4\pi}{3}))(32(\cos(\frac{5\pi}{6})+i\sin(\frac{5\pi}{6})))\end{equation}
+Por lo tanto, la forma polare y rectángular son:
+\begin{equation}32(\cos(\frac{13\pi}{6})+i\sin(\frac{13\pi}{6}))\end{equation}
+\begin{equation}16\sqrt{3}+16i\end{equation}
+
+\hfill \break
+\hfill \break
+
+\section{Ejercicio 37}
+\textbf{Utilice el resultado } $(\cos\theta+i\sin\theta)^{2}=\cos2\theta+i\sin2\theta$ \textbf{ para encontrar identidades trigronométricas para } $\cos2\theta$ \textbf{ y } $\sin2\theta$ \textbf{.}
+Tenemos:
+\begin{equation}\cos(2\theta)=\cos^{2}(\theta)-\sin^{2}(\theta)\end{equation}
+\begin{equation}\sin(2\theta)=2\sin(\theta)\cos(\theta)\end{equation}
+
+\hfill \break
+\hfill \break
+
+\section{Ejercicio 39}
+\textbf{a) Si } $z_{1}=-1$ \textbf{ y } $z_{2}=5i$ \textbf{, verifique que } $Arg(z_{1}z_{2}) \neq Arg(z_{1}) + Arg(z_{2})$ \textbf{.}
+\textbf{b) Si } $z_{1}=-1$ \textbf{ y } $z_{2}=-5i$ \textbf{, verifique que } $Arg(\frac{z_{1}}{z_{2}}) \neq Arg(z_{1}) - Arg(z_{2})$ \textbf{.}
+Sea:
+\begin{equation}(-1)(5i)=(0-0)+i(0-5)=-5i\end{equation}
+\begin{equation}\arctan(z_{1})=\pi\end{equation}
+\begin{equation}\arctan(z_{2})=\frac{\pi}{2}\end{equation}
+Para la primer condición.
+\begin{equation}\arctan(z_{1}z_{2})=\frac{3\pi}{2}\end{equation}
+\begin{equation}\arctan(z_{1})+\arctan(z_{2})=\pi+\frac{\pi}{2}=\frac{3\pi}{2}\end{equation}
+Por lo tanto, son iguales:
+\begin{equation}\frac{3\pi}{2}=\frac{3\pi}{2}\end{equation}
+Para la segunda condición.
+\begin{equation}\arctan(\frac{z_{1}}{z_{2}})=\frac{\pi}{2}\end{equation}
+\begin{equation}\arctan(z_{1})-\arctan(z_{2})=\pi-\frac{\pi}{2}=\frac{\pi}{2}\end{equation}
+Por lo tanto, son iguales:
+\begin{equation}\frac{\pi}{2}=\frac{\pi}{2}\end{equation}
+
+\end{document}

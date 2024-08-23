@@ -1,0 +1,310 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Matematicas Avanzadas para la Ingenieria}} 
+    \vspace{2cm}
+    
+    {\Large Transformacion de Variable Compleja}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large Arellano Millan Gabriel \\
+    Gomez Tovar Yoshua Oziel \\
+    Herrera Tovar Karla Elena \\
+    Vazquez Blancas Cesar Said\\
+    Zarco Sosa Kevin\\ 
+    
+    \vfill
+    
+    {\large 30 de Marzo de 2024}
+\end{titlepage}
+
+
+\newpage 
+
+\section*{1.- Ejercicio 1 }
+\newline
+Encontrar f(3 + i),f(-1),f(-4 + 2i), donde f(z) es igual a 
+\[
+z^2 + 2z
+\]
+Para  f(3 + i):
+\newline
+1.- Calculamos
+\[
+\left(3+i\right)^{2}+2\,\left(3+i\right)
+\]
+2.-Expandimos parentesis
+\[
+8+6\,i+2\,\left(3+i\right)
+\]
+3.-Expandiendo los paréntesis
+\[
+2\,\left(3+i\right)+8+6\,i
+\]
+\[
+6+2\,i+8+6\,i
+\]
+4.-Solucion Calculada
+\[
+14+8\,i
+\]
+\newline
+Para  f(-i):
+\newline
+1.- Calculamos
+\[
+(-i)^2 + 2(-i)
+\]
+2.--i elevado a 2 es -1
+\[
+-1 + 2(-i)
+\]
+3.-Solucion Calculada
+\[
+-1-2i
+\]
+\newline
+Para  f(-4+2i):
+\newline
+1.- Calculamos
+\[
+\left(-4+2\,i\right)^{2}+2\,\left(-4+2\,i\right)
+\]
+2.-Expandimos Parentesis
+\[
+12-16\,i+2\,\left(-4+2\,i\right)
+\]
+3.-Expandiendo parentesis
+\[
+2\,\left(-4+2\,i\right)+12-16\,i
+\]
+\[
+-8+4\,i+12-16\,i
+\]
+4.-Solucion Calculada
+\[
+4-12\,i
+\]
+\section*{2.- Ejercicio 3 }
+\newline
+Encontrar f(3 + i),f(-1),f(-4 + 2i), donde f(z) es igual a 
+\[
+\dfrac{1}{\left(z\right)^{3}}
+\]
+Para  f(3 + i):
+\newline
+1.- Calculamos
+\[
+\dfrac{1}{\left(3+i\right)^{3}}
+\]
+2.-Elevar a la potencia
+\[
+\dfrac{1}{\left(3+i\right)\,\left(3+i\right)^{2}}
+\]
+\[
+\dfrac{1}{\left(3+i\right)\,\left(8+6\,i\right)}
+\]
+3.-Multiplicar
+Numerador y denominador
+Conjugar
+\[
+\overline{\left(3+i\right)\,\left(8+6\,i\right)}=\left(3-i\right)\,\left(8-6\,i\right)
+\]
+\[
+\left(8-6\,i\right)\,\left(3-i\right)\,\left(3+i\right)\,\left(8+6\,i\right)=1000
+\]
+\[
+\dfrac{\left(8-6\,i\right)\,\left(3-i\right)}{1000}
+\]
+4.-Expandiendo los paréntesis
+\[
+\dfrac{\left(8-6\,i\right)\,\left(3-i\right)}{1000}
+\]
+\[
+\dfrac{18-26\,i}{1000}
+\]
+5.-La solucion es: 
+\[
+\dfrac{9}{500}-\dfrac{13\,i}{500}
+\]
+\newline
+Para  f(-i):
+\newline
+1.- Calculamos
+\[
+\dfrac{1}{\left(-i\right)^{3}}
+\]
+2.--i elevado a 3 es i
+\[
+\dfrac{1}{\left(i\right)}
+\]
+3.-Solucion Calculada
+\[
+-i
+\]
+\newline
+Para  f(-4+2i):
+\newline
+1.- Calculamos
+\[
+\dfrac{1}{\left(-4+2\,i\right)^{3}}
+\]
+2.-Elevar a una potencia
+\[
+\dfrac{1}{\left(-4+2\,i\right)^{2}\,\left(-4+2\,i\right)}
+\]
+\[
+\dfrac{1}{\left(12-16\,i\right)\,\left(-4+2\,i\right)}
+\]
+3.-Multiplicar
+Numerador y denominador
+Conjugar
+\[
+\overline{\left(12-16\,i\right)\,\left(-4+2\,i\right)}=\left(12+16\,i\right)\,\left(-4-2\,i\right)
+\]
+\[
+\left(12-16\,i\right)\,\left(\left(-4-2\,i\right)\,\left(-4+2\,i\right)\,\left(12+16\,i\right)\right)=8000
+\]
+\[
+\dfrac{\left(-4-2\,i\right)\,\left(12+16\,i\right)}{8000}
+\]
+4.-Expandiendo los paréntesis
+\[
+\dfrac{\left(-4-2\,i\right)\,\left(12+16\,i\right)}{8000}
+\]
+\[
+\dfrac{-16-88\,i}{8000}
+\]
+5.-Agrupamiento
+Parte real e imaginaria
+\[
+-\dfrac{1}{500}-\dfrac{11\,i}{1000}
+\]
+\section*{3.- Ejercicio 5 }
+\newline
+Encontrar las partes real e imaginaria de las siguientes funciones
+\[
+f(z) = 2z^3 - 3z
+\]
+\newline
+1.- Calculamos
+\[
+2\,\left(x+i\,y\right)^{3}-3\,\left(x+i\,y\right)
+\]
+2.-Elevar a la potencia
+\[
+2\cdot \left(x+i\,y\right)\,\left(x+i\,y\right)^{2}-3\,\left(x+i\,y\right)
+\]
+\[
+2\,\left(x+i\,y\right)\,\left(-y^{2}+x^{2}+2\,i\,x\,y\right)-3\,\left(x+i\,y\right)
+\]
+3.-Expandimos parentesis
+\[
+2\,\left(x+i\,y\right)\,\left(-y^{2}+x^{2}+2\,i\,x\,y\right)-3\,\left(x+i\,y\right)
+\]
+\[
+2\,\left(-3\,x\,y^{2}+x^{3}-i\,y^{3}+3\,i\,x^{2}\,y\right)-3\,x-3\,i\,y
+\]
+4.-Expandiendo los paréntesis
+\[
+2\,\left(-3\,x\,y^{2}+x^{3}-i\,y^{3}+3\,i\,x^{2}\,y\right)-3\,x-3\,i\,y
+\]
+\[
+-6\,x\,y^{2}+2\,x^{3}-2\,i\,y^{3}+6\,i\,x^{2}\,y-3\,x-3\,i\,y
+\]
+5.-La solucion es: 
+\[
+-6\,x\,y^{2}+2\,x^{3}-3\,x+i\,\left(-2\,y^{3}+6\,x^{2}\,y-3\,y\right)
+\]
+\section*{4.- Ejercicio 7 }
+\newline
+Suponer que z varía en una región R del plano z. Encontrar la región (precisa) del plano w en
+que están los valores correspondientes de w = J(z), y muestre gráficamente ambas regiones
+\[
+f(z)=z^2, |z|>3
+\]
+\newline
+1.- Calculamos a |w|
+\[
+w= (x^2-y^2)+i(2xy)
+\]
+2.-Calculamos el modulo
+\[
+\left|-y^{2}+x^{2}+2\,i\,x\,y\right|
+\]
+\[
+\sqrt{x^4-2x^2y^2+y^4+4x^2y^2}
+\]
+\[
+\sqrt{x^4+2x^2y^2+y^4}
+\]
+\[
+\sqrt{(x^2+y^2)^2}
+\]
+\[
+|w|=x^2+y^2
+\]
+3.- Calculamos el modulo de z
+\[
+\sqrt{x^2+y^2}>3
+\]
+\[
+x^2+y^2>3^2
+\]
+\[
+x^2+y^2>9
+\]
+4.- Sustituimos w
+\[
+|w|>9
+\]
+5.- La solucion es 
+\[
+|w|>9
+\]
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{img1.jpeg} % Ajusta el tamaño según sea necesario
+    \caption{circulo creado con modulo mayor al radio al cuadrado.}
+    \label{fig:mi_imagen}
+\end{figure}
+
+\section*{5.- Ejercicio 9 }
+\newline
+Suponer que z varía en una región R del plano z. Encontrar la región (precisa) del plano w en
+que están los valores correspondientes de w = J(z), y muestre gráficamente ambas regiones
+\[
+f(z)=z^3, |argz|<=  \pi/4
+\]
+\newline
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{img2.jpeg} % Ajusta el tamaño según sea necesario
+    \label{fig:mi_imagen}
+\end{figure}
+1.- Damos 3 vueltas, por lo tanto 
+\[
+|argw|<=\pi/4 (3)
+\]
+2.- La solucion es 
+\[
+|argw|<= 3\pi / 4
+\]
+
+\end{document}

@@ -1,0 +1,573 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge Matemáticas avanzadas para la ingeniería \par}
+\vspace{1cm}
+{\Large \textsc{Integral de contorno- Teorema de Cuachy} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CV2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \par}
+{\Large Arellano Millán Gabriel \par}
+{\Large Gómez Tovar Yoshua Oziel \par}
+{\Large Herrera Tovar Karla Elena \par}
+{\Large Vázquez Blancas César Said \par}
+{\Large Zarco Sosa Kevin \par}
+\vfill
+{\Large 6 de junio de 2024 \par}
+\end{titlepage}
+\section{Ejercicio 1}
+\[
+\oint_{C}  \, z^2dz \quad con \quad C=-1,1,1+i,-1+i
+\]
+\(1)\quad con \quad C= -1 \) 
+\begin{equation}
+z_1=-1+(1+1)t
+\end{equation}
+\begin{equation}
+z_1=-1+2t \quad 0\leq t \leq 1
+\end{equation}
+\begin{equation}
+z^2=4t^2-4t+1
+\end{equation}
+\begin{equation}
+dz=2dt
+\end{equation}
+\begin{equation}
+\int_{0}^{1} 4t^2-4t+1(2dt)
+\end{equation}
+\begin{equation}
+8\int_{0}^{1} t^2dt -8\int_{0}^{1} tdt + 2\int_{0}^{1}dt
+\end{equation}
+\begin{equation}
+\left.\frac{8t^3}{3}-4t^2+2t \right|_{0}^{1}
+\end{equation}
+\begin{equation}
+\frac{8}{3}-4+2+0= \frac{8}{3}-2=\frac{2}{3}
+\end{equation}
+
+
+
+\(2) \quad con\quad C= 1 \) 
+\begin{equation}
+z_2=1+(1+i-1)t
+\end{equation}
+\begin{equation}
+z_2=-1+ti \quad 0\leq t \leq 1
+\end{equation}
+\begin{equation}
+z^2=1+2ti-t^2
+\end{equation}
+\begin{equation}
+dz=i
+\end{equation}
+\begin{equation}
+\int_{0}^{1} (1+2ti-t^2)idt
+\end{equation}
+\begin{equation}
+\int_{0}^{1} idt -2\int_{0}^{1} tdt -i\int_{0}^{1}t^2dt
+\end{equation}
+\begin{equation}
+\left.it-t^2-\frac{it^3}{3} \right|_{0}^{1}
+\end{equation}
+\begin{equation}
+it-t^2-\frac{i}{3}-0=-1+\frac{2}{3}i
+\end{equation}
+
+
+\(3)\quad con\quad C= 1+i \) 
+\begin{equation}
+z_3=1+i+(-1+i-1-i)t
+\end{equation}
+\begin{equation}
+z_3=1+i-2t \quad 0\leq t \leq 1
+\end{equation}
+\begin{equation}
+z^2=4t^2-4t+2i-4ti
+\end{equation}
+\begin{equation}
+dz=-2
+\end{equation}
+\begin{equation}
+\int_{0}^{1} 4t^2-4t+2i-4ti(-2)dt
+\end{equation}
+\begin{equation}
+-8\int_{0}^{1} t^2dt +8\int_{0}^{1} tdt -4i\int_{0}^{1}dt+8i\int_{0}^{1}tdt
+\end{equation}
+\begin{equation}
+\left.-\frac{8t^3}{3} +4t^2-4it+4t^2i\right|_{0}^{1}
+\end{equation}
+\begin{equation}
+-\frac{8}{3}+4-4i+4i=\frac{4}{3}
+\end{equation}
+
+
+
+\(4) \quad con \quad C= -1+i \) 
+\begin{equation}
+z_4=-1+i+(-1+1-i)t
+\end{equation}
+\begin{equation}
+z_4=-1+i-ti \quad 0\leq t \leq 1
+\end{equation}
+\begin{equation}
+z^2=-t^2-2t-2i+2ti
+\end{equation}
+\begin{equation}
+dz=-i
+\end{equation}
+\begin{equation}
+\int_{0}^{1} -t^2+2t-2i+2ti(-i)dt
+\end{equation}
+\begin{equation}
+i\int_{0}^{1} t^2dt -2i\int_{0}^{1} tdt -2\int_{0}^{1}dt+2\int_{0}^{1}tdt
+\end{equation}
+\begin{equation}
+\left.\frac{it^3}{3} -it^2-2t+t^2\right|_{0}^{1}
+\end{equation}
+\begin{equation}
+\frac{i}{3}-i-2+1=-\frac{2i}{3}-1
+\end{equation}
+Entonces sumando los resultados
+\begin{equation}
+-\frac{2i}{3}-1+\frac{4}{3}-1+\frac{2i}{3}+\frac{2}{3}
+\end{equation}
+\begin{equation}
+-2+\frac{6}{3}=-2+2=0
+\end{equation}
+El teorema de cauchy dice que la funcion holomorfa es 0, por lo tanto el teorema está comprobado
+
+
+\section{Ejercicio 3}
+Comprobar el resultado del ejemplo 3
+\[
+\oint_{C}  \, \overline{z} dz = 2\pi i
+\]
+\begin{equation}
+\oint_{C}  \, \frac{1}{z}dz=2\pi i\quad Re \left( \frac{1}{2},0\right)=2\pi i *1
+\end{equation}
+\begin{equation}
+2\pi i
+\end{equation}
+Entonces \( \oint_{C}  \, \overline{z} dz=2\pi i\) 
+
+
+\section{Ejercicio 5}
+Sí, por el principio de deformación
+
+\section{Ejercicio 7}
+\[
+f(z)=|z|\quad |z|=1
+\]
+\begin{equation}
+|z|=\sqrt{x^2+y^2}
+\end{equation}
+\begin{equation}
+u=\sqrt{x^2+y^2}
+\end{equation}
+\begin{equation}
+v=0
+\end{equation}
+Como \( v=0\) al no haber parte imaginaria, no es analítica la función 
+\begin{equation}
+z=e^{it} \quad 0\leq t\leq 2\pi
+\end{equation}
+\begin{equation}
+dz=e^{it}idt \quad 0\leq t\leq 2\pi
+\end{equation}
+\begin{equation}
+|z|=|e^{it}|=1
+\end{equation}
+\begin{equation}
+\int_{0}^{2\pi}e^{it}idt =i\int_{0}^{2\pi}e^{it}dt
+\end{equation}
+\begin{equation}
+u=it \quad du= idt \quad \frac{du}{i}=dt
+\end{equation}
+\begin{equation}
+\frac{i}{i}\int_{0}^{2\pi}e^{u}du= \left.e^u\right|_{0}^{2\pi}
+\end{equation}
+\begin{equation}
+e^{2\pi i}-e^0=1-1=0
+\end{equation}
+0, no es aplicable Teorema dde Cauchy
+
+
+\section{Ejercicio 9}
+
+\[
+f(z)= Im(z) \quad |z|=1
+\]
+\begin{equation}
+Im(x+iy)=y
+\end{equation}
+\begin{equation}
+v=0 \quad v=y
+\end{equation}
+Como \( v=0\) no hay parte real, por tanto la función no es analítica y el teorema de Cauchy no es aplicable
+\begin{equation}
+z=e^{it}t \quad 0\leq t\leq 2\pi
+\end{equation}
+\begin{equation}
+dz=e^{it}i
+\end{equation}
+\begin{equation}
+Im(z)= cos(t)+i sen(t)
+\end{equation}
+\begin{equation}
+Im(z)=  sen(t)
+\end{equation}
+\begin{equation}
+\int_{0}^{2\pi}sen(t)e^{it}idt =i\int_{0}^{2\pi}sen(t)e^{it}dt
+\end{equation}
+\begin{equation}
+i\left[ \frac{1}{4}\left( -4cos(t) (cos(t)+isen(t))-2sen^2(t)+i(sen(2t)+2t)\right)\right]_0^{2\pi}
+\end{equation}
+\begin{equation}
+=i\left[ \left( \frac{1}{4}\left( -4cos(2\pi) (cos(2\pi)+isen(2\pi))-2sen^2(2\pi)+isen(2\pi)+2\pi \right) \right)- \right.
+\end{equation}
+\begin{equation}
+\left. \left(\frac{1}{4}\left( -4cos(0) (cos(0)+isen(0))-2sen^2(0)+isen(0)+2(0)\right)\right)\right]
+\end{equation}
+\begin{equation}
+i[i\pi]=-\pi
+\end{equation}
+\( -\pi\). no es aplicable Teorema de Cauchy 
+
+
+\section{Ejercicio 11}
+\[
+f(z)= \frac{1}{\overline{z}} \quad |z|=1
+\]
+\begin{equation}
+\frac{1}{\overline{z}}=\frac{1}{x-iy}=\frac{x+iy}{x^2+y^2}
+\end{equation}
+\begin{equation}
+u=\frac{x}{x^2+y^2} \quad v\frac{y}{x^2+y^2}
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial x}= \frac{y^2-x^2}{(x^2+y^2)^2} \neq \frac{\partial v}{\partial y}= \frac{x^2-y^2}{(x^2+y^2)^2}
+\end{equation}
+Por lo tannto, la función no es analítica y el Teorema de Cauchy no es aplicable
+\begin{equation}
+z=e^{it} \quad 0\leq t\leq 2\pi
+\end{equation}
+\begin{equation}
+z=cos(t)+isen(t)
+\end{equation}
+\begin{equation}
+\overline{z}=cos(t)-isen(t)=e^{-it}
+\end{equation}
+\begin{equation}
+dz=e^{it}i
+\end{equation}
+\begin{equation}
+i \int_{0}^{2\pi}\frac{1}{e^{-it}}e^{it}dt = i \int_{0}^{2\pi}\frac{e^{it}}{e^{-it}}dt=i \int_{0}^{2\pi} e^{2it}dt
+\end{equation}
+\begin{equation}
+u=2it \quad du=2idt\quad dt=\frac{du}{2i}
+\end{equation}
+\begin{equation}
+\frac{i}{2i}\int_{0}^{2\pi} e^udu= \left.\frac{1}{2} e^{2it}\right|_0^{2\pi}
+\end{equation}
+\begin{equation}
+\frac{1}{2}e^{4\pi}-\frac{1}{2}e^0=\frac{1}{2}-\frac{1}{2}=0
+\end{equation}
+0, no se puede resolver por Teorema de Cauchy
+
+
+
+\section{Ejercicio 13}
+\[
+f(z)= tan(z) \quad |z|=1
+\]
+\begin{equation}
+tan(x+iy)=\frac{sen(z)}{cos(z)}
+\end{equation}
+Es analítica menos cuando cos(z)=0
+\( z=\frac{\pi}{2}+k\pi\) es aplicable el teorema de Cauchy 
+\begin{equation}
+z=e^{it}
+\end{equation}
+\begin{equation}
+\int \frac{f(z)}{z-z_0}dz=2\pi i f(z_0)
+\end{equation}
+Dado que tan(z) no tiene singularidades en su contorno en la circunferencia unitaria, es 0, por lo tanto es aplicable Teorema de Cauchy
+
+\section{Ejercicio 15}
+\[
+f(z)= {\overline{z}} \quad |z|=1
+\]
+\begin{equation}
+(x-iy)^2=x^2-2xyi-y^2
+\end{equation}
+\begin{equation}
+u=x^2-y^2 \quad v=-2xy
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial x}= 2x \quad \frac{\partial v}{\partial y}= -2x
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial y}= -2y \quad \frac{\partial v}{\partial x}=-( -2y)=2y
+\end{equation}
+\begin{equation}
+2x \neq -2x
+\end{equation}
+\begin{equation}
+-2y \neq 2y
+\end{equation}
+Por tanto no es aplicable Teorema de Cauchy
+\begin{equation}
+z=e^{it} \quad 0\leq t\leq 2\pi
+\end{equation}
+\begin{equation}
+dz=e^{it}i dt
+\end{equation}
+\begin{equation}
+\overline{z}^2=(e^{it})^2=e^{-2it}
+\end{equation}
+\begin{equation}
+\int_{0}^{2\pi}e^{-2it}e^{it}idt= i\int_{0}^{2\pi}e^{-it}dt
+\end{equation}
+\begin{equation}
+u=-it \quad du=-idt \quad \frac{du}{-i}=dt
+\end{equation}
+\begin{equation}
+\frac{i}{-i}\int_{0}^{2\pi} e^udu= \left.-e^{it}\right|_0^{2\pi}
+\end{equation}
+\begin{equation}
+-e^{2\pi i}+e^0=-1+1=0
+\end{equation}
+0, no es aplicable Teorema de Cauchy
+
+
+\section{Ejercicio 17}
+\[
+f(z)= \frac{1}{(z^2+2)} \quad |z|=1
+\]
+\begin{equation}
+\oint_{C}  \, \frac{dz}{z^2+2}
+\end{equation}
+\begin{equation}
+z^2+2=0 \quad z^2=-2 \quad z=\pm \sqrt{-2}
+\end{equation}
+\begin{equation}
+z_1=i\sqrt{2} \quad z_2=-i\sqrt{2}
+\end{equation}
+\begin{equation}
+\oint_{C}  \, \frac{dz}{(z+i\sqrt{2})(z-i\sqrt{2})}
+\end{equation}
+\begin{equation}
+\oint_{C_1}  \, \frac{\frac{1}{z-i\sqrt{2}}}{(z+i\sqrt{2})} dz +\oint_{C_2}  \, \frac{\frac{1}{z+i\sqrt{2}}}{(z-i\sqrt{2})} dz
+\end{equation}
+\begin{equation}
+z_0=-i\sqrt{2} \quad z_0=i\sqrt{2}
+\end{equation}
+\begin{equation}
+\frac{1}{-i\sqrt{2}-i\sqrt{2}}=\frac{1}{-2i\sqrt{2}}\quad \frac{1}{i\sqrt{2}+i\sqrt{2}}=\frac{1}{2\sqrt{2}}
+\end{equation}
+\begin{equation}
+\frac{-2\pi i}{2i\sqrt{2}}+\frac{2\pi i}{2i\sqrt{2}}=0
+\end{equation}
+0. si es aplicable Teorema de Cauchy
+
+\section{Ejercicio 19}
+\[
+\oint_{C}  \, \frac{dz}{z-i} \quad |z|=2 \quad z=i=9
+\]
+\begin{equation}
+\oint_{C}  \, \frac{f(z)}{z-9}dz=2\pi i(1)
+\end{equation}
+\begin{equation}
+f(z)=1=2\pi i(1)=2\pi i
+\end{equation}
+
+
+\section{Ejercicio 21}
+\[
+\oint_{C}  \, \frac{cos(z)}{z}dz \quad C \quad consta \quad de \quad |z|=1 \quad |z|=3
+\]
+\begin{equation}
+z=0 \quad \frac{1}{z}=1
+\end{equation}
+\begin{equation}
+\oint_{C}  \, \frac{cos(z)}{z}=1
+\end{equation}
+Por lo tanto \( 2\pi i (1)\), lo mismo para \(|z|=3\), pero al ser contrario a las manecillas del reloj, da \(-2\pi i\)
+\begin{equation}
+2\pi i-2\pi i=0
+\end{equation}
+
+\section{Ejercicio 23}
+\[
+\oint_{C}  \, \frac{dz}{z^2-1} 
+\]
+\(\oint_{C}  \, \frac{dz}{z^2-1}\) por Teorema de Cauchy de curvas cerradas
+\begin{equation}
+2\pi if(z)=2\pi i(1)=2\pi i
+\end{equation}
+\begin{equation}
+f(z)=1
+\end{equation}
+\section{Ejercicio 25}
+\[
+\oint_{C}  \, \frac{dz}{z^2+1} 
+\]
+\begin{equation}
+C=a)|z+i|=1 \quad C=b)|z-i|=1
+\end{equation}
+\begin{equation}
+\oint_{C}  \, \frac{f(z)}{z-z_0}=2\pi i f(z_0)
+\end{equation}
+\begin{equation}
+z^2+1=0 \quad z=+i \quad z=-i
+\end{equation}
+\begin{equation}
+z^2=-1
+\end{equation}
+\begin{equation}
+z=\pm\sqrt{-1}
+\end{equation}
+\begin{equation}
+\oint_{C}  \, \frac{dz}{(z-i)(z+i)}
+\end{equation}
+a)
+\begin{equation}
+=\oint_{C}  \, \frac{\frac{1}{z+i}}{(z-i)}
+\end{equation}
+z=i
+\begin{equation}
+\frac{1}{i+i} = \frac{1}{2i}
+\end{equation}
+\begin{equation}
+2\pi i\left(\frac{1}{2i} \right)=\pi
+\end{equation}
+b)
+\begin{equation}
+=\oint_{C}  \, \frac{\frac{1}{z-i}}{(z+i)}
+\end{equation}
+z=-i
+\begin{equation}
+\frac{1}{-i-i} = -\frac{1}{2i}
+\end{equation}
+\begin{equation}
+2\pi i\left(-\frac{1}{2i} \right)=-\pi
+\end{equation}
+\begin{equation}
+\pi=-\pi
+\end{equation}
+
+\section{Ejercicio 27}
+\[
+\oint_{C}  \, \frac{2z+1}{z^2+z} 
+\]
+\begin{equation}
+a) |z|=\frac{1}{4} \quad b) |z-\frac{1}{2}|=\frac{1}{4} \quad a) |z|=2 
+\end{equation}
+\begin{equation}
+\oint_{C}  \, \frac{2z+1}{z(z+1)} 
+\end{equation}
+z=0,z=-1
+\begin{equation}
+\int \frac{\frac{2z+1}{z+1}}{z} dz 
+\end{equation}
+a) Sentido de las manecillas del reloj
+\begin{equation}
+2\pi i(1)=2\pi i
+\end{equation}
+z=0
+\begin{equation}
+f(z)=\frac{1}{1}
+\end{equation}
+\begin{equation}
+f(0)=\frac{1}{1}=1
+\end{equation}
+b)
+Las sigularidades están afuera, por lo tanto, es 0por teorema de Cauchy
+c)
+\begin{equation}
+\int  \, \frac{\frac{2z+1}{z}}{z+1} dz 
+\end{equation}
+z=-1
+\begin{equation}
+f(-1)=\frac{2(-1)+1}{-1}=\frac{-2+1}{-1}=\frac{-1}{-1}=1
+\end{equation}
+\begin{equation}
+2\pi i(1)=2 \pi i +2\pi i + 2\pi i = 4\pi i 
+\end{equation}
+Sentido de las manecillas del reloj, entonces \(-4\pi\), así: 
+\begin{equation}
+-2\pi,0,-4\pi i 
+\end{equation}
+
+\section{Ejercicio 29}
+\[
+\oint_{C}  \, \frac{3z+1}{z^3+z} dz
+\]
+\begin{equation}
+C=a)|z|=\frac{1}{2} \quad C=b)|z|=2
+\end{equation}
+
+\begin{equation}
+\int \frac{3z+1}{z(z-1)(z+1)}
+\end{equation}
+\begin{equation}
+z=0 \quad z=1 \quad z=-1
+\end{equation}
+\begin{equation}
+\int \frac{\frac{3z+1}{(z-1)(z+1)}}{z}
+\end{equation}
+a) z=0
+\begin{equation}
+f(0)=\frac{3(0)+1}{(0-1)(0+1)}=-\frac{1}{1}=-1
+\end{equation}
+\begin{equation}
+=2\pi i(-1)= 2\pi i
+\end{equation}
+z=-1
+\begin{equation}
+\int \frac{\frac{3z+1}{z(z-1)}}{z+1}
+\end{equation}
+\begin{equation}
+\frac{3(-1)+1}{-1(-1-1)}=\frac{-3+1}{2}=\frac{-2}{2}=-1
+\end{equation}
+\begin{equation}
+=2\pi i(-1)= -2\pi i
+\end{equation}
+z=1
+\begin{equation}
+\int \frac{\frac{3z+1}{z(z+1)}}{z-1}
+\end{equation}
+\begin{equation}
+\frac{3(1)+1}{1(1+1)}=\frac{3+1}{1(2)}=\frac{4}{2}=2
+\end{equation}
+\begin{equation}
+=2\pi i (2)= 4\pi i
+\end{equation}
+\begin{equation}
+=4\pi i -2\pi i -2 \pi i= 4\pi i -4 \pi i
+\end{equation}
+\begin{equation}
+=0
+\end{equation}
+b)
+\begin{equation}
+-2 \pi i,0
+\end{equation}
+
+
+\end{document}

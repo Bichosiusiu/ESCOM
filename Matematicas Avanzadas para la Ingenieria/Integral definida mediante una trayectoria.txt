@@ -1,0 +1,478 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\usepackage{amsmath}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge  Matem\'aticas avanzadas para la Ingenier\'ia \par}
+\vspace{1cm}
+{\Large \textsc{ Integral definida mediante una trayectoria} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CV2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \\
+Arellano Mill\'an Gabriel\\
+G\'omez Tovar Yoshua Oziel\\
+Herrera Tovar Karla Elena\\
+Vazquez Blancas C\'esar Said\\
+Zarco Sosa Kevin\par}
+\vfill
+{\Large 29 de Mayo de 2024 \par}
+\end{titlepage}
+
+\section{Ejercicio 1}
+\begin{equation}
+z = 0, \quad y \quad z= 1 + 2i \tag{1} \label{eq1}
+\end{equation}
+\begin{equation}
+    Z=z1+(z2-z1)t
+\end{equation}
+Evaluamos
+\begin{equation}
+z=0+(1+2i-0)t\\
+\end{equation}
+\begin{equation}
+    z=1+2i\\
+\end{equation}
+\begin{equation}
+    0<=t<=1
+\end{equation}
+
+\section{Ejercicio 3}
+\begin{equation}
+    z=4+2i \quad z=3+5i
+\end{equation}
+\begin{equation}
+    Z=z1+(z2-z1)t
+\end{equation}
+Evaluamos
+\begin{equation}
+    z=4+2i+(3+5i-4-2i)t
+\end{equation}
+\begin{equation}
+    z=4+2i+(-1+3i)t
+\end{equation}
+\begin{equation}
+    0<=t<=1
+\end{equation}
+
+\section{Ejercicio 5}
+\begin{equation}
+    z1=-4i \quad z2=-7+38i
+\end{equation}
+\begin{equation}
+    Z=z1+(z2-z1)t
+\end{equation}
+Evaluamos
+\begin{equation}
+    z=-4i+(-7+38i+4i)t
+\end{equation}
+\begin{equation}
+    z=-4i+(-7+42i)t
+\end{equation}
+\begin{equation}
+    z=-4i+\frac{(-7+42i)}{7}t
+\end{equation}
+\begin{equation}
+    z=-4i+(-1+6i)t
+\end{equation}\begin{equation}
+    0<=t<=7
+\end{equation}
+
+\section{Ejercicio 7}
+\begin{equation}
+    (1+2i)t \quad 0<=t<=3
+\end{equation}
+Segmento de recta de 0 a 3
+
+\section{Ejercicio 9}
+\begin{equation}
+    (1-i-2e^it) 
+\end{equation}
+Semicirculo inferior (radio 2, centro 1-i)
+
+\section{Ejercicio11}
+\begin{equation}
+    t+3(t^2)i \quad -1<=t<=2
+\end{equation}
+Parabola $y=3x^2$ de (-1,3) a (2,12)
+
+\section{Ejercicio 13}
+\begin{equation}
+    cost + 2isent \quad -\pi<=t<=\pi
+\end{equation}
+Elipse $4x^2+y^2=4$
+
+\section{Ejercicio 15}
+\begin{equation}
+    |z-3+4i|=4 \quad\quad z=z0+re^i^t
+\end{equation}
+\begin{align}
+    z - 3 + 4i &= z - (3 - 4i) \\
+    z_0 &= 3 - 4i \\
+    r &= 4 \\
+    z &= 3 - 4i + 4e^{it} \quad \text{para} \quad 0 \le t \le 2\pi
+\end{align}
+
+
+\section{Ejercicio 17}
+ $ y=\frac{1}{x}$ desde (1,1) hasta $(3,\frac{1}{3})$\\
+   $x(t)=t$ para 1<=t<=3\\
+   \begin{align}
+        y=\frac{1}{x}=y(t)=\frac{1}{x(t)}=\frac{1}{t}\\
+       x(t)=t \quad \quad y(t)=\frac{i}{t}\\
+       z(t)=x(t)+iy(t)=t+\frac{i}{t}\\
+       z(t)=t+\frac{i}{t}\quad\quad\quad1<=t<=3
+   \end{align}
+
+\section{Ejercicio 19}
+\begin{equation}
+    x^2+4y^2=4\quad\quad x(t)=t
+\end{equation}
+\begin{align}
+    z=z0+re^{it}\\
+    z=  x^2+4y^2+4re^{it}\\
+    \quad\quad\frac{x^2}{2}+\frac{y^2}{1}=1\quad\quad\quad x=acos(t)\quad y=bsen(t)\\
+    x=2cos(t)\quad y=sen(t)\\
+    2cos(t)+isen(t)\quad\quad 0<=t<=2\pi
+\end{align}
+
+\section{Ejercicio 21}
+$f(z)=az+b,$C es l segmento de recta desde -1-i hasta 1+i\\
+\begin{equation}
+    z=z1+(z2-z1)t
+\end{equation}
+
+\begin{equation}
+   \begin{aligned}
+    z=-1-i+(1+i+1+i)t\\
+    z=-1-i+(2+2i)t\\
+    z=-1-i+(\frac{2+2i}{2})t\\
+    z=-1-i+(1+i)t \quad\quad 0<=t<=2\\
+    dz=(1+i)dt\\
+    z=-1-i+t+ti\\
+    \int f(Z)dz= \int_{0}^{2}(a(-1-i+t+ti)+b)(1+i)dt\\
+    =a(1+i)\int_{0}^{2}-1-i+(1+i)t+bdt\\
+    =a+ai(-t-ti\frac{t^2}{2}+\frac{it^2}{2}+bt)|_{0}^{2}\\
+     =a+ai(\frac{1}{2}(t^2-2t+2bt)+\frac{i}{2}(t^2-2t))\\
+     =abt + i(at^2-2at+abt)|_{0}{2}\\
+     =ab(2)+i(a(2)^2-2a(2)+ab(2)- ab(0)+i(a(0)^2-2a(0)+ab(0)))\\
+     =2ab+i(4a-4a+2ab)\\
+     =2ab+2abi\\
+     =2ab(1+i)\\
+\end{aligned}
+\end{equation}
+
+\section{Ejercicio 23}
+$f(z)=z^3$C es la semicircunferencia |z|=2 de -2i a 2i en el semiplano derecho
+\begin{equation}
+    \begin{aligned}
+        z=z0+re^{it}=z=2e^{i(\frac{3\pi}{2}+t)}\\
+        dz=2e^{i(\frac{3\pi}{2}+t)}idt\\
+        \int_{0}^{\pi}(2e^{i(\frac{3\pi}{2}+t)})2e^{i(\frac{3\pi}{2}+t)}idt\\
+        4i\int_{0}^{\pi}e^{i(\frac{3\pi}{2}+t)})e^{i(\frac{3\pi}{2}+t)}\\
+        4i\int cos2udu+\int sen(2u)du\\
+        4i(\frac{1}{2}sen(2(\frac{3\pi}{2}+x))-i\frac{1}{2}cos(2(\frac{3\pi}{2}+x)))\\
+        =2cos(2x+3\pi)+2isen(2x+3\pi)|_{0}^{\pi}\\
+         =2cos(5\pi)+2isen(5\pi)-(2cos(3\pi)+2isen(3\pi))\\
+         =0\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \end{aligned}
+\end{equation}
+
+\section{Ejercicio 25}
+$f(Z)=2z^4-z^4$ C es la circunferencia unitaria
+
+\begin{equation}
+    \begin{aligned}
+        z(t)=e^{it}\quad\quad 2\pi<=t<=0\\\\
+        dz=e^{it}idt\\\\
+        \int_{2\pi}^{0}2(e^{it})-(e^{it})^-4=\int_{2\pi}^{0}2e^{4it}-e^{-4it}\\\\
+        2\int_{2\pi}^{0}e^{4it}dt-\int_{2\pi}^{0}e^{-4it}dt\\\\
+        u=4it\quad\quad\quad\quad\quad\quad w=-4it\\\\
+        du=4idt\quad\quad\quad\quad\quad\quad dw=-4idt\\\\
+        \frac{du}{4i}=dt\quad\quad\quad\quad\quad\quad \frac{dw}{-4i}=dt\\\\
+        2\int_{2\pi}^{0}\frac{e^udu}{4i}-\int_{2\pi}^{0}\frac{e^wdw  }{-4i}\\\\
+        \frac{2}{4i}\int_{2\pi}^{0}e^udu+\frac{1}{4i}\int_{2\pi}{0}e^wdw\\\\
+        \frac{2e^{4it}}{4i}+\frac{e^{-4it}}{4i}|_{2\pi}^{0}\\\\
+        \frac{2e^{4i0}}{4i}+\frac{e^{-4i0}}{4i}-(\frac{2e^{4i2\pi}}{4i}+\frac{e^{-4i2\pi}}{4i})\\\\
+        \frac{2}{4i}+\frac{1}{4i}-\frac{2}{4i}-\frac{1}{4i}=0\\\
+    \end{aligned}
+\end{equation}
+\section{Ejercicio 27}
+\begin{equation}
+    f(z)=lmz\quad\quad|z|=r
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        z=re^{it}\quad\quad\quad2\pi<=0<=0\\
+        dz=e^{it}i\\
+        lm(z)=rcost+risent\\
+        lm(Z)=risent\\\\
+        \int_{2\pi}^{0}risent(re^{it}i)dt\\
+        \int_{2\pi}^{0}-r^2sente^{it}dt\\
+        r^2\int_{2\pi}^{0}sente^{it}dt\\
+        -r^2(\frac{1}{2}((-sen^2(t))-2cos^2(t))+\frac{i}{4}(sen(2t)+2t-4costsent))|_{2\pi}^{0}\\
+        -r^2(\frac{1}{2}(0+2))+\frac{i}{4}(0+4\pi-0)\\
+        -r^2(1+\frac{4\pi i}{4}-1)=-4r^2(\frac{\pi i}{4})\\
+        =-\pi r^2i\\
+    \end{aligned}   
+\end{equation}
+
+\section{Ejercico 29}
+\begin{equation}
+    f(z)=(z-1)^-1+2(z-1)^-2
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        |Z-1|=4\quad\quad\quad\quad0<=t<=2\pi\\
+        z=z0+re^{it}\quad\quad z=1+4e^{it}\\
+        dz=e^{it}i\\
+        \int_{0}^{2\pi}(1+4e^{it}-1)^-1+2(1+4e^{it}-1)^-24e^{it}i\\
+         \int_{0}^{2\pi}(4e^{it})^-1+2(4e^{it})^-24e^{it}i\\
+          \int_{0}^{2\pi}\frac{4e^{it}i}{4e^{it}}+\frac{4e^{it}i}{32e^{it}}dt\\
+           \int_{0}^{2\pi}i+\frac{i}{8e^{it}}= \int_{0}^{2\pi}i(1+\frac{1}{8e^{it}})\\
+           \int_{0}^{2\pi}i(1+\frac{1}{8e^{it}})=i(\int_{0}^{2\pi}1dt+\int_{0}^{2\pi}\frac{1}{8e^{it}dt})\\
+           i(t+\frac{1}{8}\int_{0}^{2\pi}\frac{1}{e^{it}}dt\\
+           u=it\quad\quad du=idt\quad\quad \frac{du}{i}=dt\\
+           \frac{1}{8}\int_{0}^{2\pi}\frac{du}{e^ui}=\frac{1}{8i}\int_{0}^{\pi}\frac{du}{eu}\\
+           w=e^u\quad\quad dw=e^udu \quad\quad du=\frac{dw}{eu}\\
+           \frac{1}{8i}\int_{0}^{\pi}=\frac{1}{8i}(-\frac{1}{w})\\
+           \frac{1}{8i}(-\frac{1}{e^u})=-\frac{1}{8ie^{it}}\\
+           it-\frac{i}{8ie^{it}}|_{0}^{2\pi}\\
+           it-\frac{1}{8e^{it}}|_{0}^{\Pi}\\
+           i(0)-\frac{1}{8e^0}-i(2\pi)+\frac{1}{8e^{2\pi}}\\
+           0-\frac{1}{8}-2i\pi+\frac{1}{8}\\
+           =-2\pi i\\
+    \end{aligned}
+\end{equation}
+\section{Ejercicio 31}
+$f(z)=e^{2z}$ C es el segmento vertical de $\pi i$ hasta $2\pi i$\\
+\begin{equation}
+    \begin{aligned}
+        z=yi\quad\quad\quad z=idt\\
+        z(t)=ti\quad\quad\quad\pi i<=t<=2\pi i\\
+       \int_{\pi i}^{2\pi i}e^{2ti}i= i\int_{\pi i}^{2\pi i}e^{2ti}\\
+       u=2ti\quad\quad\quad du=2idt\quad\quad\quad dt=\frac{du}{2i}\\
+       i\int_{\pi i}^{2\pi i}\frac{e^udu}{2i}=\frac{1}{2}\int_{\pi i}^{2\pi i}e^udu=\frac{1}{2}e^u|_{\pi i}^{2\pi i}\\
+       \frac{e^{2ti}}{2}|_{\pi i}^{2\pi i}\\
+       \frac{e^{2(2\pi i)}}{2}-\frac{e^{2\pi i}}{2}=\frac{e^{4\pi i}}{2}-\frac{e^{2\pi i}}{2}\\
+       \frac{1}{2}-\frac{1}{2}=0
+       \end{aligned}
+\end{equation}
+
+\section{Ejercicio 33}
+f(z)=cosh3z desde $\pi\frac{i}{b}$ hasta 0
+\begin{equation}
+    \begin{aligned}
+        z(t)=(1-t)\frac{\pi i}{6}\quad\quad 0<=t<=1\\
+        dz=\frac{\pi i}{6}dt\\
+        \int_{0}^{1}(cosh(\frac{3\pi i}{6}-\frac{3\pi it}{6}))\frac{\pi i}{6}dt\\
+        \int_{0}^{1}cosh(\frac{\pi i}{2}-\frac{\pi it}{2})\frac{\pi i}{6}dt\\
+        \frac{\pi i}{6}\int_{0}^{1}cosh(\frac{\pi i}{2}-\frac{\pi it}{2})dt\\
+        u=\frac{\pi i}{2}-\frac{\pi it}{2}\quad\quad dv=-\frac{\pi i}{2}dt\\
+        -\frac{2\pi}{6\pi}\int_{0}^{1}cosh(u)du\\
+        -\frac{1}{3}senh(u)|_{0}^{1}=-\frac{1}{3}senh(\frac{\pi i}{2}-\frac{\pi it}{2})\\
+        -\frac{1}{3}senh(\frac{\pi i}{2})+\frac{1}{3}senh(0)\\
+        =-\frac{i}{3}\\
+        \end{aligned}
+\end{equation}
+
+\section{Ejercicio 35}
+$f(z)=Re(z^2)$ C es el cuadrado del problema 0,1,1+i,i
+\begin{equation}
+    \begin{aligned}
+        z=z1+(z2-z1)t\\
+        z=0+(1-0)t \quad\quad\quad z1(t)=t\quad\quad 0<=t<=1\\
+        z2=1+(1+i-1)t\quad\quad\quad1+(i)t=z2(t)=1+it\quad\quad0<=t<=1\\
+        z3=1+i+(i-1-i)\quad\quad\quad z3(t)=1+i-t\quad\quad 0<=t<=1\\
+        z4=i+(0-i)t\quad\quad\quad z4(t)=i-it\quad\quad0<=t<=1\\
+        z(t)=t\quad\quad dz=dt\\
+        z(t)=1+it \quad\quad dz=idt\\
+        z(t)=1+i \quad\quad dz=-dt\\
+        z(t)=i-it \quad\quad dz=-idt\\\\\\
+        Re(t)^2=t^2\\
+        Re(1+it)^2=1+2it-t^2=1-t^2\\
+        Re(1+i+-t)^2=-2t-2ti+t^2+2i=-2t+t^2\\
+        Re(i-it)^2=-t^2+2t-1=-t^2+2t-1\\
+        \int_{0}^{1}t^2dt+\int_{0}^{1}1-t^2idt+\int_{0}^{1}t^2-2t(-dt)+\int_{0}^{1}-t^2+2t-1(-dt)\\\\
+        \textbf{resolvemos las primeras 2 integrales}\\
+        \int_{0}^{1}t^2dt=\frac{t^3}{3}|_{0}^{1}=\frac{0^3}{3}-\frac{1}{3}=-\frac{1}{3}\\
+        \int_{0}^{1}1-t^2idt=\int_{0}^{1}idt+\int_{0}^{1}-t^2idt\\
+        =i\int_{0}^{1}dt-i\int_{0}^{1}t^2dt=it-\frac{it^3}{3}|_{0}^{1}\\
+        0-0-i+\frac{i}{3}=-i+\frac{i}{3}=-\frac{2i}{3}\\
+        \textbf{resolvemos las ultimas 2 integrales}\\
+        \int_{0}^{1}t^2-2t(-dt)=-\int_{0}^{1}t^2dt+\int_{0}^{1}2tdt\\
+        =-\frac{t^3}{3}+\frac{2t^2}{2}|_{0}^{1}=-0-0+\frac{1}{3}-1^2\\
+        =\frac{1}{3}-1=-\frac{2}{3}\\
+        \int_{0}^{1}-t^2+2t-1(-idt)=\\
+        i\int_{0}^{1}t^2dt-i\int_{0}^{1}2tdt+i\int_{0}^{1}dt=\\
+        \frac{it^3}{3}-it^2+it|_{0}^{1}=0-0+0\\
+        -\frac{i}{3}+i-i=\frac{-i}{3}\\
+        \end{aligned}    
+\end{equation}
+
+    \begin{align}
+         \textbf{Sumamos el resultado de todas las integrales}\\
+        -\frac{1}{3}-\frac{2}{3}-\frac{i}{3}-\frac{2i}{3}=-\frac{3}{3}-\frac{3i}{3}\\
+        =-1-i\\
+        \end{align}
+        
+\section{Ejercicio 37}
+$\overline{z}$,Cla parabola $y=x^2$ desde 0 hasta 1+i\\
+\begin{equation}
+    \begin{aligned}
+        z(t)=t+it^2\quad\quad0<=t<=1\\
+        dz=1+2tidt\quad\quad\overline{z}=t-it^2\\
+        \int_{0}^{1}t-it^2(1+2ti)dt\\
+        \int_{0}^{1}t+2t^2i-it^2+2t^3dt\\
+        \int_{0}^{1}tdt+i\int_{0}^{1}t^2dt+2\int_{0}^{1}t^3dt
+        \frac{t^2}{2}|_{0}^{1}+i\frac{t^3}{3}|_{0}^{1}+\frac{t^4}{2}|_{0}^{1}\\
+        \frac{1}{2}-\frac{0}{2}+\frac{i}{3}-\frac{0}{3}+\frac{1}{2}-\frac{0}{2}\\
+        \frac{1}{2}+\frac{1}{2}+\frac{i}{3}=1+\frac{i}{3}
+    \end{aligned}
+\end{equation}
+
+\section{Ejercicio 39}
+
+$f(z)=sen^2z$, C la semicircunferencia $|z|=\pi$ desde $-\pi i$ hasta $\pi i$ en el semiplano derecho\\
+\begin{equation}
+    \begin{aligned}
+        z(t)=\pi e^{\frac{3\pi}{2}+t}\quad\quad0<=t<=\pi\quad\quad dz=\pi e^{i(\frac{3\pi}{2}+t)}idt\\
+        \int_{0}^{\pi}sent^2(\pi e^{i(\frac{3\pi}{2}+t)})\pi e^{i\frac{3\pi}{2}+t}idt\\
+        u=\pi e^{i(\frac{3\pi}{2}+t)}\quad\quad \frac{du}{e^{i(\frac{3\pi}{2}+t)}}=dt\\
+        \int_{0}^{\pi}\frac{sen^2(u)du\pi e^{i(\frac{3\pi}{2}+t)}i}{e^{i(\frac{3\pi}{2}+t)}i}dt\\
+        \int_{0}^{\pi}sen^2(2)du\\
+        \frac{e^{i(\frac{3\pi}{2}+t)}}{2}-\frac{sen(2\pi e^{i(\frac{3\pi}{2}+t)})}{4}|_{0}^{\pi}\\
+        \frac{\pi i}{2}-\frac{sen(2\pi i)}{4}+\frac{\pi i}{2}-\frac{sen(2\pi i)}{4}\\
+        \frac{2\pi i}{2}-\frac{sen(2\pi i)}{4}\\
+        (\pi i -\frac{1}{2}sen(2\pi i))\\
+        (\pi-\frac{1}{2}senh (2\pi))i\\
+    \end{aligned}
+\end{equation}
+
+\section{Ejercicio 41}
+Evaluar $\int_{C}ln(z^2)dz$desde 0 hasta 2+4i a lo largo de a) del segmento de recta,b)del ejex hasta 2 y luego verticalmente hasta 2+4i,c) de la parabola $y=x^2$\\
+\begin{equation}
+    \begin{aligned}
+        \textbf{A}\\
+        z=0+(2+4i-0)t\quad\quad\quad dz=2+4idt\\
+        z=2t+4ti\\
+        lm(z^2)=16t^2\\
+        \int_{0}^{1}16t^2(2+4i)dt\\
+        \int_{0}^{1}32t^2dt+\int_{0}^{1}64t^2idt\\
+        32\int_{0}^{1}t^2dt+64\int_{0}^{1}t^2dt\\
+        \frac{32t^3}{3}+\frac{64it^3}{3}|_{0}^{1}\\
+        \frac{32}{3}+\frac{64i}{3}+0+0\\
+        =\frac{32}{3}+64\frac{i}{3}\\
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        \textbf{B}\\
+        z1=2t\quad\quad\int_{C}lm(z)=0\\
+        dz=2dt\\
+        z2=2+(2+4i-2)t\quad\quad z2=2+4it\quad\quad0<=t<=0\\
+        dz=4idt\\
+        lm(2+4it)^2=16t\\
+        \int_{0}^{1}16t(4i)dt=\int_{0}^{1}64itdt\\
+        64i\int_{0}^{1}tdt=\frac{64it^2}{2}|_{0}^{1}\\
+        \frac{64(1)i^2}{2}+\frac{64(0)i}{2}=\frac{64i}{2}=32i\\
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+         \textbf{C}\\
+         z=t+it^2\quad\quad 0<=t<=1\\
+         dz=1+2itdt\\
+         lm(z^2)=2x^3\\
+        \int_{0}^{2}2t^3(1+2it)dt\\
+        \int_{0}^{2}2t^3dt+i\int_{0}^{1}4t^4dt\\
+        \frac{2t^4}{4}+\frac{4t^5i}{5}|_{0}^{2}\\
+         \frac{2(2)^4}{4}+\frac{4(2)^5i}{5}-( \frac{2(0)^4}{4}+\frac{4(0)^5i}{5})\\
+         \frac{32}{4}+\frac{128i}{5}=8+128\frac{i}{5}\\
+    \end{aligned}
+\end{equation}
+
+\section{Ejercicio 43}
+Evaluar $\int_{C}|z|dz$ desde A. hasta z=-1 Hasta B. z=i a lo largo de a) el segmento de recta AB,la semicircunferencia del plano derecho,c) la semicircunferencia del plano izquierdo\\
+\begin{equation}
+    \begin{aligned}
+        \textbf{A}\\
+        z=-1+(i+1)t\quad\quad,0<=t<=1\\
+        z=-1+ti+t\quad\quad dz=1+idt\\
+        |z|=\sqrt{(-1+t^2)t(t)^2}=\sqrt{1-2t+2t^2}\\
+        \int_{0}^{1}(\sqrt{1-2t+2t^2})(1+i)dt\\
+        1+i\int_{0}^{1}(\sqrt{1-2t+2t^2})dt\\
+        u=1-2t+2t^2\quad\quad du=-2+4tdt\quad\quad \frac{du}{-2+4t}=dt\\
+        1+i\int_{0}^{1}\frac{\sqrt{u}du}{-2+4t}\\
+        \frac{\sqrt{2}}{8}(ln|-1+2t+\sqrt{2}\sqrt{1-2t+2t2}|-\sqrt{2}\sqrt{1}-2t+2t+2\sqrt{2}+\sqrt{-2t+2t})|_{0}^{1}\\
+        =0.876558(1+i)=\\
+        0.876+0.876i\\
+    \end{aligned}
+\end{equation}
+
+\begin{equation}
+    \begin{aligned}
+        \textbf{B}\\
+        |z|=1\quad\quad0<=t<=2\pi\\
+        z=e^{it}\quad\quad dz=e^{it}dt\quad\quad |z|=e^{it}\\
+        \int_{0}^{2\pi}e^{it}e{it}dt=2 \int_{0}^{2\pi}e^{it}dt\\
+        u=it \quad\quad du=idt \quad\quad \frac{du}{i}=dt\\
+         \frac{2i}{i}\int_{0}^{2\pi}e^udu=2e^{it}|_{0}^{2\pi}\\
+         2e^{2\pi i}-2e^0=2-2=0\\
+         \textbf{La otra circunferencia es la misma por lo tanto para C es=0}
+    \end{aligned}
+\end{equation}
+
+\section{Ejercicio 45}
+comprobar la expresion b para Kl,K,L=3z-z2,donde C es la mitad superior de la circunferencia unitaria desde 1 hasta-1\\
+\begin{equation}
+    \begin{aligned}
+        \int_{C}(k1f1(Z)+k2f2(z))dz\\
+        =\int_{C}k1f1(Z)dz+\int_{C}k2f2(z)dz\\
+        =k1\int_{C}f1(Z)dz+k2\int_{C}f2(z)dz\\\\\\\\\\\\\\\
+        k1+k2=3z-z^2\quad\quad\quad|z|=1\\
+        z=e^{i(\theta))}\quad\quad[0,\pi]\\
+        3z-z^2=3e^{i\theta}-(e^{i\theta})^2=3i^{i\theta}-e^{2i\theta}\\
+        \textbf{No afecta la linealidad de la integral}\\
+    \end{aligned}
+\end{equation}
+\section{Ejercicio 47}
+Comprobar la expresion 8 para f(z)=$z^2$ donde C es el segmento de recta desde -1-i hasta 1+i
+\begin{equation}
+      \begin{aligned}
+          z^2=8t^2i-8ti+2i\\
+          dz=2+2idt\\
+          =\int_{0}^{1}8t^2i-8ti+2i(2+2i)dt\\
+          =\int_{0}^{1}-4dt+\int_{0}^{1}8t^2idt-\int_{0}^{1}8tidt+\int_{0}^{1}4idt\\
+          =-4t+\frac{8t^3i}{3}-4t^2i+4ti|_{0}^{1}\\
+          =4+\frac{8i}{3}-4i+4i-0+0-0+0\\
+          =-4+\frac{8i}{3}\\
+           =-4t+\frac{8t^3i}{3}-4t^2i+4ti|_{1}^{0}\\
+          =-0+0-0+0 4+\frac{8i}{3}-4i+4i\\
+          =-4+\frac{8i}{3} =-4+\frac{8i}{3}   \\
+      \end{aligned}
+\end{equation}
+\section{Ejrcicio 49}
+\begin{equation}
+          =\int_{C}e^zdz\quad 0\quad a\quad 3+4i
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        z=0+(3+4i-0)t\quad\quad z=3t+4+i\quad\quad0<=t<=1\\
+        L=\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5=L\\
+        |e^z|=|e^{3+4ti}|=e^3=M\\
+        |f(z)|<=M\quad\quad |\oint_{C}f(Z)dz|<=M\\
+        =5e^3
+    \end{aligned}
+\end{equation}
+\end{document}

@@ -1,0 +1,299 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge  Matemáticas Avanzadas para la Ingeniería \par}
+\vspace{1cm}
+{\Large \textsc{Función Logaritmo, Potencia General} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CV2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \par}
+{\itshape\Large Arellano Millán Gabriel \par}
+{\itshape\Large Gómez Tovar Yoshua Oziel \par}
+{\itshape\Large Herrera Tovar Karla Elena \par}
+{\itshape\Large Vásquez Blancas César Said \par}
+{\itshape\Large Zarco Sosa Kevin \par}
+\vfill
+{\Large 30 de Mayo de 2024 \par}
+\end{titlepage}
+
+
+\section{Ejercicio 1}
+\text{Comprobar los calculos del ejemplo 1.}
+\begin{equation}\ln 1\end{equation}
+\begin{equation}|z| = \sqrt{1^{2}} = 1\end{equation}
+\begin{equation}\arg z = 0\end{equation}
+\begin{equation}\ln 1 + i(0) = 0 + 0 = 0\end{equation}
+
+\begin{equation}\ln 4\end{equation}
+\begin{equation}|z| = \sqrt{4^{2}} = 4\end{equation}
+\begin{equation}\arg z = 0\end{equation}
+\begin{equation}\ln 4 + i(4) = 0 + 0 = 1.386 + 0 = 1.386\end{equation}
+
+\begin{equation}\ln -1\end{equation}
+\begin{equation}|z| = \sqrt{(-1)^{2}} = 1\end{equation}
+\begin{equation}\arg z = \pi\end{equation}
+\begin{equation}\ln 1 + i(\pi) = 0 + \pi i = \pi i\end{equation}
+
+\begin{equation}\ln -4\end{equation}
+\begin{equation}|z| = \sqrt{(-4)^{2}} = 4\end{equation}
+\begin{equation}\arg z = \pi\end{equation}
+\begin{equation}\ln 4 + i(\pi) = 1.386 + \pi i\end{equation}
+
+\begin{equation}\ln i\end{equation}
+\begin{equation}|z| = \sqrt{1^{2}} = 1\end{equation}
+\begin{equation}\arg z = \frac{\pi}{2}\end{equation}
+\begin{equation}\ln 1 + i(\frac{\pi}{2}) = 0 + \frac{\pi}{2}i = \frac{\pi}{2}i\end{equation}
+
+\begin{equation}\ln 4i\end{equation}
+\begin{equation}|z| = \sqrt{4^{2}} = 4\end{equation}
+\begin{equation}\arg z = \frac{\pi}{2}\end{equation}
+\begin{equation}\ln 4 + i(\frac{\pi}{2}) = 1.386 + \frac{\pi}{2}i\end{equation}
+
+\begin{equation}\ln -4i\end{equation}
+\begin{equation}|z| = \sqrt{(-4)^{2}} = 4\end{equation}
+\begin{equation}\arg z = \frac{3\pi}{2}\end{equation}
+\begin{equation}\ln 4 + i(\frac{3\pi}{2}) = 1.386 - \frac{3\pi}{2}i\end{equation}
+
+\begin{equation}\ln 3 - 4i\end{equation}
+\begin{equation}|z| = \sqrt{3^{2}+(-4)^{2}} = \sqrt{9 + 16} = \sqrt{25} = 5\end{equation}
+\begin{equation}\arg z = \arctan\frac{-4}{3}\end{equation}
+\begin{equation}\ln 5 - i(0.927) = 1.609 - 0.927i\end{equation}
+
+
+\section{Ejercicio 3}
+\text{Demostrar la analiticidad de ln z aplicando las ecuaciones de Cauchy-Riemann en forma polar.}
+\begin{equation}\ln z = \ln |z| + i(\arg z)\end{equation}
+\begin{equation}z = \sqrt{x^{2} + y^{2}}\end{equation}
+\begin{equation}\arg z = \arctan (\frac{y}{x})\end{equation}
+\begin{equation}\ln \sqrt{x^{2} + y^{2}} + i \arctan(\frac{y}{x})\end{equation}
+\begin{equation}\frac{1}{2}\ln x^{2} + y^{2} + i \arctan(\frac{y}{x})\end{equation}
+\begin{equation}u = \frac{1}{2}\ln x^{2} + y^{2}\end{equation}
+\begin{equation}v = \arctan(\frac{y}{x})\end{equation}
+\begin{equation}\frac{\delta u}{\delta x} = \frac{x}{x^{2} + y^{2}}\end{equation}
+\begin{equation}\frac{\delta v}{\delta y} = \frac{x}{x^{2} + y^{2}}\end{equation}
+\begin{equation}\frac{\delta u}{\delta y} = \frac{y}{x^{2} + y^{2}}\end{equation}
+\begin{equation}\frac{\delta v}{\delta x} = \frac{y}{x^{2} + y^{2}}\end{equation}
+Por lo tanto, la función es analítica.
+
+
+\section{Ejercicio 5}
+\begin{equation}1 + i\end{equation}
+\begin{equation}\ln (1 + i)\end{equation}
+\begin{equation}|z| = \sqrt{1^{2} + 1 ^{2}} = \sqrt{2}\end{equation}
+\begin{equation}\arg (z) = \arctan (1) = \frac{\pi}{4}\end{equation}
+\begin{equation}\ln \sqrt{2} + \frac{i\pi}{4}\end{equation}
+\begin{equation}\frac{1}{2}\ln 2 + \frac{\pi i}{4} = 0.3465 + 0.7853i\end{equation}
+
+
+\section{Ejercicio 7}
+\begin{equation}-3 - 4i\end{equation}
+\begin{equation}\ln (-3-4i)\end{equation}
+\begin{equation}|z| = \sqrt{3^{2} + 4 ^{2}} = \sqrt{25} = 5\end{equation}
+\begin{equation}\arg (z) = \arctan (\frac{4}{3}) = 0.9272\end{equation}
+\begin{equation}\ln 5 + 0.9272i + \pi i = 1.6094 + 0.9272i - 3.1416i = 1.6094 - 2.2143i\end{equation}
+
+
+\section{Ejercicio 9}
+\begin{equation}-100\end{equation}
+\begin{equation}\ln (-100)\end{equation}
+\begin{equation}|z| = \sqrt{100^{2}} = 100\end{equation}
+\begin{equation}\arg (z) = \pi\end{equation}
+\begin{equation}\ln 100 - \pi i = 4.6 + 3.1516i\end{equation}
+
+
+\section{Ejercicio 11}
+\begin{equation}-16.0 + 0.1i\end{equation}
+\begin{equation}\ln (-16.0+0.1i)\end{equation}
+\begin{equation}|z| = \sqrt{16^{2}+0.1^{2}} = 16.0003\end{equation}
+\begin{equation}\arg (z) = \arctan (\frac{0.1}{-16}) = -0.006249 + \pi\end{equation}
+\begin{equation}\ln 16.0003 + \pi i - 0.006249 i  = 2.772 + 3.136i\end{equation}
+
+
+\section{Ejercicio 13}
+\begin{equation}1\end{equation}
+\begin{equation}\ln (1)\end{equation}
+\begin{equation}|z| = \sqrt{1} = 1\end{equation}
+\begin{equation}\arg (z) = \arctan (0) = 0\end{equation}
+\begin{equation}\ln 1 + 0 i + 2n\pi i  = 2n\pi i\end{equation}
+
+
+\section{Ejercicio 15}
+\begin{equation}-7\end{equation}
+\begin{equation}\ln (-7)\end{equation}
+\begin{equation}|z| = \sqrt{7^{2}} = 7\end{equation}
+\begin{equation}\arg (z) = \arctan (\pi) = 1.2626\end{equation}
+\begin{equation}\ln 7 + i (1.2626 + 2n\pi) = 1.9459 + (1 \pm 2n) \pi i\end{equation}
+
+
+\section{Ejercicio 17}
+\begin{equation}0.8-0.6i\end{equation}
+\begin{equation}\ln (0.8-0.6i)\end{equation}
+\begin{equation}|z| = \sqrt{0.8^{2} + 0.6^{2}} = 1\end{equation}
+\begin{equation}\arg (z) = \arctan (\frac{-0.6}{0.8}) = 0.6435\end{equation}
+\begin{equation}\ln 1 + i (-0.6435 + 2n\pi) = (-0.6435 \pm 2n\pi)i\end{equation}
+
+
+\section{Ejercicio 19}
+\begin{equation}\ln (-e^{-i})\end{equation}
+\begin{equation}\ln (-(\cos(1)-i\sin(1)) = \ln (-0.5403+0.8414i)\end{equation}
+\begin{equation}|z| = \sqrt{0.5403^{2}+0.8414^{2}} = 1\end{equation}
+\begin{equation}\arctan (\frac{\sin (1)}{\cos (1)}) = -1\end{equation}
+\begin{equation}\ln 1 + i (\pi -1 + 2n\pi) = (-1 + 2n\pi)i\end{equation}
+
+
+\section{Ejercicio 21}
+\begin{equation}\ln (z) = 3-i\end{equation}
+\begin{equation}z = e^{3-i}\end{equation}
+\begin{equation}z = e^{3}e^{-i} = e^{3}(\cos(1) - i\sin(1)) = e^{3}\cos(1)-e^{3}\sin(1)i\end{equation}
+\begin{equation}10.852-16.90i\end{equation}
+
+
+\section{Ejercicio 23}
+\begin{equation}\ln (z) = 2+\frac{1}{4}\pi i\end{equation}
+\begin{equation}z = e^{2+\frac{1}{4}\pi i}\end{equation}
+\begin{equation}z = e^{2}e^{\frac{1}{4}\pi i} = e^{2}(\cos(\frac{\pi}{4}) + i\sin(\frac{\pi}{4}))\end{equation}
+\begin{equation}5.2248-5.2248i\end{equation}
+
+
+\section{Ejercicio 25}
+\begin{equation}\ln (z) = 0.3+0.7i\end{equation}
+\begin{equation}z = e^{0.3+0.7i}\end{equation}
+\begin{equation}z = e^{0.3}e^{0.7i} = e^{0.3}(\cos(0.7) + i\sin(0.7)\end{equation}
+\begin{equation}1.0324+0.8696i\end{equation}
+
+
+\section{Ejercicio 27}
+\begin{equation}\ln (z) = 0.3+0.7i\end{equation}
+\begin{equation}z = e^{0.3+0.7i}\end{equation}
+\begin{equation}z = e^{0.3}e^{0.7i} = e^{0.3}(\cos(0.7) + i\sin(0.7)\end{equation}
+\begin{equation}1.0324+0.8696i\end{equation}
+
+
+\section{Ejercicio 29}
+\begin{equation}i^{\frac{1}{2}}\end{equation}
+\begin{equation}i^{\frac{1}{2}} = e^{\frac{1}{2}\ln i}\end{equation}
+\begin{equation}|z| = 1\end{equation}
+\begin{equation}\arg z = \frac{\pi}{2}\end{equation}
+\begin{equation}i^{\frac{1}{2}} = e^{\frac{1}{2}(\ln i + \frac{\pi i}{4})} = e^{\frac{\pi i}{4}}\end{equation}
+\begin{equation}(\cos(\frac{\pi}{4}) + i\sin(\frac{\pi}{4}))\end{equation}
+\begin{equation}\frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i\end{equation}
+
+
+\section{Ejercicio 31}
+\begin{equation}3^{3-i}\end{equation}
+\begin{equation}3^{3-i} = e^{3-i(\ln 3)}\end{equation}
+\begin{equation}|z| = 3\end{equation}
+\begin{equation}\arg z = 0\end{equation}
+\begin{equation}3^{3-i(\ln 3)} = 3^{3\ln3-i\ln3}\end{equation}
+\begin{equation}27(\cos(\ln3) + i\sin(\ln3)\end{equation}
+
+
+\section{Ejercicio 33}
+\begin{equation}(1-i)^{1+i}\end{equation}
+\begin{equation}(1-i)^{1+i} = e^{1+i(\ln (1-i))}\end{equation}
+\begin{equation}|z| = \sqrt{1^{2}+1^{2}} = \sqrt{2}\end{equation}
+\begin{equation}\arg z = (\frac{-1}{1}) = \arctan(-1) = -\frac{\pi}{4}\end{equation}
+\begin{equation}\frac{7\pi}{4} -> e^{1+i(\ln\sqrt{3} - \frac{\pi}{4})}\end{equation}
+\begin{equation}e^{1+i(\ln\sqrt{3} - \frac{\pi}{4})} = e^{\ln\sqrt{3} - \frac{\pi}{4} + i\ln\sqrt{3} - \frac{\pi i}{4}}\end{equation}
+\begin{equation}\sqrt{2}e^{\frac{\pi}{4}}(\cos(\ln\sqrt{2}-\frac{\pi}{4}) + i\sin(\ln\sqrt{2}-\frac{\pi}{4})\end{equation}
+
+
+\section{Ejercicio 35}
+\begin{equation}(5-2i)^{3+\pi i}\end{equation}
+\begin{equation}(5-2i)^{3+\pi i} = e^{3+\pi i(\ln (5-2i))}\end{equation}
+\begin{equation}|z| = \sqrt{5^{2}+2^{2}} = \sqrt{29}\end{equation}
+\begin{equation}\arg z = (\frac{-1}{1}) = \arctan(\frac{-2}{5})\end{equation}
+\begin{equation}e^{3+\pi i(\ln\sqrt{29} - i\arctan(0.4))}\end{equation}
+\begin{equation}e^{3+\pi i(\ln\sqrt{29} - i\arctan(0.4))} = e^{3\ln\sqrt{29} - 3i\arctan(0.4) + \pi i\ln\sqrt{29} - \pi i\arctan(0.4)}\end{equation}
+\begin{equation}e^{3\ln\sqrt{29} + \pi\arctan(0.4)} - e^{-(3\arctan(0.4)i - \pi\ln\sqrt{29}}\end{equation}
+\begin{equation}-276.2-436i\end{equation}
+
+
+\section{Ejercicio 37}
+\begin{equation}(2-i)^{1+i}\end{equation}
+\begin{equation}(2-i)^{1+i} = e^{1+i(\ln (2-i))}\end{equation}
+\begin{equation}|z| = \sqrt{2^{2}+1^{2}} = \sqrt{5}\end{equation}
+\begin{equation}\arg z = \arctan(\frac{-1}{2})\end{equation}
+\begin{equation}e^{1+i(\ln\sqrt{5} - i\arctan(0.5))}\end{equation}
+\begin{equation}e^{1+i(\ln\sqrt{5} - i\arctan(0.5))} = e^{\ln\sqrt{5} - i\arctan(0.5) + i\ln\sqrt{5} -i\arctan(0.5)} = e^{\ln\sqrt{5} + \arctan(0.5)} e^{i\ln\sqrt{5} - i\arctan(0.5)}\end{equation}
+\begin{equation}e^{1.2683}(\cos(\ln\sqrt{5}-\arctan(0.5)+i\sin(\ln\sqrt{5}-\arctan(0.5)))\end{equation}
+\begin{equation}3.5550(0.9423+0.3344i)\end{equation}
+\begin{equation}3.35+1.1891i\end{equation}
+
+
+\section{Ejercicio 39}
+\begin{equation}\sin^{-1}(z) = -i\ln(iz+\sqrt{q-z^{2}})\end{equation}
+Sea:
+\begin{equation}x = e^{i\phi}\end{equation}
+Entonces,
+\begin{equation}z = \frac{e^{i\phi} - e^{-i\phi}}{2i}\end{equation}
+\begin{equation}2iz = e^{i\phi} - e^{-i\phi}\end{equation}
+\begin{equation}2iz = x-\frac{1}{x}\end{equation}
+\begin{equation}-x+2iz+\frac{1}{x} = 0\end{equation}
+\begin{equation}x^{2}-2izx-x = 0\end{equation}
+\begin{equation}x = iz \pm \sqrt{1-z^{2}} = e^{\phi i}\end{equation}
+\begin{equation}iz\pm\sqrt{1-z^{2}} = e^{\phi i}\end{equation}
+\begin{equation}\ln(iz\pm\sqrt{1-z^{2}}) = \phi i\end{equation}
+\begin{equation}\phi = -i\ln(iz\pm\sqrt{1-z^{2}})\end{equation}
+\begin{equation}\phi = \arcsin(z) = -i\ln(iz\pm\sqrt{1-z^{2}})\end{equation}
+
+
+\section{Ejercicio 41}
+\begin{equation}\cosh^{-1}(z) = \ln(z+\sqrt{z^{2}-1})\end{equation}
+Sea:
+\begin{equation}x = e^{i\phi}\end{equation}
+\begin{equation}x = z+\sqrt{z^{2}-1}\end{equation}
+Entonces,
+\begin{equation}z = \frac{e^{\phi} + e^{-\phi}}{2}\end{equation}
+\begin{equation}2z = e^{\phi} + e^{-\phi}\end{equation}
+\begin{equation}2z = x+\frac{1}{x}\end{equation}
+\begin{equation}-x+2z-\frac{1}{x} = 0\end{equation}
+\begin{equation}x^{2}-2zx+1 = 0\end{equation}
+\begin{equation}e^{\phi} = z+\sqrt{z^{2}-1}\end{equation}
+\begin{equation}\phi = \arccos h(z) = \ln(z+\sqrt{z^{2}-1})\end{equation}
+
+
+\section{Ejercicio 43}
+\begin{equation}\tanh^{-1}(z) = \frac{i}{2}\ln(\frac{1+z}{1-z})\end{equation}
+Sea:
+\begin{equation}x = e^{i\phi}\end{equation}
+Entonces,
+\begin{equation}z = \frac{\frac{e^{iz} - e^{-iz}}{2i}}{\frac{e^{iz} + e^{-iz}}{2}} \end{equation}
+\begin{equation}\frac{e^{i\phi - e^{-i\phi}}}{ie^{i\phi + ie^{-i\phi}}}\end{equation}
+\begin{equation}iz = \frac{x^{2}-1}{x^{2}+1}\end{equation}
+\begin{equation}x^{2}iz+iz = x^{2}-1\end{equation}
+\begin{equation}x^{2}iz+iz-x^{2}+1 = 0\end{equation}
+\begin{equation}x^{2}(iz-1)+iz+1 = 0\end{equation}
+\begin{equation}x^{2} = \frac{iz+1}{1-iz}\end{equation}
+\begin{equation}x = \pm\sqrt{\frac{iz+1}{1-iz}}\end{equation}
+\begin{equation}e^{i\phi} = \pm\sqrt{\frac{iz+1}{1-iz}}\end{equation}
+\begin{equation}i\phi = \ln(\pm\sqrt{\frac{iz+1}{1-iz}})\end{equation}
+\begin{equation}\phi = i\ln(\pm\sqrt{\frac{iz+1}{1-iz}})\end{equation}
+\begin{equation}\arctan(z) = \frac{i}{2}\ln(\frac{i+z}{i-z})\end{equation}
+
+
+\section{Ejercicio 45}
+\begin{equation}\sin(w) = \sin(w+2\pi n) -> n\in Z\end{equation}
+\begin{equation}\sin(w) = \sin(\pi-w) -> w = \pi-w_{0}+2n\pi\end{equation}
+\begin{equation}\sin(w_{0}) = z\end{equation}
+\begin{equation}w = \arcsin(z)[-\frac{\pi}{2}, \frac{\pi}{2}]\end{equation}
+Por lo tanto,
+\begin{equation}w = \arcsin(z)+2n\pi\end{equation}
+\begin{equation}w = \pi-\arcsin(z)+2n\pi\end{equation}
+Para:
+\begin{equation}n = 0, \pm1, \pm2....\end{equation}
+
+
+\end{document}

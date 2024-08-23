@@ -1,0 +1,241 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    \vspace{1cm}
+    {\Huge Instituto Politécnico Nacional} 
+    \vspace{0.3cm}
+
+    
+    {\Large Escuela Superior de Cómputo} 
+    \vspace{3cm}
+    
+    {\Huge \textbf{Matematicas Avanzadas para la Ingenieria}} 
+    \vspace{2cm}
+    
+    {\Large SERIE DE LAURENT}
+    \vspace{0.5cm}
+    
+    {\Large Integrantes:}\\
+    \vspace{0.3cm}
+    {\large 
+    Arellano Millan Gabriel \\
+    Gomez Tovar Yoshua Oziel \\
+    Herrera Tovar Karla Elena \\
+    Vazquez Blancas Cesar Said\\
+    Zarco Sosa Kevin \\
+    
+    
+    
+    
+    \vfill
+    
+    {\large 9 de Junio de 2024}
+\end{titlepage}
+\newpage 
+
+\section*{1.- e^z/z^2 }
+\begin{align*}
+e^z = \sum_{n=0}^\infty \frac{z^n}{n!}  \\
+ =\sum_{n=0}^\infty \frac{z^n}{n!} \frac{1}{z^2} = \sum_{n=0}^\infty \frac{z^n}{n!z^2} = \sum_{n=0}^\infty \frac{z^nz^{-2}}{n!} \\
+ =\sum_{n=0}^\infty \frac{z^{n-2}}{n!} = \frac{1}{z^2} + \frac{1}{z} + \frac{1}{2!} + \frac{z}{3!} + ... R=\infty \\
+ \\
+\end{align*}
+\section*{3.- cosh 2z/z }
+\begin{align*}
+ cosh = \sum_{n=0}^\infty \frac{z^{2n}}{(2n)!} \\
+ cosh~2z = \sum_{n=0}^\infty \frac{2z^{2n}}{(2n)!} (\frac{1}{z}) = \sum_{n=0}^\infty \frac{2^{2n}z^{2n}}{(2n)!z} \\
+ \sum_{n=0}^\infty \frac{2^{2n}z^{2n-1}}{(2n)!} = \sum_{n=0}^\infty \frac{2^{2n}}{(2n)!}z^{2n-1}
+\end{align*}
+\section*{5.- 1/z(1+z^2) }
+\begin{align*}
+\sum_{n=0}^\infty z^n = \frac{1}{1-z} si |z|<1 \\
+ = \frac{1}{z} \frac{1}{(1+z^2)} = \\
+ \sum_{n=0}^\infty z^n = \frac{1}{1-z} \sum_{n=0}^\infty z^{2n} = \frac{1}{1-z^2} \\
+ \sum_{n=0}^\infty (-1)^nz^{2n} (\frac{1}{z}) = \sum_{n=0}^\infty \frac{(-1)^nz^{2n}}{z} \\
+ \sum_{n=0}^\infty (-1)^nz^{2n-1} = \frac{1}{z} -z +z^3 -z^5 \cdot\cdot\cdot R=1 \\
+ \\
+\end{align*}
+\section*{7.- z cos(1/z) }
+\begin{align*}
+cos~z=\sum_{n=0}^\infty (-1)^{n}\frac{z^{2n}}{(2n)!} |z|<\infty \\
+ cos~\frac{1}{z}=\sum_{n=0}^\infty (-1)^{n}\frac{(\frac{1}{z})^{2n}}{(2n)!} \\
+ (cos~\frac{1}{z})=\sum_{n=0}^\infty \frac{(-1)^{n}}{z^{2n}(2n)!}=\sum_{n=0}^\infty \frac{(-1)^{n}}{z^{2n}(2n)!} \\
+ \sum_{n=0}^\infty \frac{(-1)^{n}z}{z^{2n}(2n)!}=\sum_{n=0}^\infty \frac{(-1)^{n}z^{1-2n}}{(2n)!} \\
+ \sum_{n=0}^\infty \frac{(-1)^{n}}{(2n)!}z^{1-2n}=z-\frac{1}{2z}+\frac{1}{24z^{3}}\cdot\cdot\cdot R=\infty
+\end{align*}
+\section*{9.- 1/z^6(1+z)^2}
+\begin{align*}
+9.- \frac{1}{z^6(1+z)^2} \\
+\frac{1}{1+z} = \sum_{n=0}^\infty (-1)^n z^n \hspace{1cm} z<1 \\
+\frac{\partial \frac{1}{1+z}}{\partial z} = \frac{-1}{(1+z)^2} = \sum_{n=0}^\infty (-1)^n nz^{n-1} \frac{dz}{z} \\
+= \sum_{n=0}^\infty (-1)^{n+1} n z^{n-1} (\frac{1}{z^6}) \\
+= \sum_{n=0}^\infty (-1)^{n+1} n \frac{z^{n-1}}{z^6} = \sum_{n=0}^\infty (-1)^{n+1} nz^{n-1-6} \\
+\sum_{n=0}^\infty (-1)^{n+1} nz^{n-7} = \frac{1}{z^6} - \frac{2}{z^5} + \frac{3}{z^4} - \frac{4}{z^3} ... R=1
+\end{align*}
+\section*{11.- 1/z^2+1, z0=i}
+\begin{align*}
+11.- \frac{1}{z^2 + 1}, \hspace{0.5cm} z_0 = i \hspace{0.5cm} 0 < |z - z_0| < R \\
+\\
+\frac{1}{(z-i)(z+i)} \hspace{1cm} \begin{array}{l} w = z - i \\ z = w + i \end{array} \\
+\\
+\frac{1}{(w + i - i)(w + i + i)} = \frac{1}{w(w + 2i)} \\
+\\
+\frac{1}{w} \frac{1}{w + 2i} = \frac{1}{2i} \cdot \frac{1}{1 + \frac{w}{2i}} \\
+\\
+\sum_{n=0}^\infty (-1)^n (\frac{w}{2i})^n = \frac{1}{1 + \frac{w}{2i}} \\
+\\
+\sum_{n=0}^\infty (-1)^n (\frac{w^n}{(2i)^n}) (\frac{1}{w}) \\
+\\
+\sum_{n=0}^\infty (-1)^n (\frac{w^n}{(2i)^n w}) = \sum_{n=0}^\infty (-1)^n (\frac{w^{n-1}}{(2i)^{n+1}}) \\
+\\
+|w| < 2i \\
+\\
+= \sum_{n=0}^\infty \frac{(-1)^n}{(2i)^{n+1}} (z - 1)^{n-1} \hspace{1cm} |z - i| < 2 \\
+\\
+= \sum_{n=0}^\infty (\frac{i}{2})^{n+1} (z - 1)^{n-1} \hspace{1cm} R = 2
+\end{align*}
+\section*{13.- cos z / (z-\pi)^3, z0=\pi}
+\begin{align*}
+13.- \frac{\cos z}{(z-\pi)^3} \hspace{1cm} z_0 = \pi \hspace{1cm} 0 < |z - \pi| < \infty \\
+\cos z = \sum_{n=0}^\infty (-1)^n \frac{z^{2n}}{(2n)!} \hspace{1cm} |z| < \infty \\
+\sum_{n=0}^\infty (-1)^n \frac{(z-\pi)^{2n}}{(2n)!} (\frac{1}{(z-\pi)^3}) \\
+\sum_{n=0}^\infty \frac{(-1)^n (z-\pi)^{2n}}{(2n)!(z-\pi)^3} = \sum_{n=0}^\infty \frac{(-1)^n (z-\pi)^{2n-3}}{(2n)!} \\
+\sum_{n=0}^\infty \frac{(-1)^{n+1}}{(2n)!} (z-\pi)^{2n-3} \hspace{1cm} R = \infty \\
+\\
+\end{align*}
+\section*{15.- z^2 - 4/z - 1 ,0<|z-1|<R }
+\begin{align*}
+15.- \frac{z^2 - 4}{z - 1} \hspace{1cm} 0 < |z - 1| < R \\
+z + 1 - \frac{3}{z - 1} \\
+(z - 1) + 1 - \frac{3}{(z - 1 - 1)} \\
+(z - 1) + 1 - \frac{3}{(z - 2)} \\
+(z - 1) + 2 - \frac{3}{(z - 1)}
+\end{align*}
+\section*{17.- 1/(z+i)^2 - (z+i), z0=-i}
+\begin{align*}
+17.- \frac{1}{(z+i)^2 - (z+i)}, \hspace{0.5cm} z_0 = -i \\
+\frac{1}{(z+i)^2 - z - i} = \frac{1}{(z+i)^2} \frac{1}{-i - z} \hspace{1cm} |z + i| < 1 \\
+\sum_{n=0}^\infty z^n = \frac{1}{1-z} \\
+\sum_{n=0}^\infty (z+i)^{n+1} = \frac{1}{1-(z+i)} = \frac{1}{1-z-i} \\
+\sum_{n=0}^\infty (z+i)^{n+1} = \frac{1}{-z-i} \\
+\frac{(z+i)^{n+1}}{(z+i)^2} = z + i^{n+1-2} = z + i^{n-1} \\
+= -\sum_{n=0}^\infty (z+i)^{n-1} \hspace{1cm} R = 1 \\
+\end{align*}
+\section*{19.- 1/1-z^2, 0<z<1}
+\begin{align*}
+19.- \frac{1}{1-z^2} \hspace{1cm} 0 \le z \le 1 \\
+\sum_{n=0}^\infty z^n = \frac{1}{1-z} \hspace{1cm} |z| < 1 \\
+\sum_{n=0}^\infty z^{2n} = \frac{1}{1-z^2} \hspace{1cm} |z| < 1 \rightarrow \sum_{n=0}^\infty z^{2n}
+\end{align*}
+\section*{21.- 1/1-z^2, 0<|z-1|<2}
+\begin{align*}
+21. \frac{1}{1-z^2} \hspace{1cm} 0 < |z-1| < 2 \\
+\\
+\sum_{n=0}^\infty z^n = \frac{1}{1-z} \\
+\\
+\frac{1}{1+z} \sum_{n=0}^\infty z^n = \frac{1}{1-z} \hspace{1cm} \frac{1}{(1-z)(1+z)} \\
+\\
+|z-1| < 2 \\
+\\
+\sum_{n=0}^\infty (z-1)^{n-1} = \frac{1}{1-(z-1)} = \frac{1}{1-z+1} \\
+= \frac{1}{1-z} \\
+\\
+\sum_{n=0}^\infty \frac{(z-1)^{n-1}}{1+z} = \sum_{n=0}^\infty \frac{(-1)^{n+1}}{2^{n+1}} (z-1)^{n-1} \\
+\\
+\sum_{n=0}^\infty \frac{(z-1)^{n-1}}{1+z} = \sum_{n=0}^\infty \frac{(-1)^{n+1}}{2^{n+1}} (z-1)^{n-1}
+\end{align*}
+\section*{23.-3z^2-6z+2/z^3-3z^2+2z, 1<|z|<2}
+\begin{align*}
+23. \frac{3z^2 - 6z + 2}{z^3 - 3z^2 + 2z}, \hspace{1cm} 1 < |z| < 2 \\
+= \frac{1}{z} + \frac{1}{-1 + z} + \frac{1}{-2 + z} \\
+\sum_{n=0}^\infty \frac{1}{z^{n+1}} = \frac{1}{1-z}, \hspace{1cm} 1 < |z| < 2 \\
+\frac{1}{1-z} = - (-\sum_{n=0}^\infty \frac{1}{z^{n+1}}) = \sum_{n=0}^\infty \frac{1}{z^{n+1}} \\
+\sum_{n=0}^\infty \frac{1}{z^{n+1}} = \frac{-1}{1-z} \Rightarrow \frac{1}{-1 + z} \\
+\sum_{n=0}^\infty z^n = \frac{1}{1-z} = -\sum_{n=0}^\infty \frac{z^n}{2^{n+1}} = \frac{1}{2+z} \\
+= \frac{1}{z} + \sum_{n=0}^\infty \frac{1}{z^{n+1}} - \sum_{n=0}^\infty \frac{z^n}{2^{n+1}}
+\end{align*}
+\section*{25.-1/1-z^3 , z0=0, z=z0}
+\begin{align*}
+25. \frac{1}{1-z^3}, \hspace{0.5cm} z_0 = 0 \hspace{0.5cm} z = z_0 
+|z| < 1 \\
+\sum_{n=0}^\infty z^{3n} = \frac{1}{1-z^3} \\
+-\frac{1}{z^3 (1-\frac{1}{z^3})} = \frac{-1}{z^3} \frac{1}{(1-\frac{1}{z^3})} \\
+\sum_{n=0}^\infty \frac{1}{z^{3n}} = \frac{1}{1-\frac{1}{z^3}} \\
+-\frac{1}{z^3} \sum_{n=0}^\infty \frac{1}{z^{3n}} = -\sum_{n=0}^\infty \frac{1}{z^{3n}} (\frac{1}{z^3})
+z > 1 \\
+= -\sum_{n=0}^\infty \frac{1}{z^{3n+3}} \\
+\sum_{n=0}^\infty z^{3n} \hspace{0.5cm} |z| < 1, \hspace{0.5cm} -\sum_{n=0}^\infty \frac{1}{z^{3n+3}} \hspace{0.5cm} |z| > 1
+\end{align*}
+\section*{27.-z^2/1-z^4, z0=0 }
+\begin{align*}
+27.- \frac{z^2}{1-z^4}, \hspace{0.5cm} z_0 = 0 \\
+|z| < 1 \\
+z^2 \frac{1}{1-z^4} \sum_{n=0}^\infty z^{4n} = \frac{1}{1-z^4} \\
+z^2 \sum_{n=0}^\infty z^{4n} = \sum_{n=0}^\infty z^{4n} z^2 = \sum_{n=0}^\infty z^{4n+2} \\
+\frac{z^2}{z^4} \frac{1}{(1-\frac{1}{z^4})} = \frac{1}{z^2} \sum_{n=0}^\infty \frac{1}{z^{n}} = \frac{1}{1-\frac{1}{z}} \\
+\frac{1}{z^2} \sum_{n=0}^\infty \frac{1}{z^{4n}} = \frac{1}{1-\frac{1}{z^n}} = \sum_{n=0}^\infty \frac{1}{z^{4n}} \frac{1}{z^2} \\
+\sum_{n=0}^\infty \frac{1}{z^{4n} z^2} = \sum_{n=0}^\infty \frac{1}{z^{4n+2}} \hspace{1cm} |z| > 1 \\
+\sum_{n=0}^\infty z^{4n+2}, |z| < 1, \hspace{0.5cm} \sum_{n=0}^\infty \frac{1}{z^{4n+2}}, |z| > 1
+\end{align*}
+\section*{29.-1/z, z0=1 }
+\begin{align*}
+29.- \frac{1}{z} \hspace{1cm} z_0 = 1 \hspace{1cm} 0 < |z-1| < 1 \\
+\\
+\sum_{n=0}^\infty (z-1)^n = \frac{1}{1-(z-1)} = \frac{1}{1-z+1} \\
+\sum_{n=0}^\infty (-1)^n (z-1)^n = \frac{1}{z} \hspace{1cm} z < 1 \\
+\frac{1}{\frac{1}{z}} = \sum_{n=0}^\infty \frac{1}{(z-1)^{n+1}} = \frac{1}{1-(\frac{1}{z} - 1)} \\
+= - \frac{1}{\frac{1}{z}} = \sum_{n=0}^\infty \frac{(-1)^n}{(z-1)^{n+1}} \hspace{1cm} |z-1| > 1 \\
+\\
+\sum_{n=0}^\infty (-1)^n (z-1)^n, |z-1| < 1 \\
+\sum_{n=0}^\infty \frac{(-1)^n}{(z-1)^{n+1}}, |z-1| > 1
+\end{align*}
+\section*{31.-sen z/z+\pi /2, z0=-\pi/2 }
+\begin{align*}
+31.- \frac{\sin z}{z + \frac{1}{2}\pi}, \hspace{0.5cm} z_0 = -\frac{1}{2}\pi \\
+\\
+\sin z = \sum_{n=0}^\infty (-1)^n \frac{z^{2n+1}}{(2n+1)!} \\
+\\
+0 < |z + \frac{1}{2}\pi| \le 1 \\
+\\
+\sum_{n=0}^\infty (-1)^n \frac{(z+\frac{1}{2}\pi)^{2n}}{(2n)!} \left( \frac{1}{z + \frac{1}{2}\pi} \right) \\
+\\
+\sum_{n=0}^\infty (-1)^n \frac{(z+\frac{1}{2}\pi)^{2n}}{(2n)!(z + \frac{1}{2}\pi)} \\
+\\
+\sum_{n=0}^\infty (-1)^{n+1} \frac{(z+\frac{1}{2}\pi)^{2n-1}}{(2n)!} \hspace{1cm} 0 < |z + \frac{1}{2}\pi| \le 1
+\end{align*}
+\section*{33.4z-1/z^4 - 1, z0=0 }
+\begin{align*}
+33.- \frac{4z-1}{z^4-1}, \hspace{0.5cm} z_0 = 0 \\
+\\
+-1(\frac{4z-1}{z^4-1}) = \frac{1-4z}{1-z^4} \\
+(1-4z) \sum_{n=0}^\infty z^{4n}, |z| < 1 \\
+\frac{(1-4z)}{-z^4} (\frac{1}{-\frac{1}{z^4} + 1}) = (\frac{1}{1-\frac{1}{z^4}}) \\
+\sum_{n=0}^\infty \frac{1}{z^{4n}} = \frac{1}{1-\frac{1}{z^4}} \\
+\frac{(1-4z)}{-z^4} \sum_{n=0}^\infty \frac{1}{z^{4n}} \\
+\\
+1-4z(\frac{1}{1-z^4}) \sum_{n=0}^\infty z^{4n} = \frac{1}{1-z^4} \\
+-\sum_{n=0}^\infty \frac{(1-4z)}{z^4 z^{4n}} = -\sum_{n=0}^\infty \frac{(1-4z)}{z^{4n+4}} \\
+(\frac{4}{z^3} - \frac{1}{z^4}) \sum_{n=0}^\infty \frac{1}{z^{4n}}, |z| > 1 \\
+\\
+(1-4z) \sum_{n=0}^\infty z^{4n}, |z| < 1 \\
+\end{align*}
+\section*{35. }
+\begin{align*}
+35.- Sean \sum_{n=-\infty}^\infty a_n (z-z_0)^n \text{ y } \sum_{n=-\infty}^\infty c_n (z-z_0)^n \text{ las 2 series de} \\ 
+\text{Laurent de la misma función } f(z) \text{ en la misma corona. Ambas series se} \\
+\text{multiplican por } (z-z_0)^{-k-1} \text{ y se} \\
+\text{integra a lo largo del círculo con} \\
+\text{centro en } z_0 \text{ en el interior de la} \\
+\text{corona. Como la serie converge} \\
+\text{uniformemente, es posible integrar} \\
+\text{término a término. Así se obtiene} \\
+2\pi i a_k = 2\pi i c_k. \text{ Por tanto} \\
+a_k = c_k \text{ para todo } k = 0, \pm 1, ...
+\end{align*}
+\end{document}

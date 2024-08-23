@@ -1,0 +1,445 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge Matemáticas avanzadas para la ingeniería \par}
+\vspace{1cm}
+{\Large \textsc{Ecuaciones de Cauchy-Riemann-Función exponencial} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CV2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \par}
+{\Large Arellano Millán Gabriel \par}
+{\Large Gómez Tovar Yoshua Oziel \par}
+{\Large Herrera Tovar Karla Elena \par}
+{\Large Vázquez Blancas César Said \par}
+{\Large Zarco Sosa Kevin \par}
+\vfill
+{\Large 9 de mayo de 2024 \par}
+\end{titlepage}
+\section{Ejercicio 1}
+\(e^z\) analítica para todo z
+\begin{equation}
+e^{x+iy}
+\end{equation}
+\begin{equation}
+e^x e^{iy}
+\end{equation}
+Se utiliza la fórmula de Euler para escribir \(e^{iy}\) en términos de seno y coseno.
+\begin{equation}
+e^x(cos(y)+i sen(y))
+\end{equation}
+\begin{equation}
+e^xcos(y)+e^xsen(y)i
+\end{equation}
+Se introducen las variables u y v para representar las partes real e imaginaria de la función, respectivamente.
+\begin{equation}
+u=e^xcos(y)
+\end{equation}
+\begin{equation}
+v=e^xsen(y)
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial x}=e^xcos(y)
+\end{equation}
+\begin{equation}
+\frac{\partial v}{\partial y}=e^xsen(y)
+\end{equation}
+
+\begin{equation}
+\frac{\partial u}{\partial y}=-sen(y) e^x
+\end{equation}
+\begin{equation}
+\frac{\partial v}{\partial x}=-(sen(y) e^x)
+\end{equation}
+\begin{equation}
+e^xcos(y)=e^xcos(y)
+\end{equation}
+\begin{equation}
+-sen(y) e^x=-sen e^x
+\end{equation}
+Por lo tanto, es analítica.
+
+Calcular \(e^z\) (en la forma u+iv) y \(|e^z|\) si z es igual a:
+\section{Ejercicio 3}
+\(1+i\)
+\begin{equation}
+e^{1+i} = e^1 e^i
+\end{equation}
+Se descompone utilizando la fórmula de Euler
+\begin{equation}
+e^1 (cos(1)+i sen(1))
+\end{equation}
+\begin{equation}
+e cos(1) + e sen(1) i
+\end{equation}
+\begin{equation}
+=1.466869 + 2.28736 i
+\end{equation}
+
+\begin{equation}
+|e^z|= \sqrt{(1.46869)^2 + (2.28736)^2}
+\end{equation}
+\begin{equation}
+|e^z|= \sqrt{2.15705 + 5.23202}
+\end{equation}
+\begin{equation}
+|e^z|= \sqrt{7.389072}
+\end{equation}
+
+Quedando así que \(|e^z|= 2.711828\)
+
+\section{Ejercicio 5}
+\(\sqrt{2} - \frac{1}{2} i\)
+
+\begin{equation}
+e^{\sqrt{2} - \frac{1}{2} i}= e^{\sqrt{2}}  e^{-\frac{1}{2} i}
+\end{equation}
+\begin{equation}
+e^{\sqrt{2}} \left(cos(-\frac{1}{2})+ sen(-\frac{1}{2})i\right)
+\end{equation}
+\begin{equation}
+= 3.60972 - 1.972 i
+\end{equation}
+
+\begin{equation}
+|e^z|= \sqrt{(3.60922)^2 + (1.972)^2}
+\end{equation}
+\begin{equation}
+|e^z|= \sqrt{13.02647 + 3.888784}
+\end{equation}
+\begin{equation}
+|e^z|= \sqrt{16.915254}
+\end{equation}
+Quedando así que \(|e^z|= 4.11282\)
+
+\section{Ejercicio 7}
+\((1+i)\pi\)
+\begin{equation}
+e^{(1+i)\pi}= e^{\pi+ i\pi}
+\end{equation}
+\begin{equation}
+e^{\pi} e{i\pi}
+\end{equation}
+\begin{equation}
+e^{\pi} \left( cos(\pi) + i sen(\pi)\right)
+\end{equation}
+\begin{equation}
+-23.14069 + 0 = -23.14069
+\end{equation}
+\begin{equation}
+|e^z|= \sqrt{-23.14069 ^2}
+\end{equation}
+Quedando así que \(|e^z|= 23.14069\)
+
+\section{Ejercicio 9}
+\(\frac{-9\pi i}{2}\)
+\begin{equation}
+e^{\frac{-9\pi i}{2}}= \left( cos(\frac{-9\pi i}{2}) + i sen(\frac{-9\pi i}{2})\right)
+\end{equation}
+\begin{equation}
+ 0 - i = - i
+\end{equation}
+
+\begin{equation}
+|e^z|= \sqrt{1} = 1
+\end{equation}
+A sí nos queda que \(|e^z|= 1\)
+
+
+
+\section{Ejercicio 11}
+\(e^{z^3}\)
+\begin{equation}
+e^{z^3} = e^{(x+iy)^3}
+\end{equation}
+\begin{equation}
+e^{x^3+3x^2ui-3xy^2-y^3i}
+\end{equation}
+\begin{equation}
+e^{x^3-3xy^2} e^{3x^2yi-y^3i}
+\end{equation}
+\begin{equation}
+e^{x^3-3xy^2} e^{i(3x^2y-y^3)}
+\end{equation}
+Aplicar la fórmula de Euler a la parte imaginaria
+\begin{equation}
+e^{x^3-3xy^2} \left( cos(3x^2y-y^3) + i sen(3x^2y-y^3)\right)
+\end{equation}
+combinar las partes real e imaginaria para obtener la forma  u+iv 
+\begin{equation}
+e^{x^3-3xy^2} cos(3x^2y-y^3) + e^{x^3-3xy^2} sen(3x^2y-y^3)i
+\end{equation}
+
+Así tenemos que: 
+\begin{equation}
+\mathbb{R} \left\{ e^{z^3}\right\}= e^{x^3-3xy^2} cos(3x^2y - y^3)
+\end{equation}
+\begin{equation}
+ Im \left\{ e^{z^3}\right\}= e^{x^3-3xy^2} sen(3x^2y - y^3)
+\end{equation}
+
+
+\section{Ejercicio 13}
+\(e^{-2z}\)
+\begin{equation}
+e^{-2z}=e^{-2(x+iy)}
+\end{equation}
+\begin{equation}
+e^{-2x-2iy}
+\end{equation}
+\begin{equation}
+e^{-2x} e^{-2iy}
+\end{equation}
+\begin{equation}
+e^{-2x} \left( cos(-2y) + i sen(-2y)\right)
+\end{equation}
+\begin{equation}
+e^{-2x} cos(2y) -e^{-2x}  sen(2y)i
+\end{equation}
+
+Así tenemos que: 
+\begin{equation}
+\mathbb{R} \left\{ e^{-2z}\right\}= e^{-2x} cos(2y) 
+\end{equation}
+\begin{equation}
+ Im \left\{ e^{-2z}\right\}= -e^{-2x} sen(2y) 
+\end{equation}
+
+
+\section{Ejercicio 15}
+\(\sqrt{i} , \sqrt{-i}\)
+ donde \(k = n-1\)
+\begin{equation}
+ w_k=r^{\frac{1}{n}} \left[ cos\left( \frac{\theta + 2k\pi}{n}\right) + i sen\left( \frac{\theta + 2k\pi}{n}\right)\right]
+\end{equation}
+donde r=1, n=2, k=0
+\begin{equation}
+ 1^{\frac{1}{2}} \left[ cos\left( \frac{\frac{\pi}{2} + 2(0)\pi}{2}\right) + i sen\left( \frac{\frac{\pi}{2} + 2(0)\pi}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos\left( \frac{\frac{\pi}{2} + 0}{2}\right) + i sen\left( \frac{\frac{\pi}{2} + 0}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos(\frac{\pi}{4} + i sen(\frac{\pi}{4}))\right]
+\end{equation}
+
+con k=1
+\begin{equation}
+ 1^{\frac{1}{2}} \left[ cos\left( \frac{\frac{\pi}{2} + 2(1)\pi}{2}\right) + i sen\left( \frac{\frac{\pi}{2} + 2(1)\pi}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos\left( \frac{\frac{5\pi}{2}}{2}\right) + i sen\left(\frac{\frac{5\pi}{2}}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos\left( \frac{5\pi}{4}\right) + i sen\left( \frac{5\pi}{4}\right)\right]
+\end{equation}
+De esta manera queda que \(e^{\frac{\pi i}{4}} , e^{\frac{5\pi i}{4}}\)
+
+Ahora con r=1, n=2, k=0
+\begin{equation}
+ 1 \left[ cos\left( \frac{\frac{3\pi}{2} + 2(0)\pi}{2}\right) + i sen\left( \frac{\frac{3\pi}{2} + 2(0)\pi}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos\left( \frac{3\pi}{4}\right) + i sen\left( \frac{3\pi}{4}\right)\right]
+\end{equation}
+k=1
+\begin{equation}
+ 1 \left[ cos\left( \frac{\frac{3\pi}{2} + 2\pi}{2}\right) + i sen\left( \frac{\frac{3\pi}{2} + 2\pi}{2}\right)\right]
+\end{equation}
+\begin{equation}
+ 1 \left[ cos\left( \frac{7\pi}{4}\right) + i sen\left( \frac{7\pi}{4}\right)\right]
+\end{equation}
+quedando así que 
+\begin{equation}
+e^{\frac{3\pi i}{4}} , e^{\frac{7\pi i}{4}}
+\end{equation}
+
+
+\section{Ejercicio 17}
+\(3+4i\)
+\begin{equation}
+r=\sqrt{(3)^2 + (4)^2} = \sqrt{9+16}=\sqrt{25}=5
+\end{equation}
+\begin{equation}
+\theta=arctan\left(\frac{4}{3}\right)
+\end{equation}
+Luego
+\begin{equation}
+5\left(cos\left(arctan\left(\frac{4}{3}\right) + i sen\left(arctan\left(\frac{4}{3}\right)\right)\right)\right)
+\end{equation}
+\begin{equation}
+5e^{arctan(\frac{4}{3})i}
+\end{equation}
+\\
+\\
+\\
+\\
+Encontrar todos los valores de z tales que:
+
+\section{Ejercicio 19}
+\(|e^z|< 1\)
+\\ Sustituir z por \(-(x+iy)\) en la desigualdad
+\begin{equation}
+|e^{-(x+iy)}|< 1
+\end{equation}\begin{equation}
+|e^{-x-iy)}|< 1
+\end{equation}
+\begin{equation}
+|e^{-x}\left( cos(y) - isen (y)\right)|< 1
+\end{equation}
+Aplicar la definición de números complejos en su forma exponencial
+\begin{equation}
+\sqrt{e^{-2x} cos^2(y) +e^{-2x} isen^2 (y)}< 1
+\end{equation}
+\begin{equation}
+\sqrt{e^{-2x}\left( cos^2(y) + isen^2 (y)\right)}< 1
+\end{equation}
+\begin{equation}
+\sqrt{e^{-2x}}< 1
+\end{equation}
+\begin{equation}
+e^{-x}<1
+\end{equation}
+\begin{equation}
+-x< ln(1)
+\end{equation}
+\begin{equation}
+-x(-1)> 0(-1)
+\end{equation}
+\begin{equation}
+x>0
+\end{equation}
+
+\section{Ejercicio 21}
+    Re \(e^{2z}=0\)
+\begin{equation}
+ Re \quad e^{2(x+iy)}=0
+\end{equation}
+\begin{equation}
+ Re \quad e^{2x+2iy)}=0
+\end{equation}
+\begin{equation}
+ Re \quad \left\{ e^{2x} e^{2iy}=0\right\}
+\end{equation}
+\begin{equation}
+ Re \quad \left\{ e^{2x} \left( cos(2y) + isen(2y)\right)\right\}=0
+\end{equation}
+\begin{equation}
+ Re \quad \left\{ e^{2x}  cos(2y) + e^{2x}isen(2y)\right\}=0
+\end{equation}
+\begin{equation}
+ e^{2x}cos(2y)=0
+\end{equation}
+Entonces \(e^{2x}=0\) o \(cos(2y)=0\)
+\begin{equation}
+2x=ln(0)
+\end{equation}
+\begin{equation}
+2x=ind
+\end{equation}
+Sin solución
+\begin{equation}
+2y=\frac{\pi}{2}+2\pi n
+\end{equation}
+\begin{equation}
+y=\frac{(2n+1)\pi}{4}
+\end{equation}
+
+\section{Ejercicio 23}
+\(e^{z}=-2\)
+\begin{equation}
+e^z=-2
+\end{equation}
+\begin{equation}
+e^x(cos(y)+isen(y))=-2
+\end{equation}
+\begin{equation}
+e^x(cos(y)+isen(y))=2 (cos(\pi)+isen(\pi))
+\end{equation}
+\begin{equation}
+e^x=2
+\end{equation}
+\begin{equation}
+x=ln(2)
+\end{equation}
+\begin{equation}
+y=\pi + 2n\pi
+\end{equation}
+\begin{equation}
+z=Ln(2) + (2n+1)i\pi
+\end{equation}
+
+\section{Ejercicio 25}
+\(e^{z}=0\)
+\begin{equation}
+e^x(cos(y)+ isen(y))=0
+\end{equation}
+\begin{equation}
+e^x(cos(y)+ isen(y))=0 (cos(0)+isen(0))
+\end{equation}
+\begin{equation}
+e^x=0
+\end{equation}
+\begin{equation}
+x=ln |0|
+\end{equation}
+\begin{equation}
+x=Ind
+\end{equation}
+Entonces \(x=Ind\) y \(y=0\), por lo tanto no hay soluciones
+
+\section{Ejercicio 27}
+Encontrar todos los valores de k tal que \(f(z)= e^x(cos(ky)+isen(ky))\) sea analítica
+\begin{equation}
+f(z)=e^xcos(ky) +e^xisen(ky)
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial x}=cos(ky)e^x
+\end{equation}
+\begin{equation}
+\frac{\partial u}{\partial x}=cos(ky)e^x
+\end{equation}
+\begin{equation}
+\frac{\partial v}{\partial y}=ke^xcos(ky)
+\end{equation}
+
+\begin{equation}
+\frac{\partial u}{\partial y}=-ke^xsen(ky)
+\end{equation}
+\begin{equation}
+\frac{\partial v}{\partial x}=-sen(ky)e^x
+\end{equation}
+\begin{equation}
+cos(ky)e^x=ke^xcos(ky)
+\end{equation}
+\begin{equation}
+k=\frac{cos(ky)e^x}{cos(ky)e^x}
+\end{equation}
+Por lo tanto, k=1
+
+
+
+\section{Ejercicio 29}
+Es interesante que \(f(z)=e^z\) esté determinada de manera única por las 2 propiedades \(f(x+io)= e^x y f'(z)=f(z)\), en donde se supone que f es entera. Demostrar este hecho. Sea g entera con estas dos propiedades y demostrar que \(\left(\frac{g}{f}\right)'=0\)
+
+\begin{equation}
+\left(\frac{g}{f}\right)'=\frac{(g'f-gf')}{g^2}=0
+\end{equation}
+ya que g'=g, f'=f, \((\frac{g}{f})=k= cont\)
+\(g(0)=f(0)=e^0=1\) se obtiene k=1, g=f
+
+
+\end{document}

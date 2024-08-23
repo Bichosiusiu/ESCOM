@@ -1,0 +1,574 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, mathtools}
+\mathtoolsset{showonlyrefs=true}
+
+\begin{document}
+
+%Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Escuela Superior de Cómputo \par}
+\vspace{1cm}
+{\scshape\Large Ingeniería en Sistemas Computacionales \par}
+\vspace{3cm}
+{\scshape\Huge Matemáticas avanzadas para la ingeniería \par}
+\vspace{1cm}
+{\Large \textsc{Funciones trigonométricas, funciones hiperbólicas} \par}
+\vspace{3cm}
+{\itshape\Large Grupo: 4CV2 \par}
+{\itshape\Large Profesor: Zárate Cárdenas Alejandro \par}
+\vfill
+{\Large Equipo: \par}
+{\Large Arellano Millán Gabriel \par}
+{\Large Gómez Tovar Yoshua Oziel \par}
+{\Large Herrera Tovar Karla Elena \par}
+{\Large Vázquez Blancas César Said \par}
+{\Large Zarco Sosa Kevin \par}
+\vfill
+{\Large 10 de mayo de 2024 \par}
+\end{titlepage}
+\section{Ejercicio 1}
+Demostrar que \(cos(z), sen(z), cosh (z), senh (z)\) son funciones enteras.
+\begin{equation}
+sen(z)=\frac{e^{iz}-e^{-iz}}{2i}
+\end{equation}
+\begin{equation}
+cos(z)=\frac{e^{iz}+e^{-iz}}{2}
+\end{equation}
+
+\(sen (z)\) y \(cos (z)\) son combinaciones lineales de \(e^{iz}\) y \(e^{-iz}\), por lo tanto, \(sen (z)\) y \(cos (z)\) son enteras.
+
+\begin{equation}
+senh(z)=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+\begin{equation}
+cosh(z)=\frac{e^{z}+e^{-z}}{2}
+\end{equation}
+\(senh (z)\) y \(cosh (z)\) son combinaciones lineales de \(e^z\) y \(e^{-z}\), por lo tanto, senh(z) y cosh(z) son enteras.
+\\
+\\
+\\
+Calcular en la forma \((u+iv))\) lo siguiente
+\section{Ejercicio 3}
+\(cos (1.7+1.5i)\)
+\\Aplicamos  la definición de la función coseno en términos de los números complejos
+\begin{equation}
+\frac{e^{i(1.7+1.5i)}+e^{-i(1.7+1.5i)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{-1.5+1.7i}+e^{1.5-1.7i}}{2}
+\end{equation}
+Usando la fórmula de Euler:
+\begin{equation}
+\frac{e^{-1.5}cos(1.7)+e^{-1.5}sen(1.7)i+e^{1.5}cos(1.7)-e^{1.5}sen(1.7)i}{2}
+\end{equation}
+\begin{equation}
+\frac{-0.0287991-0.577441-4.4493i+0.22127i}{2}
+\end{equation}
+\begin{equation}
+= \frac{-0.6061901-4.22303i}{2}
+\end{equation}
+Simplificando obtenemos
+\begin{equation}
+= -0.30309-2.11151i
+\end{equation}
+
+
+\section{Ejercicio 5}
+\( sen 10i\)
+\begin{equation}
+\frac{e^{i(10i)}-e^{i(10i)}}{2i}
+\end{equation}
+\begin{equation}
+\frac{e^{-10}-e^{10}}{2i}
+\end{equation}
+\begin{equation}
+\frac{-22026.4}{2i}
+\end{equation}
+\begin{equation}
+=11013.2 i
+\end{equation}
+
+\section{Ejercicio 7}
+\(sen\sqrt{2}-4i\)
+\\Aplicando  la definición de la función coseno en términos de los números complejos
+\begin{equation}
+\frac{e^{i(\sqrt{2}-4i)}-e^{-i(\sqrt{2}-4i)}}{2i}
+\end{equation}
+\begin{equation}
+\frac{e^4cos(\sqrt{2})+e^4sen(\sqrt{2})i-e^{-4}cos(\sqrt{2})+e^{-4}sen(\sqrt{2})i}{2i}
+\end{equation}
+Calculamos los valores numéricos
+\begin{equation}
+\frac{8.51424-0.002856+53.93019i+0.0180916i}{2i}
+\end{equation}
+De esta manera queda lo siguiente:
+\begin{equation}
+=26.974 - 4.255i
+\end{equation}
+
+\section{Ejercicio 9}
+\(cos 3\pi i\)
+\\definición de la función coseno en términos de los números complejos
+\begin{equation}
+cos(z)=\frac{e^{iz}+e^{-iz}}{2}
+\end{equation}
+Aplicando la definición:
+\begin{equation}
+\frac{e^{i(3\pi i)}+e^{-i(3\pi i)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{-3\pi}+e^{3\pi}}{2}
+\end{equation}
+Calculamos los valores numéricos
+\begin{equation}
+\frac{12391.6978}{2}
+\end{equation}
+\begin{equation}
+=6195.8239
+\end{equation}
+
+\section{Ejercicio 11}
+\(cos(2.1-0.2i)\)
+\begin{equation}
+\frac{e^{i(2.1-0.2i)}+e^{-i(2.1-0.2i)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{2.1i+0.2)}+e^{-2.1i+0.2)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{0.2}cos(2.1)+e^{0.2}sen(2.1)i+e^{-0.2}cos(2.1)-e^{-0.2}sen(2.1)i}{2}
+\end{equation}
+\begin{equation}
+=\frac{-0.61662-0.41333-0.706766i+1.05433i}{2}
+\end{equation}
+\begin{equation}
+=\frac{-1.02995+0.347564i}{2}
+\end{equation}
+\begin{equation}
+=-0.514975+0.173782i
+\end{equation}
+\\
+\\
+\\
+Calcular en la forma \(u+iv\)
+\section{Ejercicio 13}
+\(cosh(-2+3i)\)
+Utilizando la definición de cosh(z) para un número complejo z
+\begin{equation}
+\frac{e^{-2+3i}+e^{-(-2+3i)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{-2}e^{3i}+e^2e^{3i}}{2}
+\end{equation}
+Aplicar fórmula de Euler:
+\begin{equation}
+\frac{e^{-2}cos(3)+e^{-2}sen(3)i+e^{2}cos(3)-e^{2}sen(3)i}{2}
+\end{equation}
+Calculamos los valores numéricos
+\begin{equation}
+\frac{-0.133931-7.31511+0.01909i-1.04274i}{2}
+\end{equation}
+\begin{equation}
+\frac{-7344909-1.02365i}{2}
+\end{equation}
+Simplificando obtenemos:
+\begin{equation}
+=-3.724545-0.51182i
+\end{equation}
+
+
+\section{Ejercicio 15}
+\(senh(2+i)\)
+\\Utilizando la definición de sinh(z) para un número complejo z
+\begin{equation}
+\frac{e^{2+i}-e^{-2-i}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^2e^i-e^{-2}e^{-i}}{2}
+\end{equation}
+Aplicar fórmula de Euler:
+\begin{equation}
+\frac{e^{2}cos(1)+e^{2}sen(1)i-e^{-2}cos(1)+e^{-2}sen(1)}{2}
+\end{equation}
+Calculamos los valores numéricos
+\begin{equation}
+\frac{3.99232-0.073122+6.21768i+0.113881}{2}
+\end{equation}
+\begin{equation}
+\frac{6.33156i+3.91921}{2}
+\end{equation}
+Así obtenemos:
+\begin{equation}
+=3.16578i+1.959605
+\end{equation}
+\\
+\\
+\\
+Encontrar todas las soluciones de las siguientes ecuaciones
+\section{Ejercicio 17}
+
+\(cos(z)=3i\)
+\\Definición de la función coseno en términos de los números complejos:
+\\Aplicado la definición:
+\begin{equation}
+cos(z)=\frac{e^{iz}+e^{-iz}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{iz}+e^{-iz}}{2}=3i
+\end{equation}
+Utilizamos una variable auxiliar 
+\begin{equation}
+u=e^{iz}
+\end{equation}
+\begin{equation}
+e^{iz}+e^{-iz}=6i
+\end{equation}
+\begin{equation}
+u+u^{-1}=6i
+\end{equation}
+Multiplicando toda la ecuación por u, obtenemos:
+\begin{equation}
+u^2+1=6i u
+\end{equation}
+Reescrimos la ecuación como una ecuación cuadrática en u:
+\begin{equation}
+u^2-6iu+1=0
+\end{equation}
+Resolviendo la ecuación cuadrática obtenemos
+\begin{equation}
+u=(3\pm\sqrt{10})
+\end{equation}
+Reemplazando u
+\begin{equation}
+e^{iz}=(3\pm\sqrt{10})i
+\end{equation}
+\begin{equation}
+e^{iz}=ln((3\pm\sqrt{10})i)+2n\pi i
+\end{equation}
+\begin{equation}
+e^{iz}=ln(3\pm\sqrt{10})\pm \frac{\pi}{2}i+2n\pi i
+\end{equation}
+\begin{equation}
+e^{iz}=2n\pi \pm \frac{\pi}{2}-iln(3\pm\sqrt{10})
+\end{equation}
+\begin{equation}
+e^{iz}=\frac{1}{2}(2n+1)\pi -(-1)^n1.818i
+\end{equation}
+
+
+
+\section{Ejercicio 19}
+\(sen(z)=i senh(z)\)
+\\Definición de la función seno para números complejos:
+\begin{equation}
+sen(z)=\frac{e^{iz}-e^{-iz}}{2i}
+\end{equation}
+Aplicando la definición
+\begin{equation}
+sen(iz)=\frac{e^{i(iz)}-e^{-i(iz)}}{2i}
+\end{equation}
+Simplificando \(e^i(iz)\)
+\begin{equation}
+sen(iz)=\frac{e^{-z}-e^{z}}{2}
+\end{equation}
+\begin{equation}
+-sen(iz)=\frac{-1 (e^{iz}-e^{-iz})}{1(2i)}
+\end{equation}
+\begin{equation}
+-sen(iz)=\frac{-e^{-z}-e^{z}}{2i}
+\end{equation}
+\begin{equation}
+-sen(iz)=\frac{e^{z}-e^{-z}}{2i}
+\end{equation}
+\begin{equation}
+-isen(iz)=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+Multiplicamos ambos lados por \(-i\)
+\begin{equation}
+-isen(iz)=isenh(z)
+\end{equation}
+Quedando así:
+\begin{equation}
+sen(iz)=i senh(z)
+\end{equation}
+
+
+\section{Ejercicio 21}
+\(cosh(z)=\frac{1}{2}\)
+\begin{equation}
+\frac{e^z+e^{-z}}{2}=\frac{1}{2}
+\end{equation}
+\begin{equation}
+e^z+e^{-z}=1
+\end{equation}
+Expresamos \(e^z y e^{-z}\) en terminos de x(parte real) y(parte imaginaria)
+\begin{equation}
+e^{x+iy}+e^{-x-iy}=1
+\end{equation}
+\begin{equation}
+e^xcos(y)+e^xisen(y)+e^{-x}cos(y)-e^{-x}isen(y)=1
+\end{equation}
+\begin{equation}
+e^xcos(y)+\frac{1}{e^x}cos(y)+e^xisen(y)-\frac{1}{e^x}isen(y)=1
+\end{equation}
+Agrupando los términos reales e imaginarios
+\begin{equation}
+cosy(e^x+e^{-x})+iseny(e^x-e^{-x})=1
+\end{equation}
+Simplificando los términos con coseno y seno
+\begin{equation}
+cosy(e^x+e^{-x})=1
+\end{equation}
+\begin{equation}
+cosy(1+1)=1
+\end{equation}
+\begin{equation}
+cosy(2)=1
+\end{equation}
+\begin{equation}
+cos(y)=\frac{1}{2}
+\end{equation}
+Encuentrar y
+\begin{equation}
+y=arccos\left( \frac{1}{2}\right)= \frac{\pi}{3}\pm 2\pi n
+\end{equation}
+\begin{equation}
+z=0\pm \frac{\pi}{3}i + 2\pi n i
+\end{equation}
+Dando como resultado:
+\begin{equation}
+z=\pm\left( \frac{\pi}{3}\right) i\pm2\pi n i
+\end{equation}
+
+
+\section{Ejercicio 23}
+\(cosh(-1.5+1.7i)\)
+\begin{equation}
+\frac{e^{(-1.5+1.7i)}+e^{-(-1.5+1.7i)}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{-1.5}cos(1.7)+e^{-1.5}isen(1.7)+e^{1.5}cos(1.7)-e^{1.5}isen(1.7)}{2}
+\end{equation}
+\begin{equation}
+\frac{-0.0287491-0.577441+0.22127i-4.4433i}{2}
+\end{equation}
+\begin{equation}
+\frac{-4.22306i-0.6061901}{2}
+\end{equation}
+\begin{equation}
+=-0.303-2.11153i
+\end{equation}
+
+
+\section{Ejercicio 25}
+Demostrar que \(cos(-z)=cos(z)\) y \(sen(-z)=-sen(z)\)
+\\comenzamos con la definición de la función coseno en términos de los números complejos
+\begin{equation}
+cos(-z)=\frac{e^{i(-z)}+e^{-i(-z)}}{2}
+\end{equation}
+\begin{equation}
+cos(-z)=\frac{e^{-iz}+e^{iz}}{2}
+\end{equation}
+Reordenamos los términos en el numerador
+\begin{equation}
+cos(-z)=\frac{e^{iz}+e^{-iz}}{2}=cos(z)
+\end{equation}
+Comenzamos con la definición de la función seno en términos de números complejos
+\begin{equation}
+sen(-z)=\frac{e^{i(-z)}-e^{-i(-z)}}{2i}
+\end{equation}
+Sustituir \(-z\) por z
+\begin{equation}
+sen(-z)=\frac{e^{-iz}-e^{iz}}{2i}
+\end{equation}
+\begin{equation}
+sen(-z)=\frac{-e^{iz}+e^{-iz}}{2i}
+\end{equation}
+Reordenar los términos del numerador
+\begin{equation}
+sen(-z)=-\left(\frac{e^{iz}-e^{-iz}}{2i}\right)
+\end{equation}
+\begin{equation}
+sen(-z)=-sen(z)
+\end{equation}
+
+\section{Ejercicio 27}
+Demostrar que \(senh(z)\) y \(cosh(z)\) son periódicas en \(2\pi i\)
+\begin{equation}
+senh(z+2\pi i)=senh(z)
+\end{equation}
+\begin{equation}
+\frac{e^{z+2\pi i}-e^{-(z+2\pi i)}}{2}=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{z+2\pi i}-e^{-z-2\pi i}}{2}=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^ze^{2\pi i}-e^{-z}e^{-2\pi i}}{2}=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^zcos(2\pi)+e^zisen(2\pi)-e^{-z}cos(2\pi)-e^{-z}isen(2\pi)}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{z}-e^{-z}}{2}=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+\\
+\begin{equation}
+cosh(z+2\pi i)=cosh(z)
+\end{equation}
+\begin{equation}
+\frac{e^{z+2\pi i}+e^{-(z+2\pi i)}}{2}=\frac{e^z+e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{z+2\pi i}+e^{-z-2\pi i)}}{2}=\frac{e^z+e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^ze^{2\pi i}+e^{-z}e^{-2\pi i)}}{2}=\frac{e^z+e^{-z}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^zcos(2\pi)+e^zisen(2\pi)+e^{-z}cos(2\pi)-e^{-z}isen(2\pi)}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{z}-e^{-z}}{2}=\frac{e^{z}-e^{-z}}{2}
+\end{equation}
+
+
+\section{Ejercicio 29}
+\(cos^2(z)+sen^2(z)=1\)
+\\Utilizamos las fórmulas de Euler para el seno y el coseno
+\begin{equation}
+sen(z)=\frac{e^{iz}-e^{-iz}}{2i}
+\end{equation}
+\begin{equation}
+cos(z)=\frac{e^{iz}+e^{-iz}}{2i}
+\end{equation}
+ Sustuimos las fórmulas en la identidad principal 
+\begin{equation}
+\left(\frac{e^{iz}-e^{-iz}}{2i}\right)+\left(\frac{e^{iz}+e^{-iz}}{2i}\right)^2=1
+\end{equation}
+Multiplicando y simplificando
+\begin{equation}
+\frac{\left(e^{iz}-e^{-iz}\right)^2}{(2i)^2}+\frac{\left(e^{iz}+e^{-iz}\right)^2}{(2)^2}=1
+\end{equation}
+\begin{equation}
+\frac{e^{2iz}-2+e^{-2iz}}{-4}+\frac{e^{2iz}+2+e^{-2iz}}{4}=1
+\end{equation}
+Multiplicar ambos lados de la ecuación por 4 
+\begin{equation}
+\frac{1}{4} \left(-(e^{2iz}-2+e^{-2iz})+e^{2iz}+2+e^{-2iz}\right)=1
+\end{equation}
+\begin{equation}
+\frac{1}{4} \left(-e^{2iz}+2-e^{-2iz}+e^{2iz}+2+e^{-2iz}\right)=1
+\end{equation}
+\begin{equation}
+\frac{1}{4}(2+2)=1
+\end{equation}
+\begin{equation}
+\frac{1}{4}(4)=1
+\end{equation}
+\begin{equation}
+\frac{4}{4}=1
+\end{equation}
+Simplificando un poco más hasta llegar al resultado
+\begin{equation}
+1=1
+\end{equation}
+\\
+\\
+\\
+\(cos^2(z)-sen^2(z)=cos(2z)\)
+\\Aplicamos las fórmulas de Euler para el seno y el coseno
+\begin{equation}
+\left(\frac{e^{iz}+e^{-iz}}{2}\right)-\left(\frac{e^{iz}-e^{-iz}}{2i}\right)^2=cos(2z)
+\end{equation}
+Sustituimos estas expresiones en la identidad trigonométrica inicial
+\begin{equation}
+\frac{e^{2iz}+2+e^{-2iz}}{4}-\frac{e^{2iz}-2+e^{-2iz}}{-4}=cos(2z)
+\end{equation}
+Multiplicando y simplificando
+\begin{equation}
+\frac{e^{2iz}+2+e^{-2iz}}{4}+\frac{e^{2iz}-2+e^{-2iz}}{4}=cos(2z)
+\end{equation}
+\begin{equation}
+\frac{1}{4} \left(e^{2iz}+2+e^{-2iz}+e^{2iz}-2+e^{-2iz}\right)=cos(2z)
+\end{equation}
+Sumamos los términos del lado izquierdo
+\begin{equation}
+\frac{1}{4} \left(2e^{2iz+2e^{-2iz}}\right)=cos(2z)
+\end{equation}
+Simplificando nuevamente
+\begin{equation}
+\frac{2e^{2iz}}{4}+\frac{2e^{-2iz}}{4}=\frac{e^{2iz}+e^{-2iz}}{2}
+\end{equation}
+\begin{equation}
+\frac{e^{2iz}}{2}+\frac{e^{-2iz}}{2}=\frac{e^{2iz}+e^{-2iz}}{2}
+\end{equation}
+Finalmente, observamos que ambos lados de la ecuación son iguales
+\begin{equation}
+\frac{e^{2iz}+e^{-2iz}}{2}=\frac{e^{2iz}+e^{-2iz}}{2}
+\end{equation}
+\\
+\\
+\\
+\(cosh^2(z)-senh^2(z)=1\)
+\\Utilizamos las definiciones de las funciones hiperbólicas y Sustituimos estas expresiones en la identidad hiperbólica inicial
+\begin{equation}
+\frac{\left(e^{z}+e^{-z}\right)^2}{(2)^2}+\frac{\left(e^{z}-e^{-z}\right)^2}{(2)^2}=1
+\end{equation}
+\begin{equation}
+\frac{e^{2z}+2+e^{-2z}}{4}-\frac{e^{2z}-2+e^{-2z}}{4}=1
+\end{equation}
+Simplificando los términos
+\begin{equation}
+\frac{1}{4}\left( e^{2z}+2+e^{-2z}-e^{2z}+2-e^{-2z}\right)=1
+\end{equation}
+\begin{equation}
+\frac{1}{4}(2+2)=1
+\end{equation}
+\begin{equation}
+\frac{4}{4}=1
+\end{equation}
+Así da como resultado:
+\begin{equation}
+1=1
+\end{equation}
+\\
+\\
+\\
+\(cosh^2(z)+senh^2(z)=cosh(2z)\)
+\\Aplicamos las definiciones de las funciones hiperbólicas y colocamos estas expresiones en la identidad hiperbólica inicial
+\begin{equation}
+\frac{(e^z+e^{-z})^2}{2^2}+\frac{(e^z-e^{-z})^2}{2^2}=cosh(2z)
+\end{equation}
+\begin{equation}
+\frac{e^{2z}+2+e^{-2z}}{4}+\frac{e^{2z}-2+e^{-2z}}{4}=cosh(2z)
+\end{equation}
+Sumamos los términos
+\begin{equation}
+\frac{1}{4} \left(e^{2z}+2+e^{-2z}+e^{2z}-2+e^{-2z}\right)= cosh(2z)
+\end{equation}
+\begin{equation}
+\frac{1}{4} \left(2e^{2z}+2e^{-2z}\right)=cosh(2z)
+\end{equation}
+Simplificando la expresión
+\begin{equation}
+\frac{1}{4} \left(2e^{2z}+2e^{-2z}\right)=cosh(2z)
+\end{equation}
+\begin{equation}
+\frac{2e^{2z}}{4}+\frac{2e^{-2z}}{4}=cosh(2z)
+\end{equation}
+\begin{equation}
+\frac{e^{2z}}{2}+\frac{e^-2z}{2}=\frac{e^{2z}+e^{-2z}}{2}
+\end{equation}
+Así observamos que ambos lados de la ecuación son iguales
+\begin{equation}
+\frac{e^{2z}+e^{-2z}}{2}=\frac{e^{2z}+e^{-2z}}{2}
+\end{equation}
+
+
+
+
+\end{document}
