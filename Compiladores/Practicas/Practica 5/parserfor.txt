@@ -1,0 +1,28 @@
+parser grammar ExprParser;
+options { tokenVocab=ExprLexer; }
+asignacion :       
+ID'='INT        
+| INT'='ID        ;
+condicion:        
+    ID OPREL INT 
+    |INT OPREL ID
+    ;
+    
+impresion: PRINTF '(' '"' TIPODAT '"' ',' ID ')'
+    |PRINTF '(' '"' TIPODAT '"' ',' INT ')' ; 
+    
+operacion:
+    ID'='ID OPMAT INT        
+    |ID OPMAT   
+    |ID'='INT OPMAT ID ;
+    
+control: FOR '(' asignacion ';' condicion ';'
+operacion ')' '{' proceso+ '}'    
+    ;
+    
+proceso:
+    control    
+    |asignacion+ ';'    
+    |operacion+ ';' 
+    |impresion+ ';'
+    ;

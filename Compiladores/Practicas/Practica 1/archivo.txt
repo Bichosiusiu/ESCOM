@@ -1,0 +1,4 @@
+float cuadradoLimitado(x) float x{
+    /* devuelve x al cuadrado, pero nunca mas de 100 */
+    return (x<=-10.0||x>=10.0)?100:x*x;
+}

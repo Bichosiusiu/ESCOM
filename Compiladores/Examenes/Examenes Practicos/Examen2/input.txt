@@ -1,0 +1,12 @@
+x := 5
+y := 14
+y --
+write y
+z := x ^ 2
+write z
+a := x * 10
+write a
+b := a / 3
+write b
+b +
+write b

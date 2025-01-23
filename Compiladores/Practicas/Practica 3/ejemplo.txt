@@ -1,0 +1,6 @@
+if var1=2 then
+if x<>4 then 
+else
+if x=4 then 
+else token=0
+10.4E7
